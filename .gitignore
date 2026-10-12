@@ -1,0 +1,20 @@
+# Godot 4 editor & cache
+.godot/
+*.translation
+
+# Tools & Engine binaries (>100MB, excluded from repository)
+.tools/
+
+# Temporary work directories & logs
+temp_downloads/
+_knife_work/
+*.log
+
+# Web build artifacts & node_modules
+web/node_modules/
+web/dist/
+
+# OS-specific files
+Thumbs.db
+Desktop.ini
+.DS_Store

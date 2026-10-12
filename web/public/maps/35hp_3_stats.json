@@ -1,0 +1,41 @@
+{
+  "map": "35hp_3",
+  "source_faces": 3437,
+  "rendered_faces": 2545,
+  "sky_faces": 268,
+  "objects": {
+    "35hp_3_static": {
+      "faces": 2521,
+      "triangles": 6485,
+      "verts_before_weld": 11529,
+      "verts_after_weld": 3234,
+      "materials": 12
+    },
+    "35hp_3_translucent": {
+      "faces": 24,
+      "triangles": 48,
+      "verts_before_weld": 96,
+      "verts_after_weld": 32,
+      "materials": 1
+    },
+    "35hp_3_sky": {
+      "faces": 268,
+      "triangles": 484,
+      "verts_before_weld": 1220,
+      "verts_after_weld": 254,
+      "materials": 1
+    }
+  },
+  "lightmap_atlas": [
+    1024,
+    512
+  ],
+  "textures": 12,
+  "materials": 14,
+  "exports": {
+    "35hp_3.glb": 1140464,
+    "35hp_3_web.glb": 550584
+  },
+  "blend": "35hp_3.blend",
+  "build_seconds": 4.26
+}

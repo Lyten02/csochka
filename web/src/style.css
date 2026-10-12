@@ -1,0 +1,389 @@
+:root {
+  --sky: #9cc3e0;
+  --panel: rgba(12, 14, 18, 0.78);
+  --text: #e6e6e6;
+  --muted: #9aa0a6;
+  --accent: #ffb13b;
+  --pad: 8px;
+  --safe-t: env(safe-area-inset-top, 0px);
+  --safe-r: env(safe-area-inset-right, 0px);
+  --safe-b: env(safe-area-inset-bottom, 0px);
+  --safe-l: env(safe-area-inset-left, 0px);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--sky);
+  color: var(--text);
+  font: 13px/1.35 system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  overscroll-behavior: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+#view {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  touch-action: none;
+  outline: none;
+  cursor: crosshair;
+}
+
+button,
+select {
+  font: inherit;
+  color: var(--text);
+  background: rgba(30, 34, 40, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 6px;
+  padding: 5px 9px;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+button.on {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ---------------------------------------------------------------- loading */
+
+#loading {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(20, 24, 30, 0.55);
+  z-index: 20;
+}
+
+#loading.done {
+  display: none;
+}
+
+.load-box {
+  width: min(360px, 86vw);
+  padding: 18px 20px;
+  background: var(--panel);
+  border-radius: 10px;
+}
+
+.load-title {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.load-bar {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+#load-fill {
+  width: 0%;
+  height: 100%;
+  background: var(--accent);
+  transition: width 0.15s linear;
+}
+
+#load-text {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+#error {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: min(460px, 90vw);
+  padding: 16px 18px;
+  background: #3a1111;
+  border: 1px solid #c44;
+  border-radius: 10px;
+  z-index: 30;
+  white-space: pre-wrap;
+}
+
+/* ---------------------------------------------------------------- toolbar */
+
+#toolbar {
+  position: fixed;
+  top: calc(var(--pad) + var(--safe-t));
+  right: calc(var(--pad) + var(--safe-r));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 6px;
+  max-width: calc(100% - 370px);
+  z-index: 10;
+}
+
+#hint {
+  position: fixed;
+  left: 50%;
+  bottom: calc(var(--pad) + var(--safe-b));
+  transform: translateX(-50%);
+  max-width: min(760px, 94vw);
+  padding: 6px 10px;
+  background: var(--panel);
+  border-radius: 6px;
+  color: var(--muted);
+  font-size: 12px;
+  text-align: center;
+  pointer-events: none;
+  z-index: 5;
+}
+
+#speed-hint {
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+body.locked #hint {
+  opacity: 0.35;
+}
+
+/* ---------------------------------------------------------------- overlay */
+
+#overlay {
+  position: fixed;
+  top: calc(var(--pad) + var(--safe-t));
+  left: calc(var(--pad) + var(--safe-l));
+  width: 350px;
+  max-width: calc(100vw - 2 * var(--pad));
+  max-height: calc(100% - 2 * var(--pad) - var(--safe-t) - var(--safe-b));
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  touch-action: pan-y;
+  padding: 6px 8px 8px;
+  background: var(--panel);
+  border-radius: 8px;
+  font: 11px/1.35 ui-monospace, 'Cascadia Mono', Consolas, Menlo, monospace;
+  z-index: 10;
+}
+
+#overlay[hidden] {
+  display: none;
+}
+
+.ov-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.ov-title {
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.ov-summary {
+  flex: 1;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ov-collapse {
+  padding: 2px 6px;
+  font-size: 11px;
+}
+
+.ov-graph {
+  display: block;
+  width: 100%;
+  height: 64px;
+  image-rendering: pixelated;
+  border-radius: 4px;
+}
+
+.ov-legend {
+  color: var(--muted);
+  margin: 2px 0 4px;
+}
+
+.ov-legend i {
+  font-style: normal;
+}
+
+.c-cpu {
+  color: #39f;
+}
+
+.c-gpu {
+  color: #f5d;
+}
+
+.ov-verdict {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.ov-verdict.light {
+  color: #5d5;
+}
+
+.ov-verdict.medium {
+  color: #ec4;
+}
+
+.ov-verdict.heavy {
+  color: #f55;
+}
+
+.ov-reason {
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
+#overlay.collapsed .ov-body,
+#overlay.collapsed .ov-legend {
+  display: none;
+}
+
+.ov-sec {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 3px;
+  margin-top: 3px;
+}
+
+.ov-sec > summary {
+  cursor: pointer;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.row .k {
+  color: var(--muted);
+  flex-shrink: 0;
+  max-width: 55%;
+}
+
+.row .v {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+}
+
+.row select {
+  font-size: 11px;
+  padding: 1px 4px;
+}
+
+/* ------------------------------------------------------------- touch ui */
+
+#touch-ui {
+  display: none;
+}
+
+body.touch #touch-ui {
+  display: block;
+}
+
+body.touch #hint {
+  display: none;
+}
+
+#joystick {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 120px;
+  height: 120px;
+  margin: -60px 0 0 -60px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.45);
+  background: rgba(0, 0, 0, 0.18);
+  pointer-events: none;
+  opacity: 0;
+  z-index: 8;
+}
+
+#joystick.visible {
+  opacity: 1;
+}
+
+#joy-knob {
+  position: absolute;
+  left: 35px;
+  top: 35px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.55);
+}
+
+#vert-buttons {
+  position: fixed;
+  right: calc(14px + var(--safe-r));
+  bottom: calc(18px + var(--safe-b));
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  z-index: 9;
+}
+
+#vert-buttons button {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  font-size: 22px;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.35);
+  border: 2px solid rgba(255, 255, 255, 0.45);
+  touch-action: none;
+}
+
+#vert-buttons button.active {
+  background: rgba(255, 177, 59, 0.55);
+}
+
+/* --------------------------------------------------------- narrow screens */
+
+@media (max-width: 700px) {
+  #toolbar {
+    left: calc(var(--pad) + var(--safe-l));
+    max-width: none;
+    justify-content: flex-start;
+    gap: 5px;
+  }
+
+  #toolbar button,
+  #toolbar select {
+    padding: 5px 7px;
+    font-size: 12px;
+  }
+
+  #overlay {
+    width: auto;
+    right: calc(var(--pad) + var(--safe-r));
+    /* top is set from JS below the (wrapping) toolbar */
+    max-height: 55%;
+  }
+}
