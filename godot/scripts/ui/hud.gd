@@ -21,21 +21,16 @@ var _digit_rects := [
 ]
 
 var _hud7_tex: Texture2D
-var _hud10_tex: Texture2D
 
 # UI Nodes
 var _health_box: HBoxContainer
 var _armor_box: HBoxContainer
-var _timer_box: HBoxContainer
-var _weapon_box: Control
 var _crosshair: Control
 
 var _speed: Label
 var _info: Label
 var _help: Label
 
-var _round_time_remaining := 105.0  # 1:45 round time in seconds
-var _last_displayed_second := -1
 var _damage_flash: ColorRect
 var _flash_tween: Tween
 
@@ -115,8 +110,6 @@ func flash_damage(dmg: int) -> void:
 func _load_textures() -> void:
 	if ResourceLoader.exists("res://sprites/hud/640hud7.png"):
 		_hud7_tex = load("res://sprites/hud/640hud7.png")
-	if ResourceLoader.exists("res://sprites/hud/640hud10.png"):
-		_hud10_tex = load("res://sprites/hud/640hud10.png")
 
 
 func _create_hud_elements() -> void:
@@ -181,62 +174,6 @@ func _create_hud_elements() -> void:
 	_armor_box.add_theme_constant_override("separation", 2)
 	ap_group.add_child(_armor_box)
 	_set_number(_armor_box, 100)
-
-	# --- 2. ROUND TIMER (Bottom Center) ---
-	var timer_container := HBoxContainer.new()
-	timer_container.name = "TimerContainer"
-	timer_container.anchor_left = 0.5
-	timer_container.anchor_top = 1.0
-	timer_container.anchor_right = 0.5
-	timer_container.anchor_bottom = 1.0
-	timer_container.offset_left = -80.0
-	timer_container.offset_top = -60.0
-	timer_container.offset_right = 80.0
-	timer_container.offset_bottom = -20.0
-	timer_container.alignment = BoxContainer.ALIGNMENT_CENTER
-	timer_container.add_theme_constant_override("separation", 8)
-	timer_container.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	bottom_panel.add_child(timer_container)
-
-	if _hud7_tex:
-		var clock_icon := TextureRect.new()
-		var clock_at := AtlasTexture.new()
-		clock_at.atlas = _hud7_tex
-		clock_at.region = Rect2(190, 143, 30, 32)
-		clock_icon.texture = clock_at
-		clock_icon.stretch_mode = TextureRect.STRETCH_KEEP_CENTERED
-		clock_icon.custom_minimum_size = Vector2(30, 30)
-		timer_container.add_child(clock_icon)
-
-	_timer_box = HBoxContainer.new()
-	_timer_box.add_theme_constant_override("separation", 2)
-	timer_container.add_child(_timer_box)
-	_update_timer_display(int(_round_time_remaining))
-
-	# --- 3. ACTIVE WEAPON / KNIFE SLOT (Bottom Right) ---
-	if _hud10_tex:
-		_weapon_box = Control.new()
-		_weapon_box.name = "WeaponSlot"
-		_weapon_box.anchor_left = 1.0
-		_weapon_box.anchor_top = 1.0
-		_weapon_box.anchor_right = 1.0
-		_weapon_box.anchor_bottom = 1.0
-		_weapon_box.offset_left = -210.0
-		_weapon_box.offset_top = -70.0
-		_weapon_box.offset_right = -30.0
-		_weapon_box.offset_bottom = -20.0
-		_weapon_box.mouse_filter = Control.MOUSE_FILTER_IGNORE
-		bottom_panel.add_child(_weapon_box)
-
-		var knife_rect := TextureRect.new()
-		var knife_at := AtlasTexture.new()
-		knife_at.atlas = _hud10_tex
-		knife_at.region = Rect2(0, 137, 170, 42)
-		knife_rect.texture = knife_at
-		knife_rect.set_anchors_preset(Control.PRESET_FULL_RECT)
-		knife_rect.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-		knife_rect.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-		_weapon_box.add_child(knife_rect)
 
 
 func _create_crosshair() -> void:
@@ -326,46 +263,6 @@ func _set_number(container: HBoxContainer, value: int) -> void:
 			container.add_child(tr)
 
 
-func _update_timer_display(seconds_total: int) -> void:
-	if not _hud7_tex or _timer_box == null:
-		return
-	for child in _timer_box.get_children():
-		child.queue_free()
-
-	var mins := seconds_total / 60
-	var secs := seconds_total % 60
-	var time_str := "%02d:%02d" % [mins, secs]
-
-	for ch in time_str:
-		var tr := TextureRect.new()
-		if ch == ":":
-			var colon := Control.new()
-			colon.custom_minimum_size = Vector2(8, 25)
-			# Two small green squares for colon
-			var dot1 := ColorRect.new()
-			dot1.color = Color("#75e49e")
-			dot1.size = Vector2(3, 3)
-			dot1.position = Vector2(2.5, 7.0)
-			colon.add_child(dot1)
-
-			var dot2 := ColorRect.new()
-			dot2.color = Color("#75e49e")
-			dot2.size = Vector2(3, 3)
-			dot2.position = Vector2(2.5, 15.0)
-			colon.add_child(dot2)
-			_timer_box.add_child(colon)
-		else:
-			var d := ch.to_int()
-			if d >= 0 and d < _digit_rects.size():
-				var at := AtlasTexture.new()
-				at.atlas = _hud7_tex
-				at.region = _digit_rects[d]
-				tr.texture = at
-				tr.stretch_mode = TextureRect.STRETCH_KEEP_CENTERED
-				tr.custom_minimum_size = Vector2(at.region.size.x, at.region.size.y)
-				_timer_box.add_child(tr)
-
-
 func _label(size: int, align: HorizontalAlignment) -> Label:
 	var l := Label.new()
 	l.horizontal_alignment = align
@@ -383,20 +280,10 @@ func _unhandled_input(event: InputEvent) -> void:
 		_info.visible = _help.visible
 
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if _player and _player.kz_timer_active:
 		if _kz_time_label:
 			_kz_time_label.text = format_kz_time(_player.kz_timer_elapsed)
-		var cur_kz_sec := int(_player.kz_timer_elapsed)
-		if cur_kz_sec != _last_displayed_second:
-			_last_displayed_second = cur_kz_sec
-			_update_timer_display(cur_kz_sec)
-	elif _round_time_remaining > 0.0:
-		_round_time_remaining -= delta
-		var current_sec := int(_round_time_remaining)
-		if current_sec != _last_displayed_second:
-			_last_displayed_second = current_sec
-			_update_timer_display(current_sec)
 
 	var pm := _player.pm
 	if pm == null:
