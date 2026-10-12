@@ -522,21 +522,11 @@ func _touch_triggers() -> bool:
 	if bsp == null or pm == null:
 		return false
 
-	var in_water: bool = pm.waterlevel > 0
-	var is_on_floor: bool = pm.onground == 0 or in_water
-
+	# 1. Authentic GoldSrc trigger_teleport volumes
 	for trig in bsp.triggers:
 		if trig.classname != "trigger_teleport":
 			continue
-		var is_touching: bool = bsp.touching_trigger(trig, pm.origin, pm.usehull)
-		# Fallback 1: if player landed on ground or water within pit horizontal bounds (below trigger ceiling, outside spawn)
-		if not is_touching and is_on_floor and not _is_in_spawn_area(pm.origin):
-			if (pm.origin.x >= trig.mins.x - 48.0 and pm.origin.x <= trig.maxs.x + 48.0 and
-				pm.origin.y >= trig.mins.y - 48.0 and pm.origin.y <= trig.maxs.y + 48.0 and
-				pm.origin.z <= trig.maxs.z + 64.0):
-				is_touching = true
-
-		if not is_touching:
+		if not bsp.touching_trigger(trig, pm.origin, pm.usehull):
 			continue
 
 		var target: String = _trigger_target(trig)
@@ -547,33 +537,21 @@ func _touch_triggers() -> bool:
 		_teleport_to(dest)
 		return true
 
-	# Fallback 2: if player fell onto ground (worldspawn floor or water in pit) below last stage or map spawn, OR fell into deep void
-	if not _is_in_spawn_area(pm.origin):
-		var ref_z := -999999.0
-		var target_dest: Dictionary = {}
-		if not _last_stage_teleport_dest.is_empty():
-			ref_z = GoldSrcBsp.parse_vec(_last_stage_teleport_dest["origin"]).z
-			target_dest = _last_stage_teleport_dest
-		elif not spawns.is_empty():
-			ref_z = _min_spawn_z
-			var closest_d := 1e9
-			for trig in bsp.triggers:
-				if trig.classname != "trigger_teleport":
-					continue
-				var center := (trig.mins + trig.maxs) * 0.5
-				var d := Vector2(pm.origin.x - center.x, pm.origin.y - center.y).length_squared()
-				if d < closest_d:
-					var t_name := _trigger_target(trig)
-					if _teleport_dest.has(t_name):
-						closest_d = d
-						target_dest = _teleport_dest[t_name]
-			if target_dest.is_empty():
-				target_dest = spawns[spawn_index]
-
-		if ref_z > -900000.0:
-			if (is_on_floor and pm.origin.z < ref_z - 45.0) or pm.origin.z < ref_z - 1200.0:
+	# 2. For maps without any trigger_teleport entities (e.g. kz_bhop)
+	if bsp.triggers.is_empty() and not _is_in_spawn_area(pm.origin):
+		var is_on_floor: bool = pm.onground == 0 or pm.waterlevel > 0
+		if is_on_floor and _min_spawn_z > -900000.0 and pm.origin.z < _min_spawn_z - 150.0:
+			var target_dest: Dictionary = spawns[spawn_index] if not spawns.is_empty() else {}
+			if not target_dest.is_empty():
 				_teleport_to(target_dest)
 				return true
+
+	# 3. Deep void safety fallback (if fallen completely out of map bounds)
+	if pm.origin.z < -4000.0:
+		var target_dest: Dictionary = _last_stage_teleport_dest if not _last_stage_teleport_dest.is_empty() else (spawns[spawn_index] if not spawns.is_empty() else {})
+		if not target_dest.is_empty():
+			_teleport_to(target_dest)
+			return true
 
 	return false
 
@@ -601,6 +579,8 @@ func _teleport_to(dest: Dictionary) -> void:
 	teleport_count += 1
 	block_stand_timer = 0.0
 	_lj_tracking = false
+	if dest.get("classname", "") == "info_teleport_destination" or dest.get("classname", "") == "info_target":
+		_last_stage_teleport_dest = dest
 	_reset_interpolation()
 	teleported.emit(dest)
 

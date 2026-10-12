@@ -380,8 +380,8 @@ func trace_model(pe: PhysEnt, start: Vector3, end: Vector3) -> PmTrace:
 	return trace
 
 
-## SV_TouchLinks accuracy test for brush triggers: player's absbox overlaps and origin is inside the
-## trigger's clip hull for the current player size.
+## SV_TouchLinks accuracy test for brush triggers: player's absbox overlaps trigger bounding box
+## and player hull (center, feet, or head) is inside the trigger's solid brush.
 func touching_trigger(trig: PhysEnt, origin: Vector3, usehull: int) -> bool:
 	var absmin: Vector3 = origin + PLAYER_MINS[usehull]
 	var absmax: Vector3 = origin + PLAYER_MAXS[usehull]
@@ -390,7 +390,18 @@ func touching_trigger(trig: PhysEnt, origin: Vector3, usehull: int) -> bool:
 	if absmax.x < trig.mins.x or absmax.y < trig.mins.y or absmax.z < trig.mins.z:
 		return false
 	var hull := hull_for(trig, usehull)
-	return hull_point_contents(hull, hull.first, origin - hull_offset(trig, usehull)) == CONTENTS_SOLID
+	if hull.first < 0:
+		return true
+	var offset := hull_offset(trig, usehull)
+	if hull_point_contents(hull, hull.first, origin - offset) == CONTENTS_SOLID:
+		return true
+	var feet_pos := origin + Vector3(0, 0, PLAYER_MINS[usehull].z + 2.0)
+	if hull_point_contents(hull, hull.first, feet_pos - offset) == CONTENTS_SOLID:
+		return true
+	var head_pos := origin + Vector3(0, 0, PLAYER_MAXS[usehull].z - 2.0)
+	if hull_point_contents(hull, hull.first, head_pos - offset) == CONTENTS_SOLID:
+		return true
+	return false
 
 
 func find_entities(key: String, value: String) -> Array[Dictionary]:
