@@ -1,0 +1,104 @@
+{
+  "godot": "4.7.stable.official.5b4e0cb0f",
+  "settings_unchanged": true,
+  "before_sha256": "6ac8e03ef1601d0a71b0ac5116d35b63704d360b93a0417aecdc2520f4af6d72",
+  "after_sha256": "6ac8e03ef1601d0a71b0ac5116d35b63704d360b93a0417aecdc2520f4af6d72",
+  "results": [
+    {
+      "name": "import",
+      "exit": 0,
+      "pass": true,
+      "settings_unchanged": true
+    },
+    {
+      "name": "guard_existing_success",
+      "exit": 0,
+      "pass": true,
+      "settings_unchanged": true
+    },
+    {
+      "name": "guard_existing_failure",
+      "exit": 1,
+      "pass": true,
+      "settings_unchanged": true
+    },
+    {
+      "name": "guard_existing_assert",
+      "exit": 1,
+      "pass": true,
+      "settings_unchanged": true
+    },
+    {
+      "name": "guard_absent_success",
+      "exit": 0,
+      "pass": true,
+      "settings_unchanged": true
+    },
+    {
+      "name": "guard_absent_failure",
+      "exit": 1,
+      "pass": true,
+      "settings_unchanged": true
+    },
+    {
+      "name": "guard_absent_assert",
+      "exit": 1,
+      "pass": true,
+      "settings_unchanged": true
+    },
+    {
+      "name": "test_knife_inspect",
+      "exit": 0,
+      "pass": true,
+      "settings_unchanged": true
+    },
+    {
+      "name": "test_knife_catalog",
+      "exit": 0,
+      "pass": true,
+      "settings_unchanged": true
+    },
+    {
+      "name": "test_knife_selection",
+      "exit": 0,
+      "pass": true,
+      "settings_unchanged": true
+    },
+    {
+      "name": "test_menu_and_settings",
+      "exit": 0,
+      "pass": true,
+      "settings_unchanged": true
+    },
+    {
+      "name": "test_pause_menu",
+      "exit": 0,
+      "pass": true,
+      "settings_unchanged": true
+    },
+    {
+      "name": "test_game_flow",
+      "exit": 0,
+      "pass": true,
+      "settings_unchanged": true
+    },
+    {
+      "name": "pmove_test",
+      "exit": 0,
+      "pass": true,
+      "settings_unchanged": true
+    },
+    {
+      "name": "render_knife_catalog",
+      "exit": 0,
+      "pass": true,
+      "settings_unchanged": true
+    },
+    {
+      "name": "capture_knife_gameplay",
+      "exit": 0,
+      "pass": true,
+      "settings_unchanged": true
+    }
+  ]
+}

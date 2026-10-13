@@ -1,0 +1,6 @@
+COMMAND: <godot-console> --path <repo>\godot --headless --script res://tests/test_knife_inspect.gd
+Godot Engine v4.7.stable.official.5b4e0cb0f - https://godotengine.org
+
+=== Knife catalog / inspect / 1280x720 contract tests ===
+KNIFE INSPECT TESTS: PASS (0 failures)
+

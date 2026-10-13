@@ -1,0 +1,27 @@
+COMMAND: C:\Users\kosta\AppData\Local\Programs\Python\Python312\python.exe godot/tests/test_knife_converter.py
+[PASS] kerambit_gamma_doppler_all_phases: 10 bodyparts, 10 meshes, 25054 triangles
+[PASS] talon_knife_case_hardened: 5 bodyparts, 36 meshes, 11321 triangles
+[PASS] skeleton_knife_fade: 7 bodyparts, 7 meshes, 17968 triangles
+[PASS] survival_knife_case_hardened_403_pattern_blue_gem: 8 bodyparts, 8 meshes, 21836 triangles
+[PASS] nomad_knife_vanilla: 9 bodyparts, 9 meshes, 27110 triangles
+[PASS] kukri_knife_fade: 6 bodyparts, 8 meshes, 19888 triangles
+[PASS] shadow_daggers_fade_v2: 17 bodyparts, 35 meshes, 32614 triangles
+[PASS] ursus_knife_fade: 4 bodyparts, 17 meshes, 6464 triangles
+[PASS] bayonet_paw: 2 bodyparts, 4 meshes, 2802 triangles
+[PASS] navaja_fade: 8 bodyparts, 8 meshes, 17972 triangles
+[PASS] butterfly_knife_fade: 8 bodyparts, 8 meshes, 24830 triangles
+[PASS] m9_bayonet_doppler_sapphire: 4 bodyparts, 13 meshes, 9260 triangles
+[PASS] huntsman_knife_blood_hound: 12 bodyparts, 16 meshes, 32406 triangles
+[PASS] falchion_comet_sport_gloves_pandoras_box: 6 bodyparts, 13 meshes, 14635 triangles
+[PASS] bowie_knife_poisonous_gas: 9 bodyparts, 10 meshes, 23585 triangles
+[PASS] classic_knife_vanilla: 2 bodyparts, 11 meshes, 1826 triangles
+[PASS] kitchen_knife: 1 bodyparts, 4 meshes, 810 triangles
+[PASS] gut_knife_lavatron: 11 bodyparts, 11 meshes, 27366 triangles
+[PASS] flip_knife_ruby: 2 bodyparts, 4 meshes, 3832 triangles
+[PASS] bayonet_doppler_phase_1: 3 bodyparts, 5 meshes, 3406 triangles
+.
+----------------------------------------------------------------------
+Ran 1 test in 19.419s
+
+OK
+

@@ -1,0 +1,47 @@
+COMMAND: <godot-console> --path <repo>\godot --headless --script res://tests/test_knife_selection.gd
+Godot Engine v4.7.stable.official.5b4e0cb0f - https://godotengine.org
+
+
+=== Running CS 1.6 Knife Selection & Model Integration Tests ===
+
+--- Test 1: SettingsManager Knife Catalog ---
+Available knives count: 22
+ - Knife ID: knife_default | Name: Frozen Knife (Ледяной нож) | Model: res://models/knife.glb
+ - Knife ID: knife_black | Name: Black Night (Тёмный нож) | Model: res://models/knife_black.glb
+ - Knife ID: cs16forge_kerambit_gamma_doppler_all_phases | Name: Karambit Gamma Doppler All Phases | Model: res://models/knives/kerambit_gamma_doppler_all_phases.glb
+ - Knife ID: cs16forge_talon_knife_case_hardened | Name: Talon Knife Case Hardened | Model: res://models/knives/talon_knife_case_hardened.glb
+ - Knife ID: cs16forge_skeleton_knife_fade | Name: Skeleton Knife Fade | Model: res://models/knives/skeleton_knife_fade.glb
+ - Knife ID: cs16forge_survival_knife_case_hardened_403_pattern_blue_gem | Name: Survival Knife Case Hardened 403 Pattern Blue Gem | Model: res://models/knives/survival_knife_case_hardened_403_pattern_blue_gem.glb
+ - Knife ID: cs16forge_nomad_knife_vanilla | Name: Nomad Knife Vanilla | Model: res://models/knives/nomad_knife_vanilla.glb
+ - Knife ID: cs16forge_kukri_knife_fade | Name: Kukri Knife Fade | Model: res://models/knives/kukri_knife_fade.glb
+ - Knife ID: cs16forge_shadow_daggers_fade_v2 | Name: Shadow Daggers Fade V2 | Model: res://models/knives/shadow_daggers_fade_v2.glb
+ - Knife ID: cs16forge_ursus_knife_fade | Name: Ursus Knife Fade | Model: res://models/knives/ursus_knife_fade.glb
+ - Knife ID: cs16forge_bayonet_paw | Name: Bayonet Paw | Model: res://models/knives/bayonet_paw.glb
+ - Knife ID: cs16forge_navaja_fade | Name: Navaja Fade | Model: res://models/knives/navaja_fade.glb
+ - Knife ID: cs16forge_butterfly_knife_fade | Name: Butterfly Knife Fade | Model: res://models/knives/butterfly_knife_fade.glb
+ - Knife ID: cs16forge_m9_bayonet_doppler_sapphire | Name: M9 Bayonet Doppler Sapphire | Model: res://models/knives/m9_bayonet_doppler_sapphire.glb
+ - Knife ID: cs16forge_huntsman_knife_blood_hound | Name: Huntsman Knife Blood Hound | Model: res://models/knives/huntsman_knife_blood_hound.glb
+ - Knife ID: cs16forge_falchion_comet_sport_gloves_pandoras_box | Name: Falchion Comet Sport Gloves Pandoras Box | Model: res://models/knives/falchion_comet_sport_gloves_pandoras_box.glb
+ - Knife ID: cs16forge_bowie_knife_poisonous_gas | Name: Bowie Knife Poisonous Gas | Model: res://models/knives/bowie_knife_poisonous_gas.glb
+ - Knife ID: cs16forge_classic_knife_vanilla | Name: Classic Knife Vanilla | Model: res://models/knives/classic_knife_vanilla.glb
+ - Knife ID: cs16forge_kitchen_knife | Name: Kitchen Knife | Model: res://models/knives/kitchen_knife.glb
+ - Knife ID: cs16forge_gut_knife_lavatron | Name: Gut Knife Lavatron | Model: res://models/knives/gut_knife_lavatron.glb
+ - Knife ID: cs16forge_flip_knife_ruby | Name: Flip Knife Ruby | Model: res://models/knives/flip_knife_ruby.glb
+ - Knife ID: cs16forge_bayonet_doppler_phase_1 | Name: Bayonet Doppler Phase 1 | Model: res://models/knives/bayonet_doppler_phase_1.glb
+[PASS] Knife catalog contains both default and black night knife definitions.
+
+--- Test 2: Model & Icon Resource Verification ---
+[PASS] Both knife GLB models and preview thumbnails load properly.
+
+--- Test 3: CSKnife Hot-swapping and Animations ---
+[PASS] CSKnife model hot-swapping and animation playback verified.
+
+--- Test 4: CSKnifeSelectDialog UI ---
+[PASS] CSKnifeSelectDialog successfully equips knife_black and updates settings.
+
+--- Test 5: CSPlayer Knife Auto-Instantiation and Hot-Reload ---
+[PASS] CSPlayer properly manages knife viewmodel and responds to knife selection.
+
+>>> ALL KNIFE INTEGRATION TESTS PASSED SUCCESSFULLY! <<<
+
+

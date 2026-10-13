@@ -1,0 +1,17 @@
+COMMAND: <godot-console> --path <repo>\godot --rendering-method gl_compatibility --script res://tests/capture_knife_gameplay.gd
+Godot Engine v4.7.stable.official.5b4e0cb0f - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 610.47 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 2060 SUPER
+
+Saved: <repo>/godot/../.orchestration/knife-evidence/gameplay/talon_idle.png
+Saved: <repo>/godot/../.orchestration/knife-evidence/gameplay/talon_inspect_10.png
+INSPECT MOTION clip=inspect time=0.267 / 2.667
+Saved: <repo>/godot/../.orchestration/knife-evidence/gameplay/talon_inspect_35.png
+INSPECT MOTION clip=inspect time=0.933 / 2.667
+Saved: <repo>/godot/../.orchestration/knife-evidence/gameplay/talon_inspect_60.png
+INSPECT MOTION clip=inspect time=1.600 / 2.667
+Saved: <repo>/godot/../.orchestration/knife-evidence/gameplay/talon_inspect_85.png
+INSPECT MOTION clip=inspect time=2.267 / 2.667
+Saved: <repo>/godot/../.orchestration/knife-evidence/gameplay/talon_return_idle.png
+Saved: <repo>/godot/../.orchestration/knife-evidence/gameplay/knife_dialog_scrolled.png
+GAMEPLAY KNIFE EVIDENCE: PASS (physical F, four temporal poses, return to idle, scrolled 22-item dialog)
+

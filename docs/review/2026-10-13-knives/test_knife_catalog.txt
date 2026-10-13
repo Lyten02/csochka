@@ -1,0 +1,27 @@
+COMMAND: <godot-console> --path <repo>\godot --headless --script res://tests/test_knife_catalog.gd
+Godot Engine v4.7.stable.official.5b4e0cb0f - https://godotengine.org
+
+[PASS] knife_default no inspect
+[PASS] knife_black no inspect
+[PASS] cs16forge_kerambit_gamma_doppler_all_phases inspect=inspect_1_1 duration=4.56000 expected=4.56000
+[PASS] cs16forge_talon_knife_case_hardened inspect=inspect duration=2.66667 expected=2.66667
+[PASS] cs16forge_skeleton_knife_fade inspect=inspect_1 duration=6.13333 expected=6.13333
+[PASS] cs16forge_survival_knife_case_hardened_403_pattern_blue_gem inspect=inspect_1 duration=8.30000 expected=8.30000
+[PASS] cs16forge_nomad_knife_vanilla inspect=inspect_1 duration=4.93333 expected=4.93333
+[PASS] cs16forge_kukri_knife_fade inspect=inspect_1 duration=6.03333 expected=6.03333
+[PASS] cs16forge_shadow_daggers_fade_v2 inspect=inspect_1 duration=4.65385 expected=4.65385
+[PASS] cs16forge_ursus_knife_fade inspect=inspect duration=5.00000 expected=5.00000
+[PASS] cs16forge_bayonet_paw inspect=inspect_1 duration=4.76667 expected=4.76667
+[PASS] cs16forge_navaja_fade inspect=inspect_1 duration=4.73333 expected=4.73333
+[PASS] cs16forge_butterfly_knife_fade no inspect
+[PASS] cs16forge_m9_bayonet_doppler_sapphire no inspect
+[PASS] cs16forge_huntsman_knife_blood_hound no inspect
+[PASS] cs16forge_falchion_comet_sport_gloves_pandoras_box no inspect
+[PASS] cs16forge_bowie_knife_poisonous_gas no inspect
+[PASS] cs16forge_classic_knife_vanilla no inspect
+[PASS] cs16forge_kitchen_knife no inspect
+[PASS] cs16forge_gut_knife_lavatron no inspect
+[PASS] cs16forge_flip_knife_ruby no inspect
+[PASS] cs16forge_bayonet_doppler_phase_1 no inspect
+KNIFE CATALOG: PASS (22 selectable, 10 inspect, 0 failures)
+

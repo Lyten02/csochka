@@ -1,0 +1,47 @@
+COMMAND: <godot-console> --path <repo>\godot --headless --script res://tests/pmove_test.gd
+Godot Engine v4.7.stable.official.5b4e0cb0f - https://godotengine.org
+
+spawn -> fall shaft -> trigger_teleport
+  ok   teleported from the spawn shaft (1)
+  ok   landed after teleport at (-872.0, 2680.0, -283.9688)
+ground acceleration / friction
+  ok   standing on arena floor
+  ok   knife run speed 250 (got 250.000)
+  ok   diagonal speed also 250 (got 250.000)
+  ok   friction stops from 250 in 55 ticks
+jump
+  ok   jump triggered from ground
+  ok   take-off vz 260.328
+  ok   jump apex 44.99 units (CS: 45)
+  ok   holding jump does not bunny hop by itself
+  ok   second jump right after landing is lower (stamina): 34.63
+walls
+  ok   stopped against wall (speed 0.000)
+  ok   stays on the floor at the wall (z -602.97)
+  ok   hull rests against the wall plane (gap 0.0000)
+  ok   hull face at the brush face x=1264 (1263.969)
+  ok   slides along the wall (+111.9 y)
+  ok   slide velocity is parallel to the wall (152.86)
+duck
+  ok   ducked after TIME_TO_DUCK
+  ok   origin lowered 18 units (feet stay)
+  ok   duck view height 12
+  ok   duck walk speed 83.25 (got 83.250)
+  ok   stood up
+  ok   instant duck in air
+  ok   feet raised by the duck hull
+bunnyhop, vanilla CS 1.6 (speed cap + stamina)
+  ok   8 consecutive hops
+    horizontal speed after each hop: [251.7, 241.6, 241.7, 241.7, 241.7, 241.7, 241.7, 241.7]
+  ok   no hop leaves the ground faster than 1.2 x 250 = 300 (max 251.74)
+  ok   PM_PreventMegaBunnyJumping cropped a hop to ~240
+  ok   air strafing gains speed above 250 (348.0)
+bunnyhop without cap/stamina (bhop server settings)
+  ok   10 consecutive hops
+  ok   speed keeps growing: [252.0, 349.0, 425.0, 489.0, 546.0, 597.0, 644.0, 688.0, 730.0, 711.0]
+ladder
+  ok   map has func_ladder
+  ok   entered ladder movement
+  ok   climbed 239.0 units
+RESULT: PASS
+

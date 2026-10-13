@@ -1,0 +1,38 @@
+COMMAND: <godot-console> --path <repo>\godot --rendering-method gl_compatibility --script res://tests/render_knife_catalog.gd
+Godot Engine v4.7.stable.official.5b4e0cb0f - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 610.47 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 2060 SUPER
+
+Saved: <repo>/godot/../.orchestration/knife-evidence/knives/knife_default_idle.png
+Saved: <repo>/godot/../.orchestration/knife-evidence/knives/knife_black_idle.png
+Saved: <repo>/godot/../.orchestration/knife-evidence/knives/cs16forge_kerambit_gamma_doppler_all_phases_idle.png
+Saved: <repo>/godot/../.orchestration/knife-evidence/knives/cs16forge_kerambit_gamma_doppler_all_phases_inspect.png
+Saved: <repo>/godot/../.orchestration/knife-evidence/knives/cs16forge_talon_knife_case_hardened_idle.png
+Saved: <repo>/godot/../.orchestration/knife-evidence/knives/cs16forge_talon_knife_case_hardened_inspect.png
+Saved: <repo>/godot/../.orchestration/knife-evidence/knives/cs16forge_skeleton_knife_fade_idle.png
+Saved: <repo>/godot/../.orchestration/knife-evidence/knives/cs16forge_skeleton_knife_fade_inspect.png
+Saved: <repo>/godot/../.orchestration/knife-evidence/knives/cs16forge_survival_knife_case_hardened_403_pattern_blue_gem_idle.png
+Saved: <repo>/godot/../.orchestration/knife-evidence/knives/cs16forge_survival_knife_case_hardened_403_pattern_blue_gem_inspect.png
+Saved: <repo>/godot/../.orchestration/knife-evidence/knives/cs16forge_nomad_knife_vanilla_idle.png
+Saved: <repo>/godot/../.orchestration/knife-evidence/knives/cs16forge_nomad_knife_vanilla_inspect.png
+Saved: <repo>/godot/../.orchestration/knife-evidence/knives/cs16forge_kukri_knife_fade_idle.png
+Saved: <repo>/godot/../.orchestration/knife-evidence/knives/cs16forge_kukri_knife_fade_inspect.png
+Saved: <repo>/godot/../.orchestration/knife-evidence/knives/cs16forge_shadow_daggers_fade_v2_idle.png
+Saved: <repo>/godot/../.orchestration/knife-evidence/knives/cs16forge_shadow_daggers_fade_v2_inspect.png
+Saved: <repo>/godot/../.orchestration/knife-evidence/knives/cs16forge_ursus_knife_fade_idle.png
+Saved: <repo>/godot/../.orchestration/knife-evidence/knives/cs16forge_ursus_knife_fade_inspect.png
+Saved: <repo>/godot/../.orchestration/knife-evidence/knives/cs16forge_bayonet_paw_idle.png
+Saved: <repo>/godot/../.orchestration/knife-evidence/knives/cs16forge_bayonet_paw_inspect.png
+Saved: <repo>/godot/../.orchestration/knife-evidence/knives/cs16forge_navaja_fade_idle.png
+Saved: <repo>/godot/../.orchestration/knife-evidence/knives/cs16forge_navaja_fade_inspect.png
+Saved: <repo>/godot/../.orchestration/knife-evidence/knives/cs16forge_butterfly_knife_fade_idle.png
+Saved: <repo>/godot/../.orchestration/knife-evidence/knives/cs16forge_m9_bayonet_doppler_sapphire_idle.png
+Saved: <repo>/godot/../.orchestration/knife-evidence/knives/cs16forge_huntsman_knife_blood_hound_idle.png
+Saved: <repo>/godot/../.orchestration/knife-evidence/knives/cs16forge_falchion_comet_sport_gloves_pandoras_box_idle.png
+Saved: <repo>/godot/../.orchestration/knife-evidence/knives/cs16forge_bowie_knife_poisonous_gas_idle.png
+Saved: <repo>/godot/../.orchestration/knife-evidence/knives/cs16forge_classic_knife_vanilla_idle.png
+Saved: <repo>/godot/../.orchestration/knife-evidence/knives/cs16forge_kitchen_knife_idle.png
+Saved: <repo>/godot/../.orchestration/knife-evidence/knives/cs16forge_gut_knife_lavatron_idle.png
+Saved: <repo>/godot/../.orchestration/knife-evidence/knives/cs16forge_flip_knife_ruby_idle.png
+Saved: <repo>/godot/../.orchestration/knife-evidence/knives/cs16forge_bayonet_doppler_phase_1_idle.png
+KNIFE RENDERS: PASS (22 idle, 10 inspect)
+
