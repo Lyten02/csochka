@@ -18,3 +18,8 @@ web/dist/
 Thumbs.db
 Desktop.ini
 .DS_Store
+
+# Local orchestration receipts and runtime state
+.orchestration/
+.omp/sessions/
+.omp/logs/

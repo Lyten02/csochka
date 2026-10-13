@@ -1,0 +1,33 @@
+# Project-only settings; launch with tools/start-omp.ps1 for explicit overlay precedence.
+modelRoleStorage: project
+defaultThinkingLevel: medium
+modelRoles:
+  default: anthropic/claude-opus-5-5:high
+  plan: anthropic/claude-opus-5-5:high
+  task: openai-codex/gpt-6-astra:medium
+  slow: openai-codex/gpt-6-astra:medium
+  smol: openai-codex/gpt-6-sol:medium
+  tiny: openai-codex/gpt-6-sol:medium
+  csochka-astra: openai-codex/gpt-6-astra:medium
+  csochka-sol: openai-codex/gpt-6-sol:medium
+prewalk:
+  enabled: false
+task:
+  prewalk: false
+  enableEffort: false
+  agentModelOverrides:
+    task: openai-codex/gpt-6-astra:medium
+    reviewer: openai-codex/gpt-6-astra:medium
+    security-reviewer: openai-codex/gpt-6-astra:medium
+    scout: openai-codex/gpt-6-sol:medium
+    sonic: openai-codex/gpt-6-sol:medium
+    csochka-astra: openai-codex/gpt-6-astra:medium
+    csochka-sol: openai-codex/gpt-6-sol:medium
+  agentPrewalk:
+    task: 'off'
+    reviewer: 'off'
+    security-reviewer: 'off'
+    scout: 'off'
+    sonic: 'off'
+    csochka-astra: 'off'
+    csochka-sol: 'off'
