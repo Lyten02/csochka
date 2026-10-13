@@ -18,6 +18,8 @@ func capture(filename: String) -> void:
 		check(image.save_png(out_dir.path_join(filename)) == OK, "Save " + filename)
 
 func _initialize() -> void:
+	if not preload("res://tests/settings_snapshot.gd").protect(self):
+		return
 	out_dir = ProjectSettings.globalize_path("res://../.orchestration/knife-evidence/menu")
 	if DisplayServer.get_name() != "headless":
 		DirAccess.make_dir_recursive_absolute(out_dir)

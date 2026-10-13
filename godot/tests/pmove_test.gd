@@ -13,6 +13,8 @@ var failures := 0
 
 
 func _initialize() -> void:
+	if not preload("res://tests/settings_snapshot.gd").protect(self):
+		return
 	bsp = GoldSrcBsp.load_file("res://maps/35hp_3.bsp")
 	player = load("res://scripts/player/cs_player.gd").new()
 	var cam := Camera3D.new()

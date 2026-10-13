@@ -1,6 +1,8 @@
 extends SceneTree
 
 func _initialize() -> void:
+	if not preload("res://tests/settings_snapshot.gd").protect(self):
+		return
 	print("=== Running bkz_goldbhop Full Integration Test ===")
 
 	# 1. Setup SettingsManager

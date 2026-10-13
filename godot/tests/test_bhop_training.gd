@@ -5,6 +5,8 @@ const CSPlayerScript = preload("res://scripts/player/cs_player.gd")
 const CSHudScript = preload("res://scripts/ui/hud.gd")
 
 func _initialize() -> void:
+	if not preload("res://tests/settings_snapshot.gd").protect(self):
+		return
 	print("\n=== Running bhop_training_final Integration & Timer Tests ===")
 
 	var sm = root.get_node_or_null("SettingsManager")

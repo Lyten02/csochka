@@ -7,6 +7,8 @@ const CSPlayerScript = preload("res://scripts/player/cs_player.gd")
 const GoldSrcBspScript = preload("res://scripts/goldsrc/goldsrc_bsp.gd")
 
 func _initialize() -> void:
+	if not preload("res://tests/settings_snapshot.gd").protect(self):
+		return
 	print("\n=== Running CS 1.6 Knife Selection & Model Integration Tests ===")
 
 	var sm = root.get_node_or_null("SettingsManager")

@@ -3,6 +3,8 @@ extends SceneTree
 var out_dir: String
 
 func _initialize() -> void:
+	if not preload("res://tests/settings_snapshot.gd").protect(self):
+		return
 	call_deferred("capture")
 
 func capture() -> void:

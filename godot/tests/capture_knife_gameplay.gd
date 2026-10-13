@@ -2,6 +2,8 @@ extends SceneTree
 ## Real GL renderer, routed physical-F input, temporal inspect frames and scrolled UI.
 
 func _initialize() -> void:
+	if not preload("res://tests/settings_snapshot.gd").protect(self):
+		return
 	call_deferred("run")
 
 func capture(out: String, filename: String) -> void:

@@ -1,6 +1,8 @@
 extends SceneTree
 
 func _initialize() -> void:
+	if not preload("res://tests/settings_snapshot.gd").protect(self):
+		return
 	print("--- Running Game Flow Test ---")
 	var menu_scene = load("res://scenes/ui/main_menu.tscn")
 	var menu = menu_scene.instantiate()

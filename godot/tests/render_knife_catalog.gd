@@ -4,6 +4,8 @@ const Settings = preload("res://scripts/utils/settings_manager.gd")
 const Knife = preload("res://scripts/weapons/cs_knife.gd")
 
 func _initialize() -> void:
+	if not preload("res://tests/settings_snapshot.gd").protect(self):
+		return
 	call_deferred("run")
 
 func run() -> void:

@@ -4,6 +4,8 @@ const GoldSrcBspScript = preload("res://scripts/goldsrc/goldsrc_bsp.gd")
 const CSPlayerScript = preload("res://scripts/player/cs_player.gd")
 
 func _initialize() -> void:
+	if not preload("res://tests/settings_snapshot.gd").protect(self):
+		return
 	print("\n========================================================")
 	print(">>> TESTING ALL DESTINATIONS ON ALL 22 MAPS <<<")
 	print("========================================================\n")

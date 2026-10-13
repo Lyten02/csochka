@@ -30,6 +30,8 @@ func check(condition: bool, message: String) -> void:
 		push_error("FAIL: " + message)
 
 func _initialize() -> void:
+	if not preload("res://tests/settings_snapshot.gd").protect(self):
+		return
 	call_deferred("run")
 
 func key(pressed: bool = true, echo: bool = false) -> InputEventKey:

@@ -1,6 +1,8 @@
 extends SceneTree
 
 func _initialize():
+	if not preload("res://tests/settings_snapshot.gd").protect(self):
+		return
 	print("--- Taking bhop_training_final photos ---")
 	var sm = root.get_node_or_null("SettingsManager")
 	if sm == null:

@@ -164,6 +164,16 @@ CSKnife восстанавливает для них additive blending. Текс
 встроенными, без дублирующих PNG; миниатюры получены реальным GL Compatibility-рендером.
 Для экспорта добавьте `models/knives/catalog.json` в фильтр non-resource files.
 
+`python godot/tests/generate_knife_catalog.py` пересобирает каталог из manifest;
+технические поля происхождения не выводятся в описании для игрока.
+Проверки запускаются последовательно командой
+`python godot/tests/run_knife_suite.py --godot "<путь к Godot console.exe>"`.
+Флаг `--refresh-evidence` также переснимает ножи и игровой диалог настоящим renderer.
+Runner и общий `settings_snapshot.gd` сохраняют точные байты пользовательского cfg
+(либо его отсутствие) и восстанавливают их после теста, включая ошибку/assert.
+Runner дополнительно защищает от аварийного завершения движка и timeout;
+итоговый SHA-256 до/после сохраняется в `.orchestration/knife-evidence/followup/results.json`.
+
 ### Экспорт
 
 `.bsp` — не ресурс Godot: в пресете экспорта добавьте `*.bsp` в «Filters to export non-resource files».

@@ -10,6 +10,8 @@ func check(ok: bool, message: String) -> void:
 		push_error(message)
 
 func _initialize() -> void:
+	if not preload("res://tests/settings_snapshot.gd").protect(self):
+		return
 	call_deferred("run")
 
 func run() -> void:
@@ -25,6 +27,11 @@ func run() -> void:
 	root.add_child(knife)
 	knife.set_process(false)
 	for entry in entries:
+		if entry["id"].begins_with("cs16forge_"):
+			var player_text: String = entry["desc"] + "\n" + entry["details"]
+			check(not entry["source_slug"] in player_text and not "GoldSrc" in player_text, "Player details exclude technical provenance")
+			check("cs16forge.com" in player_text, "Player details retain source credit")
+			check(("F" if entry["inspect_anim"] != null else "Без осмотра") in player_text, "Player details retain inspect availability")
 		check(ResourceLoader.exists(entry["icon"]), "Icon exists: " + entry["id"])
 		knife.set_knife_model(entry["model"], entry)
 		var anim: AnimationPlayer = knife._anim

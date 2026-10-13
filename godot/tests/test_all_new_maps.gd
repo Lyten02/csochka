@@ -5,6 +5,8 @@ const CSPlayerScript = preload("res://scripts/player/cs_player.gd")
 const MapSelectDialogScript = preload("res://scripts/ui/map_select_dialog.gd")
 
 func _initialize() -> void:
+	if not preload("res://tests/settings_snapshot.gd").protect(self):
+		return
 	print("\n========================================================")
 	print(">>> RUNNING TESTS FOR ALL 8 NEW MAPS & TABS SYSTEM <<<")
 	print("========================================================\n")

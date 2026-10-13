@@ -3,7 +3,7 @@
     "id": "35hp_3",
     "catalog_name": "35hp_3",
     "status": "BSP + GLB да; лог не чистый",
-    "spawn": "OK за 6 с",
+    "spawn": "Стоит на worldspawn за 6 с; это НЕ доказательство работоспособности карты",
     "notes": "Каменная арена и мост видны; один стартовый телепорт, затем приземление ко 2-й секунде.",
     "errors": {
       "ERROR: Parameter \"material\" is null.": 16,
@@ -15,13 +15,51 @@
       "35hp_3_reverse.jpg",
       "35hp_3_spawn.jpg"
     ],
-    "asset_count": 29
+    "asset_count": 29,
+    "error_phase_analysis": {
+      "map": "35hp_3",
+      "errors": [
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34
+      ],
+      "first_sample": 36,
+      "images": [
+        42,
+        43,
+        44
+      ],
+      "complete": 45,
+      "warnings": [
+        46,
+        48
+      ],
+      "counts": {
+        "startup_before_first_sample": 16,
+        "runtime_capture": 0,
+        "teardown_after_complete": 0
+      },
+      "limitation": "Startup means before first AUDIT_SAMPLE; no explicit load boundary. Cannot distinguish scene load from runtime in first second. Knife-material source is plausible from integrator report, not proven by these logs."
+    }
   },
   {
     "id": "bhop_blocks",
     "catalog_name": "bhop_blocks",
     "status": "BSP + GLB да; лог не чистый",
-    "spawn": "OK за 6 с",
+    "spawn": "Стоит на worldspawn за 6 с; это НЕ доказательство работоспособности карты",
     "notes": "Каменные блоки над водой, кирпичные стены и ящики; явных дефектов в этих ракурсах не видно.",
     "errors": {
       "ERROR: Parameter \"material\" is null.": 16,
@@ -33,13 +71,51 @@
       "bhop_blocks_reverse.jpg",
       "bhop_blocks_spawn.jpg"
     ],
-    "asset_count": 59
+    "asset_count": 59,
+    "error_phase_analysis": {
+      "map": "bhop_blocks",
+      "errors": [
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34
+      ],
+      "first_sample": 36,
+      "images": [
+        42,
+        43,
+        44
+      ],
+      "complete": 45,
+      "warnings": [
+        46,
+        48
+      ],
+      "counts": {
+        "startup_before_first_sample": 16,
+        "runtime_capture": 0,
+        "teardown_after_complete": 0
+      },
+      "limitation": "Startup means before first AUDIT_SAMPLE; no explicit load boundary. Cannot distinguish scene load from runtime in first second. Knife-material source is plausible from integrator report, not proven by these logs."
+    }
   },
   {
     "id": "bhop_dea",
     "catalog_name": "bhop_dea",
     "status": "BSP + GLB да; лог не чистый",
-    "spawn": "OK за 6 с",
+    "spawn": "Стоит на worldspawn за 6 с; это НЕ доказательство работоспособности карты",
     "notes": "Светлые кирпичные стены, стартовая площадка и кнопка в обратном ракурсе.",
     "errors": {
       "ERROR: Parameter \"material\" is null.": 16,
@@ -51,13 +127,51 @@
       "bhop_dea_reverse.jpg",
       "bhop_dea_spawn.jpg"
     ],
-    "asset_count": 45
+    "asset_count": 45,
+    "error_phase_analysis": {
+      "map": "bhop_dea",
+      "errors": [
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34
+      ],
+      "first_sample": 36,
+      "images": [
+        42,
+        43,
+        44
+      ],
+      "complete": 45,
+      "warnings": [
+        46,
+        48
+      ],
+      "counts": {
+        "startup_before_first_sample": 16,
+        "runtime_capture": 0,
+        "teardown_after_complete": 0
+      },
+      "limitation": "Startup means before first AUDIT_SAMPLE; no explicit load boundary. Cannot distinguish scene load from runtime in first second. Knife-material source is plausible from integrator report, not proven by these logs."
+    }
   },
   {
     "id": "bhop_flyblocks",
     "catalog_name": "bhop_flyblocks",
-    "status": "BSP да; свой GLB нет",
-    "spawn": "Коллизия: OK за 6 с; визуальный пол не подтверждён",
+    "status": "ВИЗУАЛЬНО НЕ ЗАГРУЖЕНА: нет GLB, показана чужая 35hp_3 + коллизия выбранного BSP",
+    "spawn": "Только BSP: стоит на worldspawn за 6 с; это НЕ доказательство работоспособности, своего визуального пола нет",
     "notes": "Нет собственного GLB: видны небо и фрагменты чужой 35hp_3 вместо выбранной карты. BSP/коллизия загружены, но визуальная загрузка выбранной карты НЕ успешна.",
     "errors": {
       "ERROR: Parameter \"material\" is null.": 16,
@@ -69,13 +183,51 @@
       "bhop_flyblocks_reverse.jpg",
       "bhop_flyblocks_spawn.jpg"
     ],
-    "asset_count": 1
+    "asset_count": 1,
+    "error_phase_analysis": {
+      "map": "bhop_flyblocks",
+      "errors": [
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34
+      ],
+      "first_sample": 36,
+      "images": [
+        42,
+        43,
+        44
+      ],
+      "complete": 45,
+      "warnings": [
+        46,
+        48
+      ],
+      "counts": {
+        "startup_before_first_sample": 16,
+        "runtime_capture": 0,
+        "teardown_after_complete": 0
+      },
+      "limitation": "Startup means before first AUDIT_SAMPLE; no explicit load boundary. Cannot distinguish scene load from runtime in first second. Knife-material source is plausible from integrator report, not proven by these logs."
+    }
   },
   {
     "id": "bhop_perfect2012",
     "catalog_name": "bhop_perfect2012",
-    "status": "BSP да; свой GLB нет",
-    "spawn": "Коллизия: OK за 6 с; визуальный пол не подтверждён",
+    "status": "ВИЗУАЛЬНО НЕ ЗАГРУЖЕНА: нет GLB, показана чужая 35hp_3 + коллизия выбранного BSP",
+    "spawn": "Только BSP: стоит на worldspawn за 6 с; это НЕ доказательство работоспособности, своего визуального пола нет",
     "notes": "Нет собственного GLB: видны небо и фрагменты чужой 35hp_3 вместо выбранной карты. BSP/коллизия загружены, но визуальная загрузка выбранной карты НЕ успешна.",
     "errors": {
       "ERROR: Parameter \"material\" is null.": 16,
@@ -87,13 +239,51 @@
       "bhop_perfect2012_reverse.jpg",
       "bhop_perfect2012_spawn.jpg"
     ],
-    "asset_count": 1
+    "asset_count": 1,
+    "error_phase_analysis": {
+      "map": "bhop_perfect2012",
+      "errors": [
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34
+      ],
+      "first_sample": 36,
+      "images": [
+        42,
+        43,
+        44
+      ],
+      "complete": 45,
+      "warnings": [
+        46,
+        48
+      ],
+      "counts": {
+        "startup_before_first_sample": 16,
+        "runtime_capture": 0,
+        "teardown_after_complete": 0
+      },
+      "limitation": "Startup means before first AUDIT_SAMPLE; no explicit load boundary. Cannot distinguish scene load from runtime in first second. Knife-material source is plausible from integrator report, not proven by these logs."
+    }
   },
   {
     "id": "bhop_rabiga",
     "catalog_name": "bhop_rabiga",
     "status": "BSP + GLB да; лог не чистый",
-    "spawn": "OK за 6 с",
+    "spawn": "Стоит на worldspawn за 6 с; это НЕ доказательство работоспособности карты",
     "notes": "Тёмная кирпичная стартовая комната; текстуры различимы, вид ограничен комнатой.",
     "errors": {
       "ERROR: Parameter \"material\" is null.": 16,
@@ -105,13 +295,51 @@
       "bhop_rabiga_reverse.jpg",
       "bhop_rabiga_spawn.jpg"
     ],
-    "asset_count": 53
+    "asset_count": 53,
+    "error_phase_analysis": {
+      "map": "bhop_rabiga",
+      "errors": [
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34
+      ],
+      "first_sample": 36,
+      "images": [
+        42,
+        43,
+        44
+      ],
+      "complete": 45,
+      "warnings": [
+        46,
+        48
+      ],
+      "counts": {
+        "startup_before_first_sample": 16,
+        "runtime_capture": 0,
+        "teardown_after_complete": 0
+      },
+      "limitation": "Startup means before first AUDIT_SAMPLE; no explicit load boundary. Cannot distinguish scene load from runtime in first second. Knife-material source is plausible from integrator report, not proven by these logs."
+    }
   },
   {
     "id": "bhop_run_1",
     "catalog_name": "bhop_run_1",
     "status": "BSP + GLB да; лог не чистый",
-    "spawn": "OK за 6 с",
+    "spawn": "Стоит на worldspawn за 6 с; это НЕ доказательство работоспособности карты",
     "notes": "Длинный освещённый коридор с металлическими блоками; обратный вид показывает стартовую площадку.",
     "errors": {
       "ERROR: Parameter \"material\" is null.": 16,
@@ -123,13 +351,51 @@
       "bhop_run_1_reverse.jpg",
       "bhop_run_1_spawn.jpg"
     ],
-    "asset_count": 57
+    "asset_count": 57,
+    "error_phase_analysis": {
+      "map": "bhop_run_1",
+      "errors": [
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34
+      ],
+      "first_sample": 36,
+      "images": [
+        42,
+        43,
+        44
+      ],
+      "complete": 45,
+      "warnings": [
+        46,
+        48
+      ],
+      "counts": {
+        "startup_before_first_sample": 16,
+        "runtime_capture": 0,
+        "teardown_after_complete": 0
+      },
+      "limitation": "Startup means before first AUDIT_SAMPLE; no explicit load boundary. Cannot distinguish scene load from runtime in first second. Knife-material source is plausible from integrator report, not proven by these logs."
+    }
   },
   {
     "id": "bhop_squareblock",
     "catalog_name": "bhop_squareblock",
     "status": "BSP + GLB да; лог не чистый",
-    "spawn": "OK за 6 с",
+    "spawn": "Стоит на worldspawn за 6 с; это НЕ доказательство работоспособности карты",
     "notes": "Кирпичный коридор с блоками над чёрной ямой; происхождение чёрной поверхности отдельно не проверялось.",
     "errors": {
       "ERROR: Parameter \"material\" is null.": 16,
@@ -141,13 +407,51 @@
       "bhop_squareblock_reverse.jpg",
       "bhop_squareblock_spawn.jpg"
     ],
-    "asset_count": 57
+    "asset_count": 57,
+    "error_phase_analysis": {
+      "map": "bhop_squareblock",
+      "errors": [
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34
+      ],
+      "first_sample": 36,
+      "images": [
+        42,
+        43,
+        44
+      ],
+      "complete": 45,
+      "warnings": [
+        46,
+        48
+      ],
+      "counts": {
+        "startup_before_first_sample": 16,
+        "runtime_capture": 0,
+        "teardown_after_complete": 0
+      },
+      "limitation": "Startup means before first AUDIT_SAMPLE; no explicit load boundary. Cannot distinguish scene load from runtime in first second. Knife-material source is plausible from integrator report, not proven by these logs."
+    }
   },
   {
     "id": "bhop_tk_speedrun",
     "catalog_name": "bhop_tk_speedrun",
     "status": "BSP + GLB да; лог не чистый",
-    "spawn": "OK за 6 с",
+    "spawn": "Стоит на worldspawn за 6 с; это НЕ доказательство работоспособности карты",
     "notes": "Однотонные серые стены и синий пол без мелкой текстурной детализации; это не чёрный экран. Соответствие исходному оформлению не проверялось.",
     "errors": {
       "ERROR: Parameter \"material\" is null.": 16,
@@ -159,13 +463,51 @@
       "bhop_tk_speedrun_reverse.jpg",
       "bhop_tk_speedrun_spawn.jpg"
     ],
-    "asset_count": 43
+    "asset_count": 43,
+    "error_phase_analysis": {
+      "map": "bhop_tk_speedrun",
+      "errors": [
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34
+      ],
+      "first_sample": 36,
+      "images": [
+        42,
+        43,
+        44
+      ],
+      "complete": 45,
+      "warnings": [
+        46,
+        48
+      ],
+      "counts": {
+        "startup_before_first_sample": 16,
+        "runtime_capture": 0,
+        "teardown_after_complete": 0
+      },
+      "limitation": "Startup means before first AUDIT_SAMPLE; no explicit load boundary. Cannot distinguish scene load from runtime in first second. Knife-material source is plausible from integrator report, not proven by these logs."
+    }
   },
   {
     "id": "bhop_train",
     "catalog_name": "bhop_train",
     "status": "BSP + GLB да; лог не чистый",
-    "spawn": "OK за 6 с",
+    "spawn": "Стоит на worldspawn за 6 с; это НЕ доказательство работоспособности карты",
     "notes": "Кирпичные стены, сетчатое ограждение и вывески; виден стартовый коридор.",
     "errors": {
       "ERROR: Parameter \"material\" is null.": 16,
@@ -177,13 +519,51 @@
       "bhop_train_reverse.jpg",
       "bhop_train_spawn.jpg"
     ],
-    "asset_count": 139
+    "asset_count": 139,
+    "error_phase_analysis": {
+      "map": "bhop_train",
+      "errors": [
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34
+      ],
+      "first_sample": 36,
+      "images": [
+        42,
+        43,
+        44
+      ],
+      "complete": 45,
+      "warnings": [
+        46,
+        48
+      ],
+      "counts": {
+        "startup_before_first_sample": 16,
+        "runtime_capture": 0,
+        "teardown_after_complete": 0
+      },
+      "limitation": "Startup means before first AUDIT_SAMPLE; no explicit load boundary. Cannot distinguish scene load from runtime in first second. Knife-material source is plausible from integrator report, not proven by these logs."
+    }
   },
   {
     "id": "bhop_training_final",
     "catalog_name": "bhop_training_final",
     "status": "BSP + GLB да; лог не чистый",
-    "spawn": "OK за 6 с",
+    "spawn": "Стоит на worldspawn за 6 с; это НЕ доказательство работоспособности карты",
     "notes": "Серые WALL-сетки и оранжевые CRATE-блоки с размерами; не розовая missing-texture шахматка.",
     "errors": {
       "ERROR: Parameter \"material\" is null.": 16,
@@ -195,13 +575,51 @@
       "bhop_training_final_reverse.jpg",
       "bhop_training_final_spawn.jpg"
     ],
-    "asset_count": 27
+    "asset_count": 27,
+    "error_phase_analysis": {
+      "map": "bhop_training_final",
+      "errors": [
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34
+      ],
+      "first_sample": 36,
+      "images": [
+        42,
+        43,
+        44
+      ],
+      "complete": 45,
+      "warnings": [
+        46,
+        48
+      ],
+      "counts": {
+        "startup_before_first_sample": 16,
+        "runtime_capture": 0,
+        "teardown_after_complete": 0
+      },
+      "limitation": "Startup means before first AUDIT_SAMPLE; no explicit load boundary. Cannot distinguish scene load from runtime in first second. Knife-material source is plausible from integrator report, not proven by these logs."
+    }
   },
   {
     "id": "bhop_without_colors",
     "catalog_name": "bhop_without_colors",
-    "status": "BSP да; свой GLB нет",
-    "spawn": "Коллизия: OK за 6 с; визуальный пол не подтверждён",
+    "status": "ВИЗУАЛЬНО НЕ ЗАГРУЖЕНА: нет GLB, показана чужая 35hp_3 + коллизия выбранного BSP",
+    "spawn": "Только BSP: стоит на worldspawn за 6 с; это НЕ доказательство работоспособности, своего визуального пола нет",
     "notes": "Нет собственного GLB: видны небо и фрагменты чужой 35hp_3 вместо выбранной карты. BSP/коллизия загружены, но визуальная загрузка выбранной карты НЕ успешна.",
     "errors": {
       "ERROR: Parameter \"material\" is null.": 16,
@@ -213,13 +631,51 @@
       "bhop_without_colors_reverse.jpg",
       "bhop_without_colors_spawn.jpg"
     ],
-    "asset_count": 1
+    "asset_count": 1,
+    "error_phase_analysis": {
+      "map": "bhop_without_colors",
+      "errors": [
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34
+      ],
+      "first_sample": 36,
+      "images": [
+        42,
+        43,
+        44
+      ],
+      "complete": 45,
+      "warnings": [
+        46,
+        48
+      ],
+      "counts": {
+        "startup_before_first_sample": 16,
+        "runtime_capture": 0,
+        "teardown_after_complete": 0
+      },
+      "limitation": "Startup means before first AUDIT_SAMPLE; no explicit load boundary. Cannot distinguish scene load from runtime in first second. Knife-material source is plausible from integrator report, not proven by these logs."
+    }
   },
   {
     "id": "bhop_ytt_neon_light",
     "catalog_name": "bhop_ytt_neon_light",
     "status": "BSP + GLB да; лог не чистый",
-    "spawn": "OK за 6 с",
+    "spawn": "Стоит на worldspawn за 6 с; это НЕ доказательство работоспособности карты",
     "notes": "Тёмный коридор с красными световыми полосами и жёлтым рисунком потолка; геометрия различима.",
     "errors": {
       "ERROR: Parameter \"material\" is null.": 16,
@@ -231,13 +687,51 @@
       "bhop_ytt_neon_light_reverse.jpg",
       "bhop_ytt_neon_light_spawn.jpg"
     ],
-    "asset_count": 85
+    "asset_count": 85,
+    "error_phase_analysis": {
+      "map": "bhop_ytt_neon_light",
+      "errors": [
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34
+      ],
+      "first_sample": 36,
+      "images": [
+        42,
+        43,
+        44
+      ],
+      "complete": 45,
+      "warnings": [
+        46,
+        48
+      ],
+      "counts": {
+        "startup_before_first_sample": 16,
+        "runtime_capture": 0,
+        "teardown_after_complete": 0
+      },
+      "limitation": "Startup means before first AUDIT_SAMPLE; no explicit load boundary. Cannot distinguish scene load from runtime in first second. Knife-material source is plausible from integrator report, not proven by these logs."
+    }
   },
   {
     "id": "bkz_goldbhop",
     "catalog_name": "bkz_goldbhop",
     "status": "BSP + GLB да; лог не чистый",
-    "spawn": "OK за 6 с",
+    "spawn": "Стоит на worldspawn за 6 с; это НЕ доказательство работоспособности карты",
     "notes": "Спавн смотрит в близкую каменную стену. Дополнительный course-ракурс показывает золотистые блоки в коридоре над чёрной ямой.",
     "errors": {
       "ERROR: Parameter \"material\" is null.": 16,
@@ -250,13 +744,52 @@
       "bkz_goldbhop_reverse.jpg",
       "bkz_goldbhop_spawn.jpg"
     ],
-    "asset_count": 49
+    "asset_count": 49,
+    "error_phase_analysis": {
+      "map": "bkz_goldbhop",
+      "errors": [
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34
+      ],
+      "first_sample": 36,
+      "images": [
+        42,
+        43,
+        44,
+        45
+      ],
+      "complete": 46,
+      "warnings": [
+        47,
+        49
+      ],
+      "counts": {
+        "startup_before_first_sample": 16,
+        "runtime_capture": 0,
+        "teardown_after_complete": 0
+      },
+      "limitation": "Startup means before first AUDIT_SAMPLE; no explicit load boundary. Cannot distinguish scene load from runtime in first second. Knife-material source is plausible from integrator report, not proven by these logs."
+    }
   },
   {
     "id": "bkz_noob",
     "catalog_name": "bkz_noob",
     "status": "BSP + GLB да; лог не чистый",
-    "spawn": "OK за 6 с",
+    "spawn": "Стоит на worldspawn за 6 с; это НЕ доказательство работоспособности карты",
     "notes": "Светлые каменные блоки в открытом небе и стартовая кнопка; открытое пространство не само по себе доказательство отсутствующей геометрии.",
     "errors": {
       "ERROR: Parameter \"material\" is null.": 16,
@@ -268,13 +801,51 @@
       "bkz_noob_reverse.jpg",
       "bkz_noob_spawn.jpg"
     ],
-    "asset_count": 43
+    "asset_count": 43,
+    "error_phase_analysis": {
+      "map": "bkz_noob",
+      "errors": [
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34
+      ],
+      "first_sample": 36,
+      "images": [
+        42,
+        43,
+        44
+      ],
+      "complete": 45,
+      "warnings": [
+        46,
+        48
+      ],
+      "counts": {
+        "startup_before_first_sample": 16,
+        "runtime_capture": 0,
+        "teardown_after_complete": 0
+      },
+      "limitation": "Startup means before first AUDIT_SAMPLE; no explicit load boundary. Cannot distinguish scene load from runtime in first second. Knife-material source is plausible from integrator report, not proven by these logs."
+    }
   },
   {
     "id": "kz_bhop",
     "catalog_name": "kz_bhop",
-    "status": "BSP да; свой GLB нет",
-    "spawn": "Коллизия: OK за 6 с; визуальный пол не подтверждён",
+    "status": "ВИЗУАЛЬНО НЕ ЗАГРУЖЕНА: нет GLB, показана чужая 35hp_3 + коллизия выбранного BSP",
+    "spawn": "Только BSP: стоит на worldspawn за 6 с; это НЕ доказательство работоспособности, своего визуального пола нет",
     "notes": "Нет собственного GLB: видны небо и фрагменты чужой 35hp_3 вместо выбранной карты. BSP/коллизия загружены, но визуальная загрузка выбранной карты НЕ успешна.",
     "errors": {
       "ERROR: Parameter \"material\" is null.": 16,
@@ -286,13 +857,51 @@
       "kz_bhop_reverse.jpg",
       "kz_bhop_spawn.jpg"
     ],
-    "asset_count": 1
+    "asset_count": 1,
+    "error_phase_analysis": {
+      "map": "kz_bhop",
+      "errors": [
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34
+      ],
+      "first_sample": 36,
+      "images": [
+        42,
+        43,
+        44
+      ],
+      "complete": 45,
+      "warnings": [
+        46,
+        48
+      ],
+      "counts": {
+        "startup_before_first_sample": 16,
+        "runtime_capture": 0,
+        "teardown_after_complete": 0
+      },
+      "limitation": "Startup means before first AUDIT_SAMPLE; no explicit load boundary. Cannot distinguish scene load from runtime in first second. Knife-material source is plausible from integrator report, not proven by these logs."
+    }
   },
   {
     "id": "kzru_airway",
     "catalog_name": "kzru_airway",
     "status": "BSP + GLB да; лог не чистый",
-    "spawn": "OK за 6 с",
+    "spawn": "Стоит на worldspawn за 6 с; это НЕ доказательство работоспособности карты",
     "notes": "Открытые высотные каменные платформы и наклонные конструкции; стартовая кнопка видна сзади.",
     "errors": {
       "ERROR: Parameter \"material\" is null.": 16,
@@ -304,13 +913,51 @@
       "kzru_airway_reverse.jpg",
       "kzru_airway_spawn.jpg"
     ],
-    "asset_count": 79
+    "asset_count": 79,
+    "error_phase_analysis": {
+      "map": "kzru_airway",
+      "errors": [
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34
+      ],
+      "first_sample": 36,
+      "images": [
+        42,
+        43,
+        44
+      ],
+      "complete": 45,
+      "warnings": [
+        46,
+        48
+      ],
+      "counts": {
+        "startup_before_first_sample": 16,
+        "runtime_capture": 0,
+        "teardown_after_complete": 0
+      },
+      "limitation": "Startup means before first AUDIT_SAMPLE; no explicit load boundary. Cannot distinguish scene load from runtime in first second. Knife-material source is plausible from integrator report, not proven by these logs."
+    }
   },
   {
     "id": "kzsca_toonbhop",
     "catalog_name": "kzsca_toonbhop",
     "status": "BSP + GLB да; лог не чистый",
-    "spawn": "OK за 6 с",
+    "spawn": "Стоит на worldspawn за 6 с; это НЕ доказательство работоспособности карты",
     "notes": "Мультяшные текстурированные стены, вывеска, цветные поверхности и кнопка; явных дефектов в этих ракурсах не видно.",
     "errors": {
       "ERROR: Parameter \"material\" is null.": 16,
@@ -322,13 +969,51 @@
       "kzsca_toonbhop_reverse.jpg",
       "kzsca_toonbhop_spawn.jpg"
     ],
-    "asset_count": 41
+    "asset_count": 41,
+    "error_phase_analysis": {
+      "map": "kzsca_toonbhop",
+      "errors": [
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34
+      ],
+      "first_sample": 36,
+      "images": [
+        42,
+        43,
+        44
+      ],
+      "complete": 45,
+      "warnings": [
+        46,
+        48
+      ],
+      "counts": {
+        "startup_before_first_sample": 16,
+        "runtime_capture": 0,
+        "teardown_after_complete": 0
+      },
+      "limitation": "Startup means before first AUDIT_SAMPLE; no explicit load boundary. Cannot distinguish scene load from runtime in first second. Knife-material source is plausible from integrator report, not proven by these logs."
+    }
   },
   {
     "id": "kzsk_xmas2010",
     "catalog_name": "kzsk_xmas2010",
-    "status": "BSP да; свой GLB нет",
-    "spawn": "Коллизия: OK за 6 с; визуальный пол не подтверждён",
+    "status": "ВИЗУАЛЬНО НЕ ЗАГРУЖЕНА: нет GLB, показана чужая 35hp_3 + коллизия выбранного BSP",
+    "spawn": "Только BSP: стоит на worldspawn за 6 с; это НЕ доказательство работоспособности, своего визуального пола нет",
     "notes": "Нет собственного GLB: видны небо и фрагменты чужой 35hp_3 вместо выбранной карты. BSP/коллизия загружены, но визуальная загрузка выбранной карты НЕ успешна.",
     "errors": {
       "ERROR: Parameter \"material\" is null.": 16,
@@ -340,13 +1025,51 @@
       "kzsk_xmas2010_reverse.jpg",
       "kzsk_xmas2010_spawn.jpg"
     ],
-    "asset_count": 1
+    "asset_count": 1,
+    "error_phase_analysis": {
+      "map": "kzsk_xmas2010",
+      "errors": [
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34
+      ],
+      "first_sample": 36,
+      "images": [
+        42,
+        43,
+        44
+      ],
+      "complete": 45,
+      "warnings": [
+        46,
+        48
+      ],
+      "counts": {
+        "startup_before_first_sample": 16,
+        "runtime_capture": 0,
+        "teardown_after_complete": 0
+      },
+      "limitation": "Startup means before first AUDIT_SAMPLE; no explicit load boundary. Cannot distinguish scene load from runtime in first second. Knife-material source is plausible from integrator report, not proven by these logs."
+    }
   },
   {
     "id": "kzy_fastbhop",
     "catalog_name": "kzy_fastbhop",
-    "status": "BSP да; свой GLB нет",
-    "spawn": "Коллизия: OK за 6 с; визуальный пол не подтверждён",
+    "status": "ВИЗУАЛЬНО НЕ ЗАГРУЖЕНА: нет GLB, показана чужая 35hp_3 + коллизия выбранного BSP",
+    "spawn": "Только BSP: стоит на worldspawn за 6 с; это НЕ доказательство работоспособности, своего визуального пола нет",
     "notes": "Нет собственного GLB: видны небо и фрагменты чужой 35hp_3 вместо выбранной карты. BSP/коллизия загружены, но визуальная загрузка выбранной карты НЕ успешна.",
     "errors": {
       "ERROR: Parameter \"material\" is null.": 16,
@@ -358,13 +1081,51 @@
       "kzy_fastbhop_reverse.jpg",
       "kzy_fastbhop_spawn.jpg"
     ],
-    "asset_count": 1
+    "asset_count": 1,
+    "error_phase_analysis": {
+      "map": "kzy_fastbhop",
+      "errors": [
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34
+      ],
+      "first_sample": 36,
+      "images": [
+        42,
+        43,
+        44
+      ],
+      "complete": 45,
+      "warnings": [
+        46,
+        48
+      ],
+      "counts": {
+        "startup_before_first_sample": 16,
+        "runtime_capture": 0,
+        "teardown_after_complete": 0
+      },
+      "limitation": "Startup means before first AUDIT_SAMPLE; no explicit load boundary. Cannot distinguish scene load from runtime in first second. Knife-material source is plausible from integrator report, not proven by these logs."
+    }
   },
   {
     "id": "kzy_juhxbhop",
     "catalog_name": "kzy_juhxbhop",
     "status": "BSP + GLB да; лог не чистый",
-    "spawn": "OK за 6 с",
+    "spawn": "Стоит на worldspawn за 6 с; это НЕ доказательство работоспособности карты",
     "notes": "Песчаные каменные стены, арка и ступени; текстуры и надписи видны.",
     "errors": {
       "ERROR: Parameter \"material\" is null.": 16,
@@ -376,13 +1137,51 @@
       "kzy_juhxbhop_reverse.jpg",
       "kzy_juhxbhop_spawn.jpg"
     ],
-    "asset_count": 73
+    "asset_count": 73,
+    "error_phase_analysis": {
+      "map": "kzy_juhxbhop",
+      "errors": [
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34
+      ],
+      "first_sample": 36,
+      "images": [
+        42,
+        43,
+        44
+      ],
+      "complete": 45,
+      "warnings": [
+        46,
+        48
+      ],
+      "counts": {
+        "startup_before_first_sample": 16,
+        "runtime_capture": 0,
+        "teardown_after_complete": 0
+      },
+      "limitation": "Startup means before first AUDIT_SAMPLE; no explicit load boundary. Cannot distinguish scene load from runtime in first second. Knife-material source is plausible from integrator report, not proven by these logs."
+    }
   },
   {
     "id": "kzy_junglerocks",
     "catalog_name": "kzy_junglerocks",
-    "status": "BSP да; свой GLB нет",
-    "spawn": "Коллизия: OK за 6 с; визуальный пол не подтверждён",
+    "status": "ВИЗУАЛЬНО НЕ ЗАГРУЖЕНА: нет GLB, показана чужая 35hp_3 + коллизия выбранного BSP",
+    "spawn": "Только BSP: стоит на worldspawn за 6 с; это НЕ доказательство работоспособности, своего визуального пола нет",
     "notes": "Нет собственного GLB: видны небо и фрагменты чужой 35hp_3 вместо выбранной карты. BSP/коллизия загружены, но визуальная загрузка выбранной карты НЕ успешна.",
     "errors": {
       "ERROR: Parameter \"material\" is null.": 16,
@@ -394,6 +1193,44 @@
       "kzy_junglerocks_reverse.jpg",
       "kzy_junglerocks_spawn.jpg"
     ],
-    "asset_count": 1
+    "asset_count": 1,
+    "error_phase_analysis": {
+      "map": "kzy_junglerocks",
+      "errors": [
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34
+      ],
+      "first_sample": 36,
+      "images": [
+        42,
+        43,
+        44
+      ],
+      "complete": 45,
+      "warnings": [
+        46,
+        48
+      ],
+      "counts": {
+        "startup_before_first_sample": 16,
+        "runtime_capture": 0,
+        "teardown_after_complete": 0
+      },
+      "limitation": "Startup means before first AUDIT_SAMPLE; no explicit load boundary. Cannot distinguish scene load from runtime in first second. Knife-material source is plausible from integrator report, not proven by these logs."
+    }
   }
 ]
