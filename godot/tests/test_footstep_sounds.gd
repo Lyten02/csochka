@@ -3,8 +3,6 @@ extends SceneTree
 const ARENA := Vector3(100, 900, -601)
 
 func _initialize() -> void:
-	if not preload("res://tests/settings_snapshot.gd").protect(self):
-		return
 	print("--- Running Footstep Sounds Test ---")
 	var sm = root.get_node_or_null("SettingsManager")
 	if sm:

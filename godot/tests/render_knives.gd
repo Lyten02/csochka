@@ -16,8 +16,6 @@ const SHOTS := [
 
 
 func _initialize() -> void:
-	if not preload("res://tests/settings_snapshot.gd").protect(self):
-		return
 	var args := OS.get_cmdline_user_args()
 	var out_dir: String = args[0] if args.size() > 0 else ProjectSettings.globalize_path("user://knife_shots")
 	DirAccess.make_dir_recursive_absolute(out_dir)

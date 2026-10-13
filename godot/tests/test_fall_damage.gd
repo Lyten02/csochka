@@ -1,8 +1,6 @@
 extends SceneTree
 
 func _initialize() -> void:
-	if not preload("res://tests/settings_snapshot.gd").protect(self):
-		return
 	print("--- Running Fall Damage Test ---")
 	var main_scene = load("res://scenes/main.tscn")
 	var main = main_scene.instantiate()

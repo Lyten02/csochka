@@ -9,8 +9,6 @@ const CSPlayerScript = preload("res://scripts/player/cs_player.gd")
 const CSHudScript = preload("res://scripts/ui/hud.gd")
 
 func _initialize() -> void:
-	if not preload("res://tests/settings_snapshot.gd").protect(self):
-		return
 	print("\n=== Running Bhop Block Stand-Teleport, Double Duck & LJ Stats Tests ===")
 	var bsp_path := "res://maps/bkz_goldbhop.bsp"
 	var bsp: GoldSrcBsp = GoldSrcBspScript.load_file(ProjectSettings.globalize_path(bsp_path))
