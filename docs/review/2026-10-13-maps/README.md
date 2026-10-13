@@ -1,3 +1,5 @@
+> Исторический аудит **22 карт**: позже пользователь решил удалить из игрового каталога семь карт без собственного GLB — `bhop_flyblocks`, `bhop_perfect2012`, `bhop_without_colors`, `kz_bhop`, `kzsk_xmas2010`, `kzy_fastbhop`, `kzy_junglerocks`. [Текущий каталог и проверка удаления](../2026-10-13-map-removal/README.md).
+
 # Аудит карт — 2026-10-13
 
 ## Итог

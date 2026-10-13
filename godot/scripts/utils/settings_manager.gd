@@ -166,6 +166,10 @@ func load_settings() -> void:
 	current_map_name = cfg.get_value("map", "current_map", "35hp_3")
 	current_map_bsp = cfg.get_value("map", "current_map_bsp", "res://maps/%s.bsp" % current_map_name)
 	current_map_glb = cfg.get_value("map", "current_map_glb", "res://maps/%s.glb" % current_map_name)
+	if not FileAccess.file_exists(current_map_bsp) or not ResourceLoader.exists(current_map_glb):
+		current_map_name = "35hp_3"
+		current_map_bsp = "res://maps/35hp_3.bsp"
+		current_map_glb = "res://maps/35hp_3.glb"
 	best_map_times = cfg.get_value("records", "best_map_times", {})
 	current_knife_id = cfg.get_value("knife", "current_knife", "knife_default")
 	current_knife_model = get_current_knife_model()
