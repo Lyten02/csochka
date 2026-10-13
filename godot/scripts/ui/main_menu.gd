@@ -21,6 +21,7 @@ var _font_regular: Font
 
 
 func _ready() -> void:
+	add_to_group("knife_input_blockers")
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 	_load_fonts()
 	_build_ui()

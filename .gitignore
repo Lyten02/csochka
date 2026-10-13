@@ -10,6 +10,9 @@ temp_downloads/
 _knife_work/
 *.log
 
+# cs16forge source MDLs: re-fetch and verify with tools/fetch_cs16forge_knives.py (manifest is tracked)
+models_src/knives/*/
+
 # Web build artifacts & node_modules
 web/node_modules/
 web/dist/

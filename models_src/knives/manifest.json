@@ -1,0 +1,2037 @@
+[
+  {
+    "slug": "kerambit_gamma_doppler_all_phases",
+    "name": "Karambit Gamma Doppler All Phases",
+    "category": "inspect",
+    "site_flags": [
+      "csgo",
+      "insp",
+      "hd"
+    ],
+    "mesh_type": "karambit",
+    "page_url": "https://cs16forge.com/skins/knife/kerambit_gamma_doppler_all_phases/",
+    "download_url": "https://cs16forge.com/dl/skins/knife/kerambit_gamma_doppler_all_phases.zip",
+    "zip_sha256": "aeaf5ece0d3dec05494d23402597c9b02f02c5f99c8d56c9c85a9187ce2e7681",
+    "mdl_sha256": "d05b87f03785168195e7bc1a5511c5261cc2048c70c6831bf2740ae65f81c555",
+    "mdl_bytes": 1613468,
+    "author": "community",
+    "license": null,
+    "date_published": "2026-08-23",
+    "date_modified": "2026-09-23",
+    "sequences": [
+      {
+        "index": 0,
+        "name": "idle",
+        "fps": 26.0,
+        "frames": 146
+      },
+      {
+        "index": 1,
+        "name": "slash1",
+        "fps": 30.0,
+        "frames": 28
+      },
+      {
+        "index": 2,
+        "name": "slash2",
+        "fps": 30.0,
+        "frames": 28
+      },
+      {
+        "index": 3,
+        "name": "draw",
+        "fps": 24.0,
+        "frames": 24
+      },
+      {
+        "index": 4,
+        "name": "backstab",
+        "fps": 30.0,
+        "frames": 29
+      },
+      {
+        "index": 5,
+        "name": "heavy_miss",
+        "fps": 30.0,
+        "frames": 28
+      },
+      {
+        "index": 6,
+        "name": "midslash1",
+        "fps": 30.0,
+        "frames": 28
+      },
+      {
+        "index": 7,
+        "name": "midslash2",
+        "fps": 30.0,
+        "frames": 28
+      },
+      {
+        "index": 8,
+        "name": "inspect_1_1",
+        "fps": 25.0,
+        "frames": 115
+      },
+      {
+        "index": 9,
+        "name": "inspect_1_2",
+        "fps": 25.0,
+        "frames": 115
+      },
+      {
+        "index": 10,
+        "name": "inspect_1_3",
+        "fps": 25.0,
+        "frames": 115
+      }
+    ],
+    "inspect": {
+      "index": 8,
+      "name": "inspect_1_1",
+      "fps": 25.0,
+      "frames": 115,
+      "duration_s": 4.6
+    },
+    "role_map": {
+      "idle": "idle",
+      "slash1": "slash1",
+      "slash2": "slash2",
+      "draw": "draw",
+      "stab": "backstab",
+      "stab_miss": "heavy_miss",
+      "midslash1": "midslash1",
+      "midslash2": "midslash2"
+    },
+    "textures": {
+      "embedded_count": 4,
+      "sequence_groups": 1
+    },
+    "converter_trial": {
+      "success": true,
+      "output_bytes": 2215184,
+      "warnings": null,
+      "errors": null,
+      "exit_code": 0
+    },
+    "notes": "Other inspect variants: 9 inspect_1_2 (115 frames at 25 fps), 10 inspect_1_3 (115 frames at 25 fps). NextClient knife uses index 8. Nonstandard stab slot names; map roles by index 4/5."
+  },
+  {
+    "slug": "talon_knife_case_hardened",
+    "name": "Talon Knife Case Hardened",
+    "category": "inspect",
+    "site_flags": [
+      "csgo",
+      "insp"
+    ],
+    "mesh_type": "talon",
+    "page_url": "https://cs16forge.com/skins/knife/talon_knife_case_hardened/",
+    "download_url": "https://cs16forge.com/dl/skins/knife/talon_knife_case_hardened.zip",
+    "zip_sha256": "ac881f9278e2c9fd20921358e57795355a004d522334a14eed9fc99513ab0df9",
+    "mdl_sha256": "c9066265799d3d04ceec582f45fed22cbfba9120a4c17e17bded885bf9e910fb",
+    "mdl_bytes": 5528000,
+    "author": "community",
+    "license": null,
+    "date_published": "2026-08-23",
+    "date_modified": "2026-08-25",
+    "sequences": [
+      {
+        "index": 0,
+        "name": "idle",
+        "fps": 30.0,
+        "frames": 250
+      },
+      {
+        "index": 1,
+        "name": "slash1",
+        "fps": 30.0,
+        "frames": 36
+      },
+      {
+        "index": 2,
+        "name": "slash2",
+        "fps": 30.0,
+        "frames": 36
+      },
+      {
+        "index": 3,
+        "name": "draw",
+        "fps": 30.0,
+        "frames": 31
+      },
+      {
+        "index": 4,
+        "name": "stab",
+        "fps": 30.0,
+        "frames": 36
+      },
+      {
+        "index": 5,
+        "name": "stab_miss",
+        "fps": 30.0,
+        "frames": 36
+      },
+      {
+        "index": 6,
+        "name": "midslash1",
+        "fps": 30.0,
+        "frames": 36
+      },
+      {
+        "index": 7,
+        "name": "midslash2",
+        "fps": 30.0,
+        "frames": 36
+      },
+      {
+        "index": 8,
+        "name": "inspect",
+        "fps": 30.0,
+        "frames": 81
+      }
+    ],
+    "inspect": {
+      "index": 8,
+      "name": "inspect",
+      "fps": 30.0,
+      "frames": 81,
+      "duration_s": 2.7
+    },
+    "role_map": {
+      "idle": "idle",
+      "slash1": "slash1",
+      "slash2": "slash2",
+      "draw": "draw",
+      "stab": "stab",
+      "stab_miss": "stab_miss",
+      "midslash1": "midslash1",
+      "midslash2": "midslash2"
+    },
+    "textures": {
+      "embedded_count": 31,
+      "sequence_groups": 1
+    },
+    "converter_trial": {
+      "success": true,
+      "output_bytes": 5469124,
+      "warnings": null,
+      "errors": null,
+      "exit_code": 0
+    },
+    "notes": null
+  },
+  {
+    "slug": "skeleton_knife_fade",
+    "name": "Skeleton Knife Fade",
+    "category": "inspect",
+    "site_flags": [
+      "csgo",
+      "insp",
+      "hd"
+    ],
+    "mesh_type": "skeleton",
+    "page_url": "https://cs16forge.com/skins/knife/skeleton_knife_fade/",
+    "download_url": "https://cs16forge.com/dl/skins/knife/skeleton_knife_fade.zip",
+    "zip_sha256": "8dc35fb5740462e12d0eb10893e75b786379d744151fca9ec0e6bb6f46593d10",
+    "mdl_sha256": "74ca74a0b83da2e7c68892083f9054eb78924a757e7c372e429a6a714fa959de",
+    "mdl_bytes": 1548520,
+    "author": "community",
+    "license": null,
+    "date_published": "2026-08-23",
+    "date_modified": "2026-08-25",
+    "sequences": [
+      {
+        "index": 0,
+        "name": "idle",
+        "fps": 30.0,
+        "frames": 185
+      },
+      {
+        "index": 1,
+        "name": "slash1",
+        "fps": 30.0,
+        "frames": 36
+      },
+      {
+        "index": 2,
+        "name": "slash2",
+        "fps": 30.0,
+        "frames": 36
+      },
+      {
+        "index": 3,
+        "name": "draw",
+        "fps": 30.0,
+        "frames": 31
+      },
+      {
+        "index": 4,
+        "name": "stab",
+        "fps": 30.0,
+        "frames": 36
+      },
+      {
+        "index": 5,
+        "name": "stab_miss",
+        "fps": 30.0,
+        "frames": 36
+      },
+      {
+        "index": 6,
+        "name": "midslash1",
+        "fps": 30.0,
+        "frames": 36
+      },
+      {
+        "index": 7,
+        "name": "midslash2",
+        "fps": 30.0,
+        "frames": 36
+      },
+      {
+        "index": 8,
+        "name": "inspect_1",
+        "fps": 30.0,
+        "frames": 185
+      },
+      {
+        "index": 9,
+        "name": "inspect_2",
+        "fps": 30.0,
+        "frames": 67
+      }
+    ],
+    "inspect": {
+      "index": 8,
+      "name": "inspect_1",
+      "fps": 30.0,
+      "frames": 185,
+      "duration_s": 6.16667
+    },
+    "role_map": {
+      "idle": "idle",
+      "slash1": "slash1",
+      "slash2": "slash2",
+      "draw": "draw",
+      "stab": "stab",
+      "stab_miss": "stab_miss",
+      "midslash1": "midslash1",
+      "midslash2": "midslash2"
+    },
+    "textures": {
+      "embedded_count": 4,
+      "sequence_groups": 1
+    },
+    "converter_trial": {
+      "success": true,
+      "output_bytes": 2021368,
+      "warnings": null,
+      "errors": null,
+      "exit_code": 0
+    },
+    "notes": "Other inspect variants: 9 inspect_2 (67 frames at 30 fps). NextClient knife uses index 8."
+  },
+  {
+    "slug": "survival_knife_case_hardened_403_pattern_blue_gem",
+    "name": "Survival Knife Case Hardened 403 Pattern Blue Gem",
+    "category": "inspect",
+    "site_flags": [
+      "csgo",
+      "insp",
+      "hd"
+    ],
+    "mesh_type": "survival",
+    "page_url": "https://cs16forge.com/skins/knife/survival_knife_case_hardened_403_pattern_blue_gem/",
+    "download_url": "https://cs16forge.com/dl/skins/knife/survival_knife_case_hardened_403_pattern_blue_gem.zip",
+    "zip_sha256": "7f7f9c1f2f15b3b2f57cdb7f705b9de76bb40ed9b3a78d3beee470250b7ec061",
+    "mdl_sha256": "4583587141268f9cb81950a8c54a5c68d95f83693f59ed29e4fbc9a815a36ebb",
+    "mdl_bytes": 1670968,
+    "author": "community",
+    "license": null,
+    "date_published": "2026-08-23",
+    "date_modified": "2026-08-25",
+    "sequences": [
+      {
+        "index": 0,
+        "name": "idle",
+        "fps": 30.0,
+        "frames": 250
+      },
+      {
+        "index": 1,
+        "name": "slash1",
+        "fps": 30.0,
+        "frames": 36
+      },
+      {
+        "index": 2,
+        "name": "slash2",
+        "fps": 30.0,
+        "frames": 36
+      },
+      {
+        "index": 3,
+        "name": "draw",
+        "fps": 30.0,
+        "frames": 31
+      },
+      {
+        "index": 4,
+        "name": "stab",
+        "fps": 30.0,
+        "frames": 36
+      },
+      {
+        "index": 5,
+        "name": "stab_miss",
+        "fps": 30.0,
+        "frames": 36
+      },
+      {
+        "index": 6,
+        "name": "midslash1",
+        "fps": 30.0,
+        "frames": 36
+      },
+      {
+        "index": 7,
+        "name": "midslash2",
+        "fps": 30.0,
+        "frames": 36
+      },
+      {
+        "index": 8,
+        "name": "inspect_1",
+        "fps": 30.0,
+        "frames": 250
+      },
+      {
+        "index": 9,
+        "name": "inspect_2",
+        "fps": 30.0,
+        "frames": 187
+      }
+    ],
+    "inspect": {
+      "index": 8,
+      "name": "inspect_1",
+      "fps": 30.0,
+      "frames": 250,
+      "duration_s": 8.33333
+    },
+    "role_map": {
+      "idle": "idle",
+      "slash1": "slash1",
+      "slash2": "slash2",
+      "draw": "draw",
+      "stab": "stab",
+      "stab_miss": "stab_miss",
+      "midslash1": "midslash1",
+      "midslash2": "midslash2"
+    },
+    "textures": {
+      "embedded_count": 4,
+      "sequence_groups": 1
+    },
+    "converter_trial": {
+      "success": true,
+      "output_bytes": 2318284,
+      "warnings": null,
+      "errors": null,
+      "exit_code": 0
+    },
+    "notes": "Other inspect variants: 9 inspect_2 (187 frames at 30 fps). NextClient knife uses index 8."
+  },
+  {
+    "slug": "nomad_knife_vanilla",
+    "name": "Nomad Knife Vanilla",
+    "category": "inspect",
+    "site_flags": [
+      "csgo",
+      "insp",
+      "hd"
+    ],
+    "mesh_type": "nomad",
+    "page_url": "https://cs16forge.com/skins/knife/nomad_knife_vanilla/",
+    "download_url": "https://cs16forge.com/dl/skins/knife/nomad_knife_vanilla.zip",
+    "zip_sha256": "532fe43213e86888b84ac5551efb60af5fc45229ce1744c962b4b30714e6359e",
+    "mdl_sha256": "cd9e350d289c3f5ee0dc64eb30749b2d60e82ff7fab8ce925aa6e2ed736d2ac5",
+    "mdl_bytes": 1784932,
+    "author": "community",
+    "license": null,
+    "date_published": "2026-08-23",
+    "date_modified": "2026-08-25",
+    "sequences": [
+      {
+        "index": 0,
+        "name": "idle",
+        "fps": 30.0,
+        "frames": 149
+      },
+      {
+        "index": 1,
+        "name": "slash1",
+        "fps": 30.0,
+        "frames": 36
+      },
+      {
+        "index": 2,
+        "name": "slash2",
+        "fps": 30.0,
+        "frames": 36
+      },
+      {
+        "index": 3,
+        "name": "draw",
+        "fps": 30.0,
+        "frames": 31
+      },
+      {
+        "index": 4,
+        "name": "stab",
+        "fps": 30.0,
+        "frames": 36
+      },
+      {
+        "index": 5,
+        "name": "stab_miss",
+        "fps": 30.0,
+        "frames": 36
+      },
+      {
+        "index": 6,
+        "name": "midslash1",
+        "fps": 30.0,
+        "frames": 36
+      },
+      {
+        "index": 7,
+        "name": "midslash2",
+        "fps": 30.0,
+        "frames": 36
+      },
+      {
+        "index": 8,
+        "name": "inspect_1",
+        "fps": 30.0,
+        "frames": 149
+      },
+      {
+        "index": 9,
+        "name": "inspect_2",
+        "fps": 30.0,
+        "frames": 187
+      }
+    ],
+    "inspect": {
+      "index": 8,
+      "name": "inspect_1",
+      "fps": 30.0,
+      "frames": 149,
+      "duration_s": 4.96667
+    },
+    "role_map": {
+      "idle": "idle",
+      "slash1": "slash1",
+      "slash2": "slash2",
+      "draw": "draw",
+      "stab": "stab",
+      "stab_miss": "stab_miss",
+      "midslash1": "midslash1",
+      "midslash2": "midslash2"
+    },
+    "textures": {
+      "embedded_count": 4,
+      "sequence_groups": 1
+    },
+    "converter_trial": {
+      "success": true,
+      "output_bytes": 2185324,
+      "warnings": null,
+      "errors": null,
+      "exit_code": 0
+    },
+    "notes": "Other inspect variants: 9 inspect_2 (187 frames at 30 fps). NextClient knife uses index 8."
+  },
+  {
+    "slug": "kukri_knife_fade",
+    "name": "Kukri Knife Fade",
+    "category": "inspect",
+    "site_flags": [
+      "csgo",
+      "insp",
+      "hd"
+    ],
+    "mesh_type": "kukri",
+    "page_url": "https://cs16forge.com/skins/knife/kukri_knife_fade/",
+    "download_url": "https://cs16forge.com/dl/skins/knife/kukri_knife_fade.zip",
+    "zip_sha256": "622ec9ccee4ad8349c56a43f337fb4a081ca345ac2f21f75bc1f4bce673f1dd2",
+    "mdl_sha256": "7b630ea22570cb6c3fbe57abb10ea62795231c16405b9f606d230f7464ed7d5d",
+    "mdl_bytes": 1384344,
+    "author": "community",
+    "license": null,
+    "date_published": "2026-08-23",
+    "date_modified": "2026-08-25",
+    "sequences": [
+      {
+        "index": 0,
+        "name": "idle",
+        "fps": 30.0,
+        "frames": 329
+      },
+      {
+        "index": 1,
+        "name": "slash1",
+        "fps": 30.0,
+        "frames": 29
+      },
+      {
+        "index": 2,
+        "name": "slash2",
+        "fps": 30.0,
+        "frames": 29
+      },
+      {
+        "index": 3,
+        "name": "draw",
+        "fps": 30.0,
+        "frames": 25
+      },
+      {
+        "index": 4,
+        "name": "stab",
+        "fps": 30.0,
+        "frames": 29
+      },
+      {
+        "index": 5,
+        "name": "stab_miss",
+        "fps": 30.0,
+        "frames": 28
+      },
+      {
+        "index": 6,
+        "name": "midslash1",
+        "fps": 30.0,
+        "frames": 29
+      },
+      {
+        "index": 7,
+        "name": "midslash2",
+        "fps": 30.0,
+        "frames": 29
+      },
+      {
+        "index": 8,
+        "name": "inspect_1",
+        "fps": 30.0,
+        "frames": 182
+      }
+    ],
+    "inspect": {
+      "index": 8,
+      "name": "inspect_1",
+      "fps": 30.0,
+      "frames": 182,
+      "duration_s": 6.06667
+    },
+    "role_map": {
+      "idle": "idle",
+      "slash1": "slash1",
+      "slash2": "slash2",
+      "draw": "draw",
+      "stab": "stab",
+      "stab_miss": "stab_miss",
+      "midslash1": "midslash1",
+      "midslash2": "midslash2"
+    },
+    "textures": {
+      "embedded_count": 3,
+      "sequence_groups": 1
+    },
+    "converter_trial": {
+      "success": true,
+      "output_bytes": 1944232,
+      "warnings": null,
+      "errors": null,
+      "exit_code": 0
+    },
+    "notes": null
+  },
+  {
+    "slug": "shadow_daggers_fade_v2",
+    "name": "Shadow Daggers Fade V2",
+    "category": "inspect",
+    "site_flags": [
+      "csgo",
+      "insp",
+      "hd"
+    ],
+    "mesh_type": "shadow daggers",
+    "page_url": "https://cs16forge.com/skins/knife/shadow_daggers_fade_v2/",
+    "download_url": "https://cs16forge.com/dl/skins/knife/shadow_daggers_fade_v2.zip",
+    "zip_sha256": "34548fb96a0b605dd43e8b2fcb906609cb13c6f9f7a9a3d12631c1402b4d4866",
+    "mdl_sha256": "e4a02781a8b9820c64d16bc006bfe3c466b85e4ed2833d2c62dc7e4182f847f4",
+    "mdl_bytes": 2545732,
+    "author": "community",
+    "license": null,
+    "date_published": "2026-08-23",
+    "date_modified": "2026-08-25",
+    "sequences": [
+      {
+        "index": 0,
+        "name": "idle",
+        "fps": 21.0,
+        "frames": 122
+      },
+      {
+        "index": 1,
+        "name": "slash1",
+        "fps": 26.0,
+        "frames": 26
+      },
+      {
+        "index": 2,
+        "name": "slash2",
+        "fps": 26.0,
+        "frames": 26
+      },
+      {
+        "index": 3,
+        "name": "draw",
+        "fps": 25.0,
+        "frames": 26
+      },
+      {
+        "index": 4,
+        "name": "stab",
+        "fps": 25.0,
+        "frames": 26
+      },
+      {
+        "index": 5,
+        "name": "stab_miss",
+        "fps": 26.0,
+        "frames": 26
+      },
+      {
+        "index": 6,
+        "name": "midslash1",
+        "fps": 26.0,
+        "frames": 26
+      },
+      {
+        "index": 7,
+        "name": "midslash2",
+        "fps": 26.0,
+        "frames": 26
+      },
+      {
+        "index": 8,
+        "name": "inspect_1",
+        "fps": 26.0,
+        "frames": 122
+      },
+      {
+        "index": 9,
+        "name": "inspect_2",
+        "fps": 26.0,
+        "frames": 122
+      },
+      {
+        "index": 10,
+        "name": "inspect_3",
+        "fps": 26.0,
+        "frames": 122
+      }
+    ],
+    "inspect": {
+      "index": 8,
+      "name": "inspect_1",
+      "fps": 26.0,
+      "frames": 122,
+      "duration_s": 4.69231
+    },
+    "role_map": {
+      "idle": "idle",
+      "slash1": "slash1",
+      "slash2": "slash2",
+      "draw": "draw",
+      "stab": "stab",
+      "stab_miss": "stab_miss",
+      "midslash1": "midslash1",
+      "midslash2": "midslash2"
+    },
+    "textures": {
+      "embedded_count": 13,
+      "sequence_groups": 1
+    },
+    "converter_trial": {
+      "success": true,
+      "output_bytes": 3098752,
+      "warnings": null,
+      "errors": null,
+      "exit_code": 0
+    },
+    "notes": "Other inspect variants: 9 inspect_2 (122 frames at 26 fps), 10 inspect_3 (122 frames at 26 fps). NextClient knife uses index 8. Archive also includes cstrike/sound/weapons/knife_deploy1.wav, cstrike/sound/weapons/knife_hit1.wav, cstrike/sound/weapons/knife_hit2.wav, cstrike/sound/weapons/knife_hit3.wav, cstrike/sound/weapons/knife_hit4.wav, cstrike/sound/weapons/knife_hitwall1.wav, cstrike/sound/weapons/knife_slash1.wav, cstrike/sound/weapons/knife_slash2.wav, cstrike/sound/weapons/knife_stab.wav; excluded because not required for this viewmodel conversion."
+  },
+  {
+    "slug": "ursus_knife_fade",
+    "name": "Ursus Knife Fade",
+    "category": "inspect",
+    "site_flags": [
+      "csgo",
+      "insp"
+    ],
+    "mesh_type": "ursus",
+    "page_url": "https://cs16forge.com/skins/knife/ursus_knife_fade/",
+    "download_url": "https://cs16forge.com/dl/skins/knife/ursus_knife_fade.zip",
+    "zip_sha256": "c9c43bb97fad98bd10c95304adf49120a753d97fc2b24d9ac490688ddbcd1b83",
+    "mdl_sha256": "421218c192c96b968a0d0a08e40cfcb3cb2ffea931367abd9ec98fbe7a017708",
+    "mdl_bytes": 1564104,
+    "author": "community",
+    "license": null,
+    "date_published": "2026-08-23",
+    "date_modified": "2026-08-25",
+    "sequences": [
+      {
+        "index": 0,
+        "name": "idle",
+        "fps": 20.0,
+        "frames": 425
+      },
+      {
+        "index": 1,
+        "name": "slash1",
+        "fps": 30.0,
+        "frames": 36
+      },
+      {
+        "index": 2,
+        "name": "slash2",
+        "fps": 30.0,
+        "frames": 36
+      },
+      {
+        "index": 3,
+        "name": "draw",
+        "fps": 30.0,
+        "frames": 31
+      },
+      {
+        "index": 4,
+        "name": "stab",
+        "fps": 30.0,
+        "frames": 36
+      },
+      {
+        "index": 5,
+        "name": "stab_miss",
+        "fps": 30.0,
+        "frames": 36
+      },
+      {
+        "index": 6,
+        "name": "midslash1",
+        "fps": 30.0,
+        "frames": 36
+      },
+      {
+        "index": 7,
+        "name": "midslash2",
+        "fps": 30.0,
+        "frames": 36
+      },
+      {
+        "index": 8,
+        "name": "inspect",
+        "fps": 30.0,
+        "frames": 151
+      }
+    ],
+    "inspect": {
+      "index": 8,
+      "name": "inspect",
+      "fps": 30.0,
+      "frames": 151,
+      "duration_s": 5.03333
+    },
+    "role_map": {
+      "idle": "idle",
+      "slash1": "slash1",
+      "slash2": "slash2",
+      "draw": "draw",
+      "stab": "stab",
+      "stab_miss": "stab_miss",
+      "midslash1": "midslash1",
+      "midslash2": "midslash2"
+    },
+    "textures": {
+      "embedded_count": 15,
+      "sequence_groups": 1
+    },
+    "converter_trial": {
+      "success": true,
+      "output_bytes": 2857784,
+      "warnings": null,
+      "errors": null,
+      "exit_code": 0
+    },
+    "notes": null
+  },
+  {
+    "slug": "bayonet_paw",
+    "name": "Bayonet Paw",
+    "category": "inspect",
+    "site_flags": [
+      "csgo",
+      "insp",
+      "hd",
+      "light"
+    ],
+    "mesh_type": "bayonet",
+    "page_url": "https://cs16forge.com/skins/knife/bayonet_paw/",
+    "download_url": "https://cs16forge.com/dl/skins/knife/bayonet_paw.zip",
+    "zip_sha256": "f109b45c0d258b98f964cf0e5e2cf5117e9a2e5b2af20e9ae2a02e48dc3e8c2c",
+    "mdl_sha256": "efa04b166bdf9a64a776f5fd3818e1d670af062cc5e6e0b8c19be68040d2fcad",
+    "mdl_bytes": 983816,
+    "author": "community",
+    "license": null,
+    "date_published": "2026-08-23",
+    "date_modified": "2026-08-25",
+    "sequences": [
+      {
+        "index": 0,
+        "name": "idle",
+        "fps": 30.0,
+        "frames": 265
+      },
+      {
+        "index": 1,
+        "name": "slash1",
+        "fps": 30.0,
+        "frames": 28
+      },
+      {
+        "index": 2,
+        "name": "slash2",
+        "fps": 30.0,
+        "frames": 28
+      },
+      {
+        "index": 3,
+        "name": "draw",
+        "fps": 23.0,
+        "frames": 30
+      },
+      {
+        "index": 4,
+        "name": "backstab",
+        "fps": 30.0,
+        "frames": 28
+      },
+      {
+        "index": 5,
+        "name": "heavy_miss",
+        "fps": 30.0,
+        "frames": 28
+      },
+      {
+        "index": 6,
+        "name": "midslash1",
+        "fps": 30.0,
+        "frames": 28
+      },
+      {
+        "index": 7,
+        "name": "midslash2",
+        "fps": 30.0,
+        "frames": 28
+      },
+      {
+        "index": 8,
+        "name": "inspect_1",
+        "fps": 30.0,
+        "frames": 144
+      },
+      {
+        "index": 9,
+        "name": "inspect_2",
+        "fps": 30.0,
+        "frames": 144
+      },
+      {
+        "index": 10,
+        "name": "inspect_3",
+        "fps": 30.0,
+        "frames": 144
+      }
+    ],
+    "inspect": {
+      "index": 8,
+      "name": "inspect_1",
+      "fps": 30.0,
+      "frames": 144,
+      "duration_s": 4.8
+    },
+    "role_map": {
+      "idle": "idle",
+      "slash1": "slash1",
+      "slash2": "slash2",
+      "draw": "draw",
+      "stab": "backstab",
+      "stab_miss": "heavy_miss",
+      "midslash1": "midslash1",
+      "midslash2": "midslash2"
+    },
+    "textures": {
+      "embedded_count": 4,
+      "sequence_groups": 1
+    },
+    "converter_trial": {
+      "success": true,
+      "output_bytes": 2383092,
+      "warnings": null,
+      "errors": null,
+      "exit_code": 0
+    },
+    "notes": "Other inspect variants: 9 inspect_2 (144 frames at 30 fps), 10 inspect_3 (144 frames at 30 fps). NextClient knife uses index 8. Nonstandard stab slot names; map roles by index 4/5. Archive also includes cstrike/models/p_knife.mdl, cstrike/sound/weapons/knife_deploy1.wav, cstrike/sound/weapons/knife_hit1.wav, cstrike/sound/weapons/knife_hit2.wav, cstrike/sound/weapons/knife_hit3.wav, cstrike/sound/weapons/knife_hit4.wav, cstrike/sound/weapons/knife_hitwall1.wav, cstrike/sound/weapons/knife_slash1.wav, cstrike/sound/weapons/knife_slash2.wav, cstrike/sound/weapons/knife_stab.wav; excluded because not required for this viewmodel conversion."
+  },
+  {
+    "slug": "navaja_fade",
+    "name": "Navaja Fade",
+    "category": "inspect",
+    "site_flags": [
+      "csgo",
+      "insp",
+      "hd"
+    ],
+    "mesh_type": "navaja",
+    "page_url": "https://cs16forge.com/skins/knife/navaja_fade/",
+    "download_url": "https://cs16forge.com/dl/skins/knife/navaja_fade.zip",
+    "zip_sha256": "8bbbba1b774ac53acd6c9d88b872fc311c3aa199c1b12ec5d72ffd9fcd1b499f",
+    "mdl_sha256": "baa4ae45d35c073169ae042574adc48d4a6d43f5be85df13a08b5e76479e4127",
+    "mdl_bytes": 1586912,
+    "author": "community",
+    "license": null,
+    "date_published": "2026-08-23",
+    "date_modified": "2026-08-25",
+    "sequences": [
+      {
+        "index": 0,
+        "name": "idle",
+        "fps": 30.0,
+        "frames": 142
+      },
+      {
+        "index": 1,
+        "name": "slash1",
+        "fps": 30.0,
+        "frames": 28
+      },
+      {
+        "index": 2,
+        "name": "slash2",
+        "fps": 30.0,
+        "frames": 28
+      },
+      {
+        "index": 3,
+        "name": "draw",
+        "fps": 25.0,
+        "frames": 26
+      },
+      {
+        "index": 4,
+        "name": "stab",
+        "fps": 30.0,
+        "frames": 28
+      },
+      {
+        "index": 5,
+        "name": "stab_miss",
+        "fps": 30.0,
+        "frames": 28
+      },
+      {
+        "index": 6,
+        "name": "midslash1",
+        "fps": 30.0,
+        "frames": 28
+      },
+      {
+        "index": 7,
+        "name": "midslash2",
+        "fps": 30.0,
+        "frames": 28
+      },
+      {
+        "index": 8,
+        "name": "inspect_1",
+        "fps": 30.0,
+        "frames": 143
+      },
+      {
+        "index": 9,
+        "name": "inspect_2",
+        "fps": 30.0,
+        "frames": 143
+      },
+      {
+        "index": 10,
+        "name": "inspect_3",
+        "fps": 30.0,
+        "frames": 143
+      }
+    ],
+    "inspect": {
+      "index": 8,
+      "name": "inspect_1",
+      "fps": 30.0,
+      "frames": 143,
+      "duration_s": 4.76667
+    },
+    "role_map": {
+      "idle": "idle",
+      "slash1": "slash1",
+      "slash2": "slash2",
+      "draw": "draw",
+      "stab": "stab",
+      "stab_miss": "stab_miss",
+      "midslash1": "midslash1",
+      "midslash2": "midslash2"
+    },
+    "textures": {
+      "embedded_count": 4,
+      "sequence_groups": 1
+    },
+    "converter_trial": {
+      "success": true,
+      "output_bytes": 2372188,
+      "warnings": null,
+      "errors": null,
+      "exit_code": 0
+    },
+    "notes": "Other inspect variants: 9 inspect_2 (143 frames at 30 fps), 10 inspect_3 (143 frames at 30 fps). NextClient knife uses index 8."
+  },
+  {
+    "slug": "butterfly_knife_fade",
+    "name": "Butterfly Knife Fade",
+    "category": "no_inspect",
+    "site_flags": [
+      "csgo"
+    ],
+    "mesh_type": "butterfly",
+    "page_url": "https://cs16forge.com/skins/knife/butterfly_knife_fade/",
+    "download_url": "https://cs16forge.com/dl/skins/knife/butterfly_knife_fade.zip",
+    "zip_sha256": "cbd98aba20e0fe8c837f4982bee4ef3403312be21574d09df6988833f0d46ac1",
+    "mdl_sha256": "79e7c449a6f7db56cbc444ca4c6bf49c460522bc97aac409eb207d915eb346bc",
+    "mdl_bytes": 1099376,
+    "author": "community",
+    "license": null,
+    "date_published": "2026-08-23",
+    "date_modified": "2026-08-25",
+    "sequences": [
+      {
+        "index": 0,
+        "name": "idle",
+        "fps": 30.0,
+        "frames": 1
+      },
+      {
+        "index": 1,
+        "name": "slash1",
+        "fps": 20.0,
+        "frames": 35
+      },
+      {
+        "index": 2,
+        "name": "slash2",
+        "fps": 20.0,
+        "frames": 35
+      },
+      {
+        "index": 3,
+        "name": "draw",
+        "fps": 40.0,
+        "frames": 86
+      },
+      {
+        "index": 4,
+        "name": "stab",
+        "fps": 30.0,
+        "frames": 45
+      },
+      {
+        "index": 5,
+        "name": "stab_miss",
+        "fps": 40.0,
+        "frames": 40
+      },
+      {
+        "index": 6,
+        "name": "midslash1",
+        "fps": 20.0,
+        "frames": 35
+      },
+      {
+        "index": 7,
+        "name": "midslash2",
+        "fps": 20.0,
+        "frames": 35
+      }
+    ],
+    "inspect": null,
+    "role_map": {
+      "idle": "idle",
+      "slash1": "slash1",
+      "slash2": "slash2",
+      "draw": "draw",
+      "stab": "stab",
+      "stab_miss": "stab_miss",
+      "midslash1": "midslash1",
+      "midslash2": "midslash2"
+    },
+    "textures": {
+      "embedded_count": 2,
+      "sequence_groups": 1
+    },
+    "converter_trial": {
+      "success": true,
+      "output_bytes": 1219764,
+      "warnings": null,
+      "errors": null,
+      "exit_code": 0
+    },
+    "notes": "Idle sequence is one frame, not an inspect animation."
+  },
+  {
+    "slug": "m9_bayonet_doppler_sapphire",
+    "name": "M9 Bayonet Doppler Sapphire",
+    "category": "no_inspect",
+    "site_flags": [
+      "csgo",
+      "hd"
+    ],
+    "mesh_type": "M9 bayonet",
+    "page_url": "https://cs16forge.com/skins/knife/m9_bayonet_doppler_sapphire/",
+    "download_url": "https://cs16forge.com/dl/skins/knife/m9_bayonet_doppler_sapphire.zip",
+    "zip_sha256": "d4320d1ba756d945ba4d8cebb5ae99d9f9fb03510c0c835830aa53d526323f43",
+    "mdl_sha256": "3b8ea9b77f1bda07a856bf8659abb202ef2334ab289e5fe034848d9dd8d4784d",
+    "mdl_bytes": 1775728,
+    "author": "community",
+    "license": null,
+    "date_published": "2026-08-23",
+    "date_modified": "2026-08-25",
+    "sequences": [
+      {
+        "index": 0,
+        "name": "idle",
+        "fps": 25.0,
+        "frames": 360
+      },
+      {
+        "index": 1,
+        "name": "slash1",
+        "fps": 40.0,
+        "frames": 36
+      },
+      {
+        "index": 2,
+        "name": "slash2",
+        "fps": 40.0,
+        "frames": 36
+      },
+      {
+        "index": 3,
+        "name": "draw",
+        "fps": 35.0,
+        "frames": 30
+      },
+      {
+        "index": 4,
+        "name": "stab",
+        "fps": 35.0,
+        "frames": 36
+      },
+      {
+        "index": 5,
+        "name": "stab_miss",
+        "fps": 40.0,
+        "frames": 36
+      },
+      {
+        "index": 6,
+        "name": "midslash1",
+        "fps": 40.0,
+        "frames": 36
+      },
+      {
+        "index": 7,
+        "name": "midslash2",
+        "fps": 40.0,
+        "frames": 36
+      }
+    ],
+    "inspect": null,
+    "role_map": {
+      "idle": "idle",
+      "slash1": "slash1",
+      "slash2": "slash2",
+      "draw": "draw",
+      "stab": "stab",
+      "stab_miss": "stab_miss",
+      "midslash1": "midslash1",
+      "midslash2": "midslash2"
+    },
+    "textures": {
+      "embedded_count": 13,
+      "sequence_groups": 1
+    },
+    "converter_trial": {
+      "success": true,
+      "output_bytes": 2126180,
+      "warnings": null,
+      "errors": null,
+      "exit_code": 0
+    },
+    "notes": "Archive also includes cstrike/models/p_knife.mdl; excluded because not required for this viewmodel conversion."
+  },
+  {
+    "slug": "huntsman_knife_blood_hound",
+    "name": "Huntsman Knife Blood Hound",
+    "category": "no_inspect",
+    "site_flags": [
+      "csgo",
+      "hd"
+    ],
+    "mesh_type": "huntsman",
+    "page_url": "https://cs16forge.com/skins/knife/huntsman_knife_blood_hound/",
+    "download_url": "https://cs16forge.com/dl/skins/knife/huntsman_knife_blood_hound.zip",
+    "zip_sha256": "a3b04f4a26deaaf76d71aea113ca9df80641dea74bb8097963523e76718dad84",
+    "mdl_sha256": "7248f59bbf78efec768746239ae68eafc1feddc37faeff65c20d3d53547cb943",
+    "mdl_bytes": 1645056,
+    "author": "community",
+    "license": null,
+    "date_published": "2026-08-23",
+    "date_modified": "2026-08-25",
+    "sequences": [
+      {
+        "index": 0,
+        "name": "idle",
+        "fps": 25.0,
+        "frames": 417
+      },
+      {
+        "index": 1,
+        "name": "slash1",
+        "fps": 40.0,
+        "frames": 40
+      },
+      {
+        "index": 2,
+        "name": "slash2",
+        "fps": 40.0,
+        "frames": 39
+      },
+      {
+        "index": 3,
+        "name": "draw",
+        "fps": 35.0,
+        "frames": 46
+      },
+      {
+        "index": 4,
+        "name": "stab",
+        "fps": 35.0,
+        "frames": 64
+      },
+      {
+        "index": 5,
+        "name": "stab_miss",
+        "fps": 40.0,
+        "frames": 56
+      },
+      {
+        "index": 6,
+        "name": "midslash1",
+        "fps": 40.0,
+        "frames": 40
+      },
+      {
+        "index": 7,
+        "name": "midslash2",
+        "fps": 40.0,
+        "frames": 39
+      }
+    ],
+    "inspect": null,
+    "role_map": {
+      "idle": "idle",
+      "slash1": "slash1",
+      "slash2": "slash2",
+      "draw": "draw",
+      "stab": "stab",
+      "stab_miss": "stab_miss",
+      "midslash1": "midslash1",
+      "midslash2": "midslash2"
+    },
+    "textures": {
+      "embedded_count": 3,
+      "sequence_groups": 1
+    },
+    "converter_trial": {
+      "success": true,
+      "output_bytes": 2179840,
+      "warnings": null,
+      "errors": null,
+      "exit_code": 0
+    },
+    "notes": null
+  },
+  {
+    "slug": "falchion_comet_sport_gloves_pandoras_box",
+    "name": "Falchion Comet Sport Gloves Pandoras Box",
+    "category": "no_inspect",
+    "site_flags": [
+      "csgo",
+      "hd"
+    ],
+    "mesh_type": "falchion",
+    "page_url": "https://cs16forge.com/skins/knife/falchion_comet_sport_gloves_pandoras_box/",
+    "download_url": "https://cs16forge.com/dl/skins/knife/falchion_comet_sport_gloves_pandoras_box.zip",
+    "zip_sha256": "6732a12da12e277558a8bed3b6e5ba92a2b7b5334ef09b9f02a8b01e3087b32f",
+    "mdl_sha256": "6c25e4241453907b44bafe46da89d9dca194d99dbc49f6c529dfaca67fe08ca6",
+    "mdl_bytes": 1994972,
+    "author": "community",
+    "license": null,
+    "date_published": "2026-08-23",
+    "date_modified": "2026-08-25",
+    "sequences": [
+      {
+        "index": 0,
+        "name": "idle",
+        "fps": 20.0,
+        "frames": 385
+      },
+      {
+        "index": 1,
+        "name": "slash1",
+        "fps": 37.0,
+        "frames": 28
+      },
+      {
+        "index": 2,
+        "name": "slash2",
+        "fps": 37.0,
+        "frames": 28
+      },
+      {
+        "index": 3,
+        "name": "draw",
+        "fps": 35.0,
+        "frames": 24
+      },
+      {
+        "index": 4,
+        "name": "stab",
+        "fps": 30.0,
+        "frames": 28
+      },
+      {
+        "index": 5,
+        "name": "stab_miss",
+        "fps": 35.0,
+        "frames": 28
+      },
+      {
+        "index": 6,
+        "name": "midslash1",
+        "fps": 37.0,
+        "frames": 28
+      },
+      {
+        "index": 7,
+        "name": "midslash2",
+        "fps": 37.0,
+        "frames": 28
+      }
+    ],
+    "inspect": null,
+    "role_map": {
+      "idle": "idle",
+      "slash1": "slash1",
+      "slash2": "slash2",
+      "draw": "draw",
+      "stab": "stab",
+      "stab_miss": "stab_miss",
+      "midslash1": "midslash1",
+      "midslash2": "midslash2"
+    },
+    "textures": {
+      "embedded_count": 8,
+      "sequence_groups": 1
+    },
+    "converter_trial": {
+      "success": true,
+      "output_bytes": 2166108,
+      "warnings": null,
+      "errors": null,
+      "exit_code": 0
+    },
+    "notes": "Archive also includes cstrike/models/p_knife.mdl, cstrike/sound/weapons/knife_deploy1.wav, cstrike/sound/weapons/knife_hit1.wav, cstrike/sound/weapons/knife_hit2.wav, cstrike/sound/weapons/knife_hit3.wav, cstrike/sound/weapons/knife_hit4.wav, cstrike/sound/weapons/knife_hitwall1.wav, cstrike/sound/weapons/knife_slash1.wav, cstrike/sound/weapons/knife_slash2.wav, cstrike/sound/weapons/knife_stab.wav, cstrike/sound/weapons/olaf/afterstab.wav, cstrike/sound/weapons/olaf/inspect1.wav, cstrike/sound/weapons/olaf/inspect2.wav; excluded because not required for this viewmodel conversion."
+  },
+  {
+    "slug": "bowie_knife_poisonous_gas",
+    "name": "Bowie Knife Poisonous Gas",
+    "category": "no_inspect",
+    "site_flags": [
+      "csgo",
+      "hd"
+    ],
+    "mesh_type": "bowie",
+    "page_url": "https://cs16forge.com/skins/knife/bowie_knife_poisonous_gas/",
+    "download_url": "https://cs16forge.com/dl/skins/knife/bowie_knife_poisonous_gas.zip",
+    "zip_sha256": "1d5c295c26372028217aca08037a6011ef8fe4f4f009034f009f83bacd3a8f44",
+    "mdl_sha256": "f1f9ea52f87f3baf4196911bd76a11a56806bf2b0100427e49ca7e945ed4e2ae",
+    "mdl_bytes": 1596244,
+    "author": "community",
+    "license": null,
+    "date_published": "2026-08-23",
+    "date_modified": "2026-08-25",
+    "sequences": [
+      {
+        "index": 0,
+        "name": "idle",
+        "fps": 25.0,
+        "frames": 175
+      },
+      {
+        "index": 1,
+        "name": "slash1",
+        "fps": 25.0,
+        "frames": 29
+      },
+      {
+        "index": 2,
+        "name": "slash2",
+        "fps": 25.0,
+        "frames": 29
+      },
+      {
+        "index": 3,
+        "name": "draw",
+        "fps": 25.0,
+        "frames": 31
+      },
+      {
+        "index": 4,
+        "name": "stab",
+        "fps": 25.0,
+        "frames": 29
+      },
+      {
+        "index": 5,
+        "name": "stab_miss",
+        "fps": 25.0,
+        "frames": 29
+      },
+      {
+        "index": 6,
+        "name": "midslash1",
+        "fps": 25.0,
+        "frames": 29
+      },
+      {
+        "index": 7,
+        "name": "midslash2",
+        "fps": 25.0,
+        "frames": 29
+      }
+    ],
+    "inspect": null,
+    "role_map": {
+      "idle": "idle",
+      "slash1": "slash1",
+      "slash2": "slash2",
+      "draw": "draw",
+      "stab": "stab",
+      "stab_miss": "stab_miss",
+      "midslash1": "midslash1",
+      "midslash2": "midslash2"
+    },
+    "textures": {
+      "embedded_count": 4,
+      "sequence_groups": 1
+    },
+    "converter_trial": {
+      "success": true,
+      "output_bytes": 1601944,
+      "warnings": null,
+      "errors": null,
+      "exit_code": 0
+    },
+    "notes": null
+  },
+  {
+    "slug": "classic_knife_vanilla",
+    "name": "Classic Knife Vanilla",
+    "category": "no_inspect",
+    "site_flags": [
+      "csgo",
+      "light"
+    ],
+    "mesh_type": "classic",
+    "page_url": "https://cs16forge.com/skins/knife/classic_knife_vanilla/",
+    "download_url": "https://cs16forge.com/dl/skins/knife/classic_knife_vanilla.zip",
+    "zip_sha256": "904c5a199f6ffe574bab4002026d0bd26716a107ca01b6d6a3d6f2e52ed985f3",
+    "mdl_sha256": "3a86ff46e7f01f0622b0bb9825e1ae1e0cc9a7950ca5c244cc260403c585a489",
+    "mdl_bytes": 1151016,
+    "author": "community",
+    "license": null,
+    "date_published": "2026-08-23",
+    "date_modified": "2026-08-25",
+    "sequences": [
+      {
+        "index": 0,
+        "name": "idle",
+        "fps": 24.0,
+        "frames": 409
+      },
+      {
+        "index": 1,
+        "name": "slash1",
+        "fps": 30.0,
+        "frames": 36
+      },
+      {
+        "index": 2,
+        "name": "slash2",
+        "fps": 30.0,
+        "frames": 36
+      },
+      {
+        "index": 3,
+        "name": "draw",
+        "fps": 45.0,
+        "frames": 31
+      },
+      {
+        "index": 4,
+        "name": "stab",
+        "fps": 35.0,
+        "frames": 36
+      },
+      {
+        "index": 5,
+        "name": "stab_miss",
+        "fps": 40.0,
+        "frames": 36
+      },
+      {
+        "index": 6,
+        "name": "midslash1",
+        "fps": 55.0,
+        "frames": 36
+      },
+      {
+        "index": 7,
+        "name": "midslash2",
+        "fps": 55.0,
+        "frames": 36
+      }
+    ],
+    "inspect": null,
+    "role_map": {
+      "idle": "idle",
+      "slash1": "slash1",
+      "slash2": "slash2",
+      "draw": "draw",
+      "stab": "stab",
+      "stab_miss": "stab_miss",
+      "midslash1": "midslash1",
+      "midslash2": "midslash2"
+    },
+    "textures": {
+      "embedded_count": 11,
+      "sequence_groups": 1
+    },
+    "converter_trial": {
+      "success": true,
+      "output_bytes": 2325292,
+      "warnings": null,
+      "errors": null,
+      "exit_code": 0
+    },
+    "notes": "Archive also includes cstrike/models/p_knife.mdl, cstrike/sound/weapons/knife_deploy1.wav, cstrike/sound/weapons/knife_hit1.wav, cstrike/sound/weapons/knife_hit2.wav, cstrike/sound/weapons/knife_hit3.wav, cstrike/sound/weapons/knife_hit4.wav, cstrike/sound/weapons/knife_hitwall1.wav, cstrike/sound/weapons/knife_slash1.wav, cstrike/sound/weapons/knife_slash2.wav, cstrike/sound/weapons/knife_stab.wav; excluded because not required for this viewmodel conversion."
+  },
+  {
+    "slug": "kitchen_knife",
+    "name": "Kitchen Knife",
+    "category": "no_inspect",
+    "site_flags": [
+      "light"
+    ],
+    "mesh_type": "kitchen knife",
+    "page_url": "https://cs16forge.com/skins/knife/kitchen_knife/",
+    "download_url": "https://cs16forge.com/dl/skins/knife/kitchen_knife.zip",
+    "zip_sha256": "68bd1c90eacfb9ca0b4fdf2a832c64830ef4cb41502767d37aa23f69139befb1",
+    "mdl_sha256": "810920633aee6916cd226352ab7ad8791546e34da4f793f4e8242a4530a87fb0",
+    "mdl_bytes": 244272,
+    "author": "community",
+    "license": null,
+    "date_published": "2026-08-23",
+    "date_modified": "2026-08-25",
+    "sequences": [
+      {
+        "index": 0,
+        "name": "idle",
+        "fps": 12.0,
+        "frames": 151
+      },
+      {
+        "index": 1,
+        "name": "slash1",
+        "fps": 30.0,
+        "frames": 2
+      },
+      {
+        "index": 2,
+        "name": "slash2",
+        "fps": 30.0,
+        "frames": 2
+      },
+      {
+        "index": 3,
+        "name": "draw",
+        "fps": 45.0,
+        "frames": 46
+      },
+      {
+        "index": 4,
+        "name": "stab",
+        "fps": 35.0,
+        "frames": 47
+      },
+      {
+        "index": 5,
+        "name": "stab_miss",
+        "fps": 40.0,
+        "frames": 61
+      },
+      {
+        "index": 6,
+        "name": "midslash1",
+        "fps": 55.0,
+        "frames": 66
+      },
+      {
+        "index": 7,
+        "name": "midslash2",
+        "fps": 55.0,
+        "frames": 66
+      }
+    ],
+    "inspect": null,
+    "role_map": {
+      "idle": "idle",
+      "slash1": "slash1",
+      "slash2": "slash2",
+      "draw": "draw",
+      "stab": "stab",
+      "stab_miss": "stab_miss",
+      "midslash1": "midslash1",
+      "midslash2": "midslash2"
+    },
+    "textures": {
+      "embedded_count": 4,
+      "sequence_groups": 1
+    },
+    "converter_trial": {
+      "success": true,
+      "output_bytes": 940164,
+      "warnings": null,
+      "errors": null,
+      "exit_code": 0
+    },
+    "notes": null
+  },
+  {
+    "slug": "gut_knife_lavatron",
+    "name": "Gut Knife Lavatron",
+    "category": "no_inspect",
+    "site_flags": [
+      "csgo",
+      "hd"
+    ],
+    "mesh_type": "gut knife",
+    "page_url": "https://cs16forge.com/skins/knife/gut_knife_lavatron/",
+    "download_url": "https://cs16forge.com/dl/skins/knife/gut_knife_lavatron.zip",
+    "zip_sha256": "19ec7e851c89d82a7ef8a21f175a8218047c3da9dc7527a9c4174557f62ed8d7",
+    "mdl_sha256": "ff6f2497aa9f78feb48fe54351cec724fb8c753cdcbe6302902e7e9baec22764",
+    "mdl_bytes": 1719296,
+    "author": "community",
+    "license": null,
+    "date_published": "2026-08-23",
+    "date_modified": "2026-08-25",
+    "sequences": [
+      {
+        "index": 0,
+        "name": "idle",
+        "fps": 30.0,
+        "frames": 149
+      },
+      {
+        "index": 1,
+        "name": "slash1",
+        "fps": 30.0,
+        "frames": 28
+      },
+      {
+        "index": 2,
+        "name": "slash2",
+        "fps": 30.0,
+        "frames": 28
+      },
+      {
+        "index": 3,
+        "name": "draw",
+        "fps": 30.0,
+        "frames": 24
+      },
+      {
+        "index": 4,
+        "name": "stab",
+        "fps": 30.0,
+        "frames": 28
+      },
+      {
+        "index": 5,
+        "name": "stab_miss",
+        "fps": 30.0,
+        "frames": 28
+      },
+      {
+        "index": 6,
+        "name": "midslash1",
+        "fps": 30.0,
+        "frames": 28
+      },
+      {
+        "index": 7,
+        "name": "midslash2",
+        "fps": 30.0,
+        "frames": 28
+      }
+    ],
+    "inspect": null,
+    "role_map": {
+      "idle": "idle",
+      "slash1": "slash1",
+      "slash2": "slash2",
+      "draw": "draw",
+      "stab": "stab",
+      "stab_miss": "stab_miss",
+      "midslash1": "midslash1",
+      "midslash2": "midslash2"
+    },
+    "textures": {
+      "embedded_count": 5,
+      "sequence_groups": 1
+    },
+    "converter_trial": {
+      "success": true,
+      "output_bytes": 1814748,
+      "warnings": null,
+      "errors": null,
+      "exit_code": 0
+    },
+    "notes": null
+  },
+  {
+    "slug": "flip_knife_ruby",
+    "name": "Flip Knife Ruby",
+    "category": "no_inspect",
+    "site_flags": [
+      "csgo",
+      "hd",
+      "light"
+    ],
+    "mesh_type": "flip knife",
+    "page_url": "https://cs16forge.com/skins/knife/flip_knife_ruby/",
+    "download_url": "https://cs16forge.com/dl/skins/knife/flip_knife_ruby.zip",
+    "zip_sha256": "5994b977ab13c282045ce9869e27fe893fdbce5a8ec5a19bf44fdb3c3fe030de",
+    "mdl_sha256": "1e6f44071e0a14d33f7eeae0ce1cef43e4671c118ad1f42e1f26086b1e25d458",
+    "mdl_bytes": 540652,
+    "author": "community",
+    "license": null,
+    "date_published": "2026-08-23",
+    "date_modified": "2026-08-25",
+    "sequences": [
+      {
+        "index": 0,
+        "name": "idle",
+        "fps": 30.0,
+        "frames": 371
+      },
+      {
+        "index": 1,
+        "name": "slash1",
+        "fps": 35.0,
+        "frames": 37
+      },
+      {
+        "index": 2,
+        "name": "slash2",
+        "fps": 35.0,
+        "frames": 37
+      },
+      {
+        "index": 3,
+        "name": "draw",
+        "fps": 30.0,
+        "frames": 31
+      },
+      {
+        "index": 4,
+        "name": "staber",
+        "fps": 35.0,
+        "frames": 37
+      },
+      {
+        "index": 5,
+        "name": "stab_miss",
+        "fps": 30.0,
+        "frames": 37
+      },
+      {
+        "index": 6,
+        "name": "midslash1",
+        "fps": 35.0,
+        "frames": 37
+      },
+      {
+        "index": 7,
+        "name": "midslash2",
+        "fps": 35.0,
+        "frames": 37
+      }
+    ],
+    "inspect": null,
+    "role_map": {
+      "idle": "idle",
+      "slash1": "slash1",
+      "slash2": "slash2",
+      "draw": "draw",
+      "stab": "staber",
+      "stab_miss": "stab_miss",
+      "midslash1": "midslash1",
+      "midslash2": "midslash2"
+    },
+    "textures": {
+      "embedded_count": 4,
+      "sequence_groups": 1
+    },
+    "converter_trial": {
+      "success": true,
+      "output_bytes": 1561396,
+      "warnings": null,
+      "errors": null,
+      "exit_code": 0
+    },
+    "notes": "Nonstandard stab slot names; map roles by index 4/5. Archive also includes cstrike/sound/weapons/knife_deploy1.wav, cstrike/sound/weapons/knife_hit1.wav, cstrike/sound/weapons/knife_hit2.wav, cstrike/sound/weapons/knife_hit3.wav, cstrike/sound/weapons/knife_hit4.wav, cstrike/sound/weapons/knife_hitwall1.wav, cstrike/sound/weapons/knife_slash1.wav, cstrike/sound/weapons/knife_slash2.wav, cstrike/sound/weapons/knife_stab.wav; excluded because not required for this viewmodel conversion."
+  },
+  {
+    "slug": "bayonet_doppler_phase_1",
+    "name": "Bayonet Doppler Phase 1",
+    "category": "no_inspect",
+    "site_flags": [
+      "csgo",
+      "hd",
+      "light"
+    ],
+    "mesh_type": "bayonet",
+    "page_url": "https://cs16forge.com/skins/knife/bayonet_doppler_phase_1/",
+    "download_url": "https://cs16forge.com/dl/skins/knife/bayonet_doppler_phase_1.zip",
+    "zip_sha256": "ce7197d75c48b51598d1a43b52dc24ce1949ec10aa9888cdfa5996fa7558601d",
+    "mdl_sha256": "5f3aaccf8793e62df6b4cf2278c4d4043bd41ed053b4d955c5060fb13a5ae7eb",
+    "mdl_bytes": 519880,
+    "author": "community",
+    "license": null,
+    "date_published": "2026-08-23",
+    "date_modified": "2026-08-25",
+    "sequences": [
+      {
+        "index": 0,
+        "name": "idle",
+        "fps": 30.0,
+        "frames": 150
+      },
+      {
+        "index": 1,
+        "name": "slash1",
+        "fps": 30.0,
+        "frames": 28
+      },
+      {
+        "index": 2,
+        "name": "slash2",
+        "fps": 30.0,
+        "frames": 28
+      },
+      {
+        "index": 3,
+        "name": "draw",
+        "fps": 30.0,
+        "frames": 28
+      },
+      {
+        "index": 4,
+        "name": "stab",
+        "fps": 30.0,
+        "frames": 28
+      },
+      {
+        "index": 5,
+        "name": "stab_miss",
+        "fps": 30.0,
+        "frames": 28
+      },
+      {
+        "index": 6,
+        "name": "midslash1",
+        "fps": 30.0,
+        "frames": 28
+      },
+      {
+        "index": 7,
+        "name": "midslash2",
+        "fps": 30.0,
+        "frames": 28
+      }
+    ],
+    "inspect": null,
+    "role_map": {
+      "idle": "idle",
+      "slash1": "slash1",
+      "slash2": "slash2",
+      "draw": "draw",
+      "stab": "stab",
+      "stab_miss": "stab_miss",
+      "midslash1": "midslash1",
+      "midslash2": "midslash2"
+    },
+    "textures": {
+      "embedded_count": 5,
+      "sequence_groups": 1
+    },
+    "converter_trial": {
+      "success": true,
+      "output_bytes": 1157900,
+      "warnings": null,
+      "errors": null,
+      "exit_code": 0
+    },
+    "notes": null
+  }
+]

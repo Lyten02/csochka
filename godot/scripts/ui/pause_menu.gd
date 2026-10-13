@@ -25,6 +25,7 @@ var _font_regular: Font
 
 
 func _ready() -> void:
+	add_to_group("knife_input_blockers")
 	process_mode = Node.PROCESS_MODE_ALWAYS
 	layer = 100
 	visible = false

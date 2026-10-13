@@ -29,6 +29,7 @@ var _font_bold: Font
 
 
 func _ready() -> void:
+	add_to_group("knife_input_blockers")
 	_sm = get_node_or_null("/root/SettingsManager")
 	_load_fonts()
 	_build_ui()

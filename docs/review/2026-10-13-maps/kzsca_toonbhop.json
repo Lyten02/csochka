@@ -1,0 +1,54 @@
+{
+	"glb": "res://maps/kzsca_toonbhop.glb",
+	"id": "kzsca_toonbhop",
+	"samples": [
+		{
+			"ground": 0,
+			"origin": "(-2496.0, -3264.0, 3172.031)",
+			"second": 1,
+			"solid": -1,
+			"teleports": 0,
+			"velocity": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ground": 0,
+			"origin": "(-2496.0, -3264.0, 3172.031)",
+			"second": 2,
+			"solid": -1,
+			"teleports": 0,
+			"velocity": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ground": 0,
+			"origin": "(-2496.0, -3264.0, 3172.031)",
+			"second": 3,
+			"solid": -1,
+			"teleports": 0,
+			"velocity": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ground": 0,
+			"origin": "(-2496.0, -3264.0, 3172.031)",
+			"second": 4,
+			"solid": -1,
+			"teleports": 0,
+			"velocity": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ground": 0,
+			"origin": "(-2496.0, -3264.0, 3172.031)",
+			"second": 5,
+			"solid": -1,
+			"teleports": 0,
+			"velocity": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ground": 0,
+			"origin": "(-2496.0, -3264.0, 3172.031)",
+			"second": 6,
+			"solid": -1,
+			"teleports": 0,
+			"velocity": "(0.0, 0.0, 0.0)"
+		}
+	]
+}

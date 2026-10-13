@@ -1,0 +1,54 @@
+{
+	"glb": "res://maps/bhop_ytt_neon_light.glb",
+	"id": "bhop_ytt_neon_light",
+	"samples": [
+		{
+			"ground": 0,
+			"origin": "(-1216.0, 1825.0, 420.0313)",
+			"second": 1,
+			"solid": -1,
+			"teleports": 0,
+			"velocity": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ground": 0,
+			"origin": "(-1216.0, 1825.0, 420.0313)",
+			"second": 2,
+			"solid": -1,
+			"teleports": 0,
+			"velocity": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ground": 0,
+			"origin": "(-1216.0, 1825.0, 420.0313)",
+			"second": 3,
+			"solid": -1,
+			"teleports": 0,
+			"velocity": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ground": 0,
+			"origin": "(-1216.0, 1825.0, 420.0313)",
+			"second": 4,
+			"solid": -1,
+			"teleports": 0,
+			"velocity": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ground": 0,
+			"origin": "(-1216.0, 1825.0, 420.0313)",
+			"second": 5,
+			"solid": -1,
+			"teleports": 0,
+			"velocity": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ground": 0,
+			"origin": "(-1216.0, 1825.0, 420.0313)",
+			"second": 6,
+			"solid": -1,
+			"teleports": 0,
+			"velocity": "(0.0, 0.0, 0.0)"
+		}
+	]
+}

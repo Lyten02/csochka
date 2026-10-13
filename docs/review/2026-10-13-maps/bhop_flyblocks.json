@@ -1,0 +1,54 @@
+{
+	"glb": "",
+	"id": "bhop_flyblocks",
+	"samples": [
+		{
+			"ground": 0,
+			"origin": "(-3517.0, 3474.0, -273.9688)",
+			"second": 1,
+			"solid": -1,
+			"teleports": 0,
+			"velocity": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ground": 0,
+			"origin": "(-3517.0, 3474.0, -273.9688)",
+			"second": 2,
+			"solid": -1,
+			"teleports": 0,
+			"velocity": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ground": 0,
+			"origin": "(-3517.0, 3474.0, -273.9688)",
+			"second": 3,
+			"solid": -1,
+			"teleports": 0,
+			"velocity": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ground": 0,
+			"origin": "(-3517.0, 3474.0, -273.9688)",
+			"second": 4,
+			"solid": -1,
+			"teleports": 0,
+			"velocity": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ground": 0,
+			"origin": "(-3517.0, 3474.0, -273.9688)",
+			"second": 5,
+			"solid": -1,
+			"teleports": 0,
+			"velocity": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ground": 0,
+			"origin": "(-3517.0, 3474.0, -273.9688)",
+			"second": 6,
+			"solid": -1,
+			"teleports": 0,
+			"velocity": "(0.0, 0.0, 0.0)"
+		}
+	]
+}

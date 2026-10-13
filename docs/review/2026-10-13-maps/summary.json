@@ -1,0 +1,399 @@
+[
+  {
+    "id": "35hp_3",
+    "catalog_name": "35hp_3",
+    "status": "BSP + GLB да; лог не чистый",
+    "spawn": "OK за 6 с",
+    "notes": "Каменная арена и мост видны; один стартовый телепорт, затем приземление ко 2-й секунде.",
+    "errors": {
+      "ERROR: Parameter \"material\" is null.": 16,
+      "WARNING: 1 RID of type \"CanvasItem\" was leaked.": 1,
+      "WARNING: 2 ObjectDB instances were leaked at exit (run with `--verbose` for details).": 1
+    },
+    "images": [
+      "35hp_3_elevated.jpg",
+      "35hp_3_reverse.jpg",
+      "35hp_3_spawn.jpg"
+    ],
+    "asset_count": 29
+  },
+  {
+    "id": "bhop_blocks",
+    "catalog_name": "bhop_blocks",
+    "status": "BSP + GLB да; лог не чистый",
+    "spawn": "OK за 6 с",
+    "notes": "Каменные блоки над водой, кирпичные стены и ящики; явных дефектов в этих ракурсах не видно.",
+    "errors": {
+      "ERROR: Parameter \"material\" is null.": 16,
+      "WARNING: 1 RID of type \"CanvasItem\" was leaked.": 1,
+      "WARNING: 2 ObjectDB instances were leaked at exit (run with `--verbose` for details).": 1
+    },
+    "images": [
+      "bhop_blocks_elevated.jpg",
+      "bhop_blocks_reverse.jpg",
+      "bhop_blocks_spawn.jpg"
+    ],
+    "asset_count": 59
+  },
+  {
+    "id": "bhop_dea",
+    "catalog_name": "bhop_dea",
+    "status": "BSP + GLB да; лог не чистый",
+    "spawn": "OK за 6 с",
+    "notes": "Светлые кирпичные стены, стартовая площадка и кнопка в обратном ракурсе.",
+    "errors": {
+      "ERROR: Parameter \"material\" is null.": 16,
+      "WARNING: 1 RID of type \"CanvasItem\" was leaked.": 1,
+      "WARNING: 2 ObjectDB instances were leaked at exit (run with `--verbose` for details).": 1
+    },
+    "images": [
+      "bhop_dea_elevated.jpg",
+      "bhop_dea_reverse.jpg",
+      "bhop_dea_spawn.jpg"
+    ],
+    "asset_count": 45
+  },
+  {
+    "id": "bhop_flyblocks",
+    "catalog_name": "bhop_flyblocks",
+    "status": "BSP да; свой GLB нет",
+    "spawn": "Коллизия: OK за 6 с; визуальный пол не подтверждён",
+    "notes": "Нет собственного GLB: видны небо и фрагменты чужой 35hp_3 вместо выбранной карты. BSP/коллизия загружены, но визуальная загрузка выбранной карты НЕ успешна.",
+    "errors": {
+      "ERROR: Parameter \"material\" is null.": 16,
+      "WARNING: 1 RID of type \"CanvasItem\" was leaked.": 1,
+      "WARNING: 2 ObjectDB instances were leaked at exit (run with `--verbose` for details).": 1
+    },
+    "images": [
+      "bhop_flyblocks_elevated.jpg",
+      "bhop_flyblocks_reverse.jpg",
+      "bhop_flyblocks_spawn.jpg"
+    ],
+    "asset_count": 1
+  },
+  {
+    "id": "bhop_perfect2012",
+    "catalog_name": "bhop_perfect2012",
+    "status": "BSP да; свой GLB нет",
+    "spawn": "Коллизия: OK за 6 с; визуальный пол не подтверждён",
+    "notes": "Нет собственного GLB: видны небо и фрагменты чужой 35hp_3 вместо выбранной карты. BSP/коллизия загружены, но визуальная загрузка выбранной карты НЕ успешна.",
+    "errors": {
+      "ERROR: Parameter \"material\" is null.": 16,
+      "WARNING: 1 RID of type \"CanvasItem\" was leaked.": 1,
+      "WARNING: 2 ObjectDB instances were leaked at exit (run with `--verbose` for details).": 1
+    },
+    "images": [
+      "bhop_perfect2012_elevated.jpg",
+      "bhop_perfect2012_reverse.jpg",
+      "bhop_perfect2012_spawn.jpg"
+    ],
+    "asset_count": 1
+  },
+  {
+    "id": "bhop_rabiga",
+    "catalog_name": "bhop_rabiga",
+    "status": "BSP + GLB да; лог не чистый",
+    "spawn": "OK за 6 с",
+    "notes": "Тёмная кирпичная стартовая комната; текстуры различимы, вид ограничен комнатой.",
+    "errors": {
+      "ERROR: Parameter \"material\" is null.": 16,
+      "WARNING: 1 RID of type \"CanvasItem\" was leaked.": 1,
+      "WARNING: 2 ObjectDB instances were leaked at exit (run with `--verbose` for details).": 1
+    },
+    "images": [
+      "bhop_rabiga_elevated.jpg",
+      "bhop_rabiga_reverse.jpg",
+      "bhop_rabiga_spawn.jpg"
+    ],
+    "asset_count": 53
+  },
+  {
+    "id": "bhop_run_1",
+    "catalog_name": "bhop_run_1",
+    "status": "BSP + GLB да; лог не чистый",
+    "spawn": "OK за 6 с",
+    "notes": "Длинный освещённый коридор с металлическими блоками; обратный вид показывает стартовую площадку.",
+    "errors": {
+      "ERROR: Parameter \"material\" is null.": 16,
+      "WARNING: 1 RID of type \"CanvasItem\" was leaked.": 1,
+      "WARNING: 2 ObjectDB instances were leaked at exit (run with `--verbose` for details).": 1
+    },
+    "images": [
+      "bhop_run_1_elevated.jpg",
+      "bhop_run_1_reverse.jpg",
+      "bhop_run_1_spawn.jpg"
+    ],
+    "asset_count": 57
+  },
+  {
+    "id": "bhop_squareblock",
+    "catalog_name": "bhop_squareblock",
+    "status": "BSP + GLB да; лог не чистый",
+    "spawn": "OK за 6 с",
+    "notes": "Кирпичный коридор с блоками над чёрной ямой; происхождение чёрной поверхности отдельно не проверялось.",
+    "errors": {
+      "ERROR: Parameter \"material\" is null.": 16,
+      "WARNING: 1 RID of type \"CanvasItem\" was leaked.": 1,
+      "WARNING: 2 ObjectDB instances were leaked at exit (run with `--verbose` for details).": 1
+    },
+    "images": [
+      "bhop_squareblock_elevated.jpg",
+      "bhop_squareblock_reverse.jpg",
+      "bhop_squareblock_spawn.jpg"
+    ],
+    "asset_count": 57
+  },
+  {
+    "id": "bhop_tk_speedrun",
+    "catalog_name": "bhop_tk_speedrun",
+    "status": "BSP + GLB да; лог не чистый",
+    "spawn": "OK за 6 с",
+    "notes": "Однотонные серые стены и синий пол без мелкой текстурной детализации; это не чёрный экран. Соответствие исходному оформлению не проверялось.",
+    "errors": {
+      "ERROR: Parameter \"material\" is null.": 16,
+      "WARNING: 1 RID of type \"CanvasItem\" was leaked.": 1,
+      "WARNING: 2 ObjectDB instances were leaked at exit (run with `--verbose` for details).": 1
+    },
+    "images": [
+      "bhop_tk_speedrun_elevated.jpg",
+      "bhop_tk_speedrun_reverse.jpg",
+      "bhop_tk_speedrun_spawn.jpg"
+    ],
+    "asset_count": 43
+  },
+  {
+    "id": "bhop_train",
+    "catalog_name": "bhop_train",
+    "status": "BSP + GLB да; лог не чистый",
+    "spawn": "OK за 6 с",
+    "notes": "Кирпичные стены, сетчатое ограждение и вывески; виден стартовый коридор.",
+    "errors": {
+      "ERROR: Parameter \"material\" is null.": 16,
+      "WARNING: 1 RID of type \"CanvasItem\" was leaked.": 1,
+      "WARNING: 2 ObjectDB instances were leaked at exit (run with `--verbose` for details).": 1
+    },
+    "images": [
+      "bhop_train_elevated.jpg",
+      "bhop_train_reverse.jpg",
+      "bhop_train_spawn.jpg"
+    ],
+    "asset_count": 139
+  },
+  {
+    "id": "bhop_training_final",
+    "catalog_name": "bhop_training_final",
+    "status": "BSP + GLB да; лог не чистый",
+    "spawn": "OK за 6 с",
+    "notes": "Серые WALL-сетки и оранжевые CRATE-блоки с размерами; не розовая missing-texture шахматка.",
+    "errors": {
+      "ERROR: Parameter \"material\" is null.": 16,
+      "WARNING: 1 RID of type \"CanvasItem\" was leaked.": 1,
+      "WARNING: 2 ObjectDB instances were leaked at exit (run with `--verbose` for details).": 1
+    },
+    "images": [
+      "bhop_training_final_elevated.jpg",
+      "bhop_training_final_reverse.jpg",
+      "bhop_training_final_spawn.jpg"
+    ],
+    "asset_count": 27
+  },
+  {
+    "id": "bhop_without_colors",
+    "catalog_name": "bhop_without_colors",
+    "status": "BSP да; свой GLB нет",
+    "spawn": "Коллизия: OK за 6 с; визуальный пол не подтверждён",
+    "notes": "Нет собственного GLB: видны небо и фрагменты чужой 35hp_3 вместо выбранной карты. BSP/коллизия загружены, но визуальная загрузка выбранной карты НЕ успешна.",
+    "errors": {
+      "ERROR: Parameter \"material\" is null.": 16,
+      "WARNING: 1 RID of type \"CanvasItem\" was leaked.": 1,
+      "WARNING: 2 ObjectDB instances were leaked at exit (run with `--verbose` for details).": 1
+    },
+    "images": [
+      "bhop_without_colors_elevated.jpg",
+      "bhop_without_colors_reverse.jpg",
+      "bhop_without_colors_spawn.jpg"
+    ],
+    "asset_count": 1
+  },
+  {
+    "id": "bhop_ytt_neon_light",
+    "catalog_name": "bhop_ytt_neon_light",
+    "status": "BSP + GLB да; лог не чистый",
+    "spawn": "OK за 6 с",
+    "notes": "Тёмный коридор с красными световыми полосами и жёлтым рисунком потолка; геометрия различима.",
+    "errors": {
+      "ERROR: Parameter \"material\" is null.": 16,
+      "WARNING: 1 RID of type \"CanvasItem\" was leaked.": 1,
+      "WARNING: 2 ObjectDB instances were leaked at exit (run with `--verbose` for details).": 1
+    },
+    "images": [
+      "bhop_ytt_neon_light_elevated.jpg",
+      "bhop_ytt_neon_light_reverse.jpg",
+      "bhop_ytt_neon_light_spawn.jpg"
+    ],
+    "asset_count": 85
+  },
+  {
+    "id": "bkz_goldbhop",
+    "catalog_name": "bkz_goldbhop",
+    "status": "BSP + GLB да; лог не чистый",
+    "spawn": "OK за 6 с",
+    "notes": "Спавн смотрит в близкую каменную стену. Дополнительный course-ракурс показывает золотистые блоки в коридоре над чёрной ямой.",
+    "errors": {
+      "ERROR: Parameter \"material\" is null.": 16,
+      "WARNING: 1 RID of type \"CanvasItem\" was leaked.": 1,
+      "WARNING: 2 ObjectDB instances were leaked at exit (run with `--verbose` for details).": 1
+    },
+    "images": [
+      "bkz_goldbhop_course.jpg",
+      "bkz_goldbhop_elevated.jpg",
+      "bkz_goldbhop_reverse.jpg",
+      "bkz_goldbhop_spawn.jpg"
+    ],
+    "asset_count": 49
+  },
+  {
+    "id": "bkz_noob",
+    "catalog_name": "bkz_noob",
+    "status": "BSP + GLB да; лог не чистый",
+    "spawn": "OK за 6 с",
+    "notes": "Светлые каменные блоки в открытом небе и стартовая кнопка; открытое пространство не само по себе доказательство отсутствующей геометрии.",
+    "errors": {
+      "ERROR: Parameter \"material\" is null.": 16,
+      "WARNING: 1 RID of type \"CanvasItem\" was leaked.": 1,
+      "WARNING: 2 ObjectDB instances were leaked at exit (run with `--verbose` for details).": 1
+    },
+    "images": [
+      "bkz_noob_elevated.jpg",
+      "bkz_noob_reverse.jpg",
+      "bkz_noob_spawn.jpg"
+    ],
+    "asset_count": 43
+  },
+  {
+    "id": "kz_bhop",
+    "catalog_name": "kz_bhop",
+    "status": "BSP да; свой GLB нет",
+    "spawn": "Коллизия: OK за 6 с; визуальный пол не подтверждён",
+    "notes": "Нет собственного GLB: видны небо и фрагменты чужой 35hp_3 вместо выбранной карты. BSP/коллизия загружены, но визуальная загрузка выбранной карты НЕ успешна.",
+    "errors": {
+      "ERROR: Parameter \"material\" is null.": 16,
+      "WARNING: 1 RID of type \"CanvasItem\" was leaked.": 1,
+      "WARNING: 2 ObjectDB instances were leaked at exit (run with `--verbose` for details).": 1
+    },
+    "images": [
+      "kz_bhop_elevated.jpg",
+      "kz_bhop_reverse.jpg",
+      "kz_bhop_spawn.jpg"
+    ],
+    "asset_count": 1
+  },
+  {
+    "id": "kzru_airway",
+    "catalog_name": "kzru_airway",
+    "status": "BSP + GLB да; лог не чистый",
+    "spawn": "OK за 6 с",
+    "notes": "Открытые высотные каменные платформы и наклонные конструкции; стартовая кнопка видна сзади.",
+    "errors": {
+      "ERROR: Parameter \"material\" is null.": 16,
+      "WARNING: 1 RID of type \"CanvasItem\" was leaked.": 1,
+      "WARNING: 2 ObjectDB instances were leaked at exit (run with `--verbose` for details).": 1
+    },
+    "images": [
+      "kzru_airway_elevated.jpg",
+      "kzru_airway_reverse.jpg",
+      "kzru_airway_spawn.jpg"
+    ],
+    "asset_count": 79
+  },
+  {
+    "id": "kzsca_toonbhop",
+    "catalog_name": "kzsca_toonbhop",
+    "status": "BSP + GLB да; лог не чистый",
+    "spawn": "OK за 6 с",
+    "notes": "Мультяшные текстурированные стены, вывеска, цветные поверхности и кнопка; явных дефектов в этих ракурсах не видно.",
+    "errors": {
+      "ERROR: Parameter \"material\" is null.": 16,
+      "WARNING: 1 RID of type \"CanvasItem\" was leaked.": 1,
+      "WARNING: 2 ObjectDB instances were leaked at exit (run with `--verbose` for details).": 1
+    },
+    "images": [
+      "kzsca_toonbhop_elevated.jpg",
+      "kzsca_toonbhop_reverse.jpg",
+      "kzsca_toonbhop_spawn.jpg"
+    ],
+    "asset_count": 41
+  },
+  {
+    "id": "kzsk_xmas2010",
+    "catalog_name": "kzsk_xmas2010",
+    "status": "BSP да; свой GLB нет",
+    "spawn": "Коллизия: OK за 6 с; визуальный пол не подтверждён",
+    "notes": "Нет собственного GLB: видны небо и фрагменты чужой 35hp_3 вместо выбранной карты. BSP/коллизия загружены, но визуальная загрузка выбранной карты НЕ успешна.",
+    "errors": {
+      "ERROR: Parameter \"material\" is null.": 16,
+      "WARNING: 1 RID of type \"CanvasItem\" was leaked.": 1,
+      "WARNING: 2 ObjectDB instances were leaked at exit (run with `--verbose` for details).": 1
+    },
+    "images": [
+      "kzsk_xmas2010_elevated.jpg",
+      "kzsk_xmas2010_reverse.jpg",
+      "kzsk_xmas2010_spawn.jpg"
+    ],
+    "asset_count": 1
+  },
+  {
+    "id": "kzy_fastbhop",
+    "catalog_name": "kzy_fastbhop",
+    "status": "BSP да; свой GLB нет",
+    "spawn": "Коллизия: OK за 6 с; визуальный пол не подтверждён",
+    "notes": "Нет собственного GLB: видны небо и фрагменты чужой 35hp_3 вместо выбранной карты. BSP/коллизия загружены, но визуальная загрузка выбранной карты НЕ успешна.",
+    "errors": {
+      "ERROR: Parameter \"material\" is null.": 16,
+      "WARNING: 1 RID of type \"CanvasItem\" was leaked.": 1,
+      "WARNING: 2 ObjectDB instances were leaked at exit (run with `--verbose` for details).": 1
+    },
+    "images": [
+      "kzy_fastbhop_elevated.jpg",
+      "kzy_fastbhop_reverse.jpg",
+      "kzy_fastbhop_spawn.jpg"
+    ],
+    "asset_count": 1
+  },
+  {
+    "id": "kzy_juhxbhop",
+    "catalog_name": "kzy_juhxbhop",
+    "status": "BSP + GLB да; лог не чистый",
+    "spawn": "OK за 6 с",
+    "notes": "Песчаные каменные стены, арка и ступени; текстуры и надписи видны.",
+    "errors": {
+      "ERROR: Parameter \"material\" is null.": 16,
+      "WARNING: 1 RID of type \"CanvasItem\" was leaked.": 1,
+      "WARNING: 2 ObjectDB instances were leaked at exit (run with `--verbose` for details).": 1
+    },
+    "images": [
+      "kzy_juhxbhop_elevated.jpg",
+      "kzy_juhxbhop_reverse.jpg",
+      "kzy_juhxbhop_spawn.jpg"
+    ],
+    "asset_count": 73
+  },
+  {
+    "id": "kzy_junglerocks",
+    "catalog_name": "kzy_junglerocks",
+    "status": "BSP да; свой GLB нет",
+    "spawn": "Коллизия: OK за 6 с; визуальный пол не подтверждён",
+    "notes": "Нет собственного GLB: видны небо и фрагменты чужой 35hp_3 вместо выбранной карты. BSP/коллизия загружены, но визуальная загрузка выбранной карты НЕ успешна.",
+    "errors": {
+      "ERROR: Parameter \"material\" is null.": 16,
+      "WARNING: 1 RID of type \"CanvasItem\" was leaked.": 1,
+      "WARNING: 2 ObjectDB instances were leaked at exit (run with `--verbose` for details).": 1
+    },
+    "images": [
+      "kzy_junglerocks_elevated.jpg",
+      "kzy_junglerocks_reverse.jpg",
+      "kzy_junglerocks_spawn.jpg"
+    ],
+    "asset_count": 1
+  }
+]

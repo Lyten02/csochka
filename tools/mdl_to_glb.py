@@ -52,7 +52,7 @@ def convert_mdl_to_glb(mdl_path: str, out_glb_path: str, skin_prefix: str | None
         bio = io.BytesIO()
         rgb.save(bio, format="PNG")
         tex_png_bytes.append(bio.getvalue())
-        textures.append((name, w, h))
+        textures.append((name, w, h, flags))
 
     # 2. Bones
     numbones = struct.unpack_from("<i", data, 140)[0]
@@ -102,90 +102,91 @@ def convert_mdl_to_glb(mdl_path: str, out_glb_path: str, skin_prefix: str | None
         inv_bind_matrices.append(inv_m.T) # column major
     inv_bind_array = np.array(inv_bind_matrices, dtype=np.float32)
 
-    # 3. Meshes
-    bodypartindex = struct.unpack_from("<i", data, 208)[0]
-    modelindex = struct.unpack_from("<i", data, bodypartindex + 72)[0]
-    mOff = modelindex
-    nummesh = struct.unpack_from("<i", data, mOff + 72)[0]
-    meshindex = struct.unpack_from("<i", data, mOff + 76)[0]
-    numverts = struct.unpack_from("<i", data, mOff + 80)[0]
-    vertinfoindex = struct.unpack_from("<i", data, mOff + 84)[0]
-    vertindex = struct.unpack_from("<i", data, mOff + 88)[0]
-    numnorms = struct.unpack_from("<i", data, mOff + 92)[0]
-    norminfoindex = struct.unpack_from("<i", data, mOff + 96)[0]
-    normindex = struct.unpack_from("<i", data, mOff + 100)[0]
-
-    raw_verts = []
-    for v in range(numverts):
-        pos_gs = np.array(struct.unpack_from("<3f", data, vertindex + v * 12), dtype=np.float32)
-        b = data[vertinfoindex + v]
-        pos_gltf = (C @ pos_gs) * UNIT
-        raw_verts.append((pos_gltf, b))
-
-    raw_norms = []
-    for n in range(numnorms):
-        norm_gs = np.array(struct.unpack_from("<3f", data, normindex + n * 12), dtype=np.float32)
-        norm_gltf = C @ norm_gs
-        raw_norms.append(norm_gltf)
-
+    # 3. Meshes: body=0 selects submodel zero of EVERY bodypart, not only
+    # the first bodypart (modern viewmodels split hands and blade across many).
+    numbodyparts, bodypartindex = struct.unpack_from("<ii", data, 204)
+    numskinref, numskinfamilies, skinindex = struct.unpack_from("<iii", data, 192)
+    skin_family = struct.unpack_from(f"<{numskinref}H", data, skinindex) if numskinfamilies else ()
     primitives_data = []
-    for m in range(nummesh):
-        off = meshindex + m * 20
-        triindex = struct.unpack_from("<i", data, off + 4)[0]
-        skinref = struct.unpack_from("<i", data, off + 8)[0]
-        tex_w, tex_h = textures[skinref][1], textures[skinref][2]
+    for body in range(numbodyparts):
+        mOff = struct.unpack_from("<i", data, bodypartindex + body * 76 + 72)[0]
+        nummesh = struct.unpack_from("<i", data, mOff + 72)[0]
+        meshindex = struct.unpack_from("<i", data, mOff + 76)[0]
+        numverts = struct.unpack_from("<i", data, mOff + 80)[0]
+        vertinfoindex = struct.unpack_from("<i", data, mOff + 84)[0]
+        vertindex = struct.unpack_from("<i", data, mOff + 88)[0]
+        numnorms = struct.unpack_from("<i", data, mOff + 92)[0]
+        norminfoindex = struct.unpack_from("<i", data, mOff + 96)[0]
+        normindex = struct.unpack_from("<i", data, mOff + 100)[0]
 
-        pos = triindex
-        vert_map = {}
-        unique_verts = []
-        indices = []
+        raw_verts = []
+        for v in range(numverts):
+            pos_gs = np.array(struct.unpack_from("<3f", data, vertindex + v * 12), dtype=np.float32)
+            b = data[vertinfoindex + v]
+            pos_gltf = (C @ pos_gs) * UNIT
+            raw_verts.append((pos_gltf, b))
 
-        while True:
-            count = struct.unpack_from("<h", data, pos)[0]
-            pos += 2
-            if count == 0:
-                break
-            is_fan = count < 0
-            vcount = abs(count)
-            strip_pts = []
-            for _ in range(vcount):
-                vi, ni, s, t = struct.unpack_from("<hhhh", data, pos)
-                pos += 8
-                u = s / tex_w
-                v = t / tex_h
-                strip_pts.append((vi, ni, u, v))
+        raw_norms = []
+        for n in range(numnorms):
+            norm_gs = np.array(struct.unpack_from("<3f", data, normindex + n * 12), dtype=np.float32)
+            raw_norms.append((C @ norm_gs, data[norminfoindex + n]))
 
-            tris = []
-            if is_fan:
-                for j in range(1, vcount - 1):
-                    tris.append((strip_pts[0], strip_pts[j], strip_pts[j + 1]))
-            else:
-                for j in range(vcount - 2):
-                    if j % 2 == 0:
-                        tris.append((strip_pts[j], strip_pts[j + 1], strip_pts[j + 2]))
-                    else:
-                        tris.append((strip_pts[j + 1], strip_pts[j], strip_pts[j + 2]))
+        for m in range(nummesh):
+            off = meshindex + m * 20
+            triindex = struct.unpack_from("<i", data, off + 4)[0]
+            skinref = struct.unpack_from("<i", data, off + 8)[0]
+            skinref = skin_family[skinref] if skin_family else skinref
+            tex_w, tex_h = textures[skinref][1], textures[skinref][2]
+            pos = triindex
+            vert_map = {}
+            unique_verts = []
+            indices = []
 
-            # GoldSrc strips/fans are clockwise-front (Quake GL_FRONT culling); glTF front faces are CCW.
-            for tri in tris:
-                for p in (tri[0], tri[2], tri[1]):
-                    key = (p[0], p[1], round(p[2], 5), round(p[3], 5))
-                    if key not in vert_map:
-                        vert_map[key] = len(unique_verts)
-                        pos_loc, b = raw_verts[p[0]]
-                        norm_loc = raw_norms[p[1]]
-                        p4 = np.array([pos_loc[0], pos_loc[1], pos_loc[2], 1.0], dtype=np.float32)
-                        bind_pos = (world_m4[b] @ p4)[:3]
-                        bind_norm = (world_m4[b][:3, :3] @ norm_loc)
-                        bind_norm = bind_norm / (np.linalg.norm(bind_norm) + 1e-8)
-                        unique_verts.append((bind_pos, bind_norm, (p[2], p[3]), b))
-                    indices.append(vert_map[key])
+            while True:
+                count = struct.unpack_from("<h", data, pos)[0]
+                pos += 2
+                if count == 0:
+                    break
+                is_fan = count < 0
+                vcount = abs(count)
+                strip_pts = []
+                for _ in range(vcount):
+                    vi, ni, s, t = struct.unpack_from("<hhhh", data, pos)
+                    pos += 8
+                    strip_pts.append((vi, ni, s / tex_w, t / tex_h))
 
-        primitives_data.append({
-            "skinref": skinref,
-            "verts": unique_verts,
-            "indices": indices
-        })
+                tris = []
+                if is_fan:
+                    for j in range(1, vcount - 1):
+                        tris.append((strip_pts[0], strip_pts[j], strip_pts[j + 1]))
+                else:
+                    for j in range(vcount - 2):
+                        if j % 2 == 0:
+                            tris.append((strip_pts[j], strip_pts[j + 1], strip_pts[j + 2]))
+                        else:
+                            tris.append((strip_pts[j + 1], strip_pts[j], strip_pts[j + 2]))
+
+                # GoldSrc strips/fans are clockwise-front; glTF fronts are CCW.
+                for tri in tris:
+                    for p in (tri[0], tri[2], tri[1]):
+                        key = (p[0], p[1], round(p[2], 5), round(p[3], 5))
+                        if key not in vert_map:
+                            vert_map[key] = len(unique_verts)
+                            pos_loc, b = raw_verts[p[0]]
+                            norm_loc, normal_bone = raw_norms[p[1]]
+                            p4 = np.array([pos_loc[0], pos_loc[1], pos_loc[2], 1.0], dtype=np.float32)
+                            bind_pos = (world_m4[b] @ p4)[:3]
+                            bind_norm = world_m4[normal_bone][:3, :3] @ norm_loc
+                            bind_norm /= np.linalg.norm(bind_norm) + 1e-8
+                            unique_verts.append((bind_pos, bind_norm, (p[2], p[3]), b))
+                        indices.append(vert_map[key])
+
+            if indices:
+                primitives_data.append({
+                    "skinref": skinref,
+                    "verts": unique_verts,
+                    "indices": indices
+                })
 
     # 4. Animations
     numseq = struct.unpack_from("<i", data, 164)[0]
@@ -280,7 +281,10 @@ def convert_mdl_to_glb(mdl_path: str, out_glb_path: str, skin_prefix: str | None
         tex_idx = len(gltf.textures)
         gltf.textures.append(pygltflib.Texture(sampler=0, source=img_idx))
         gltf.materials.append(pygltflib.Material(
-            name=textures[i][0],
+            # glTF has no additive blend mode. Preserve the flag in a stable
+            # material-name suffix for CSKnife's Godot material adapter.
+            name=textures[i][0] + ("__goldsrc_additive" if textures[i][3] & 0x20 else ""),
+            alphaMode="BLEND" if textures[i][3] & 0x20 else "OPAQUE",
             pbrMetallicRoughness=pygltflib.PbrMetallicRoughness(
                 baseColorTexture=pygltflib.TextureInfo(index=tex_idx),
                 metallicFactor=0.0,

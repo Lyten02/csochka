@@ -25,6 +25,13 @@ window/size/viewport_width=1280
 window/size/viewport_height=720
 window/vsync/vsync_mode=0
 
+[input]
+
+knife_inspect={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"physical_keycode":70)]
+}
+
 [physics]
 
 common/physics_ticks_per_second=100

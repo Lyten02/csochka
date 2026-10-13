@@ -204,7 +204,14 @@ func load_knife(model_path: String = "") -> void:
 		else:
 			model_path = "res://models/knife.glb"
 	if knife and model_path != "":
-		knife.set_knife_model(model_path)
+		var info: Dictionary = {}
+		var sm = get_node_or_null("/root/SettingsManager")
+		if sm:
+			for entry in sm.get_available_knives():
+				if entry["model"] == model_path:
+					info = entry
+					break
+		knife.set_knife_model(model_path, info)
 
 
 func _on_settings_changed(key: String, _val: Variant) -> void:
@@ -302,7 +309,29 @@ func _reset_interpolation() -> void:
 	_step_old_z = pm.origin.z
 
 
+func _knife_mouse_captured() -> bool:
+	return Input.mouse_mode == Input.MOUSE_MODE_CAPTURED
+
+
+func _can_inspect_knife() -> bool:
+	if is_dead or get_tree().paused or not _knife_mouse_captured():
+		return false
+	var focus := get_viewport().gui_get_focus_owner()
+	if (focus is LineEdit or focus is TextEdit) and focus.is_visible_in_tree():
+		return false
+	for menu in get_tree().get_nodes_in_group("knife_input_blockers"):
+		if menu is CanvasLayer and menu.visible:
+			return false
+		if menu is Control and menu.is_visible_in_tree():
+			return false
+	return true
+
+
 func _unhandled_input(event: InputEvent) -> void:
+	if event.is_action_pressed("knife_inspect"):
+		if knife and _can_inspect_knife():
+			knife.inspect()
+		return
 	if event is InputEventMouseMotion and Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 		view_angles.y -= event.relative.x * sensitivity * m_yaw
 		view_angles.x = clampf(view_angles.x + event.relative.y * sensitivity * m_pitch, -89.0, 89.0)

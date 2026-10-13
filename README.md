@@ -84,7 +84,7 @@ Debug overlay (F3): FPS / 1% low / frame time + график, CPU и GPU вре�
 
 Управление: WASD, мышь, Space **или колесо мыши** — прыжок, Ctrl — присед, Shift — шаг, E — use,
 R — следующий спавн, V — noclip, F2 — автобхоп, F3 — лимит скорости bhop, F4 — стамина прыжка,
-F1 — скрыть HUD, Esc — отпустить мышь.
+F1 — скрыть HUD, F — осмотр ножа (если модель его поддерживает), Esc — отпустить мышь.
 
 ### Как устроено
 
@@ -140,6 +140,29 @@ python tools/mdl_to_glb.py models_src/v_knife.mdl godot/models/knife.glb --skin 
 взгляда без доп. смещения/поворота/масштаба, как `v_` модели в GoldSrc. ЛКМ чередует
 `midslash1`/`midslash2` (`slash1`/`slash2` в этом MDL — двухкадровые заглушки), ПКМ — `stab_miss`.
 `render_knives.gd` снимает оба ножа в ключевых кадрах анимаций.
+
+Дополнительные ножи загружаются из `godot/models/knives/catalog.json` (JSON-массив).
+Поля: `id` = `cs16forge_<source_slug>`, `name`, `model`, `icon`, `desc`, `details`,
+`source_slug`, `category` (`inspect` / `no_inspect`), `inspect_anim` (имя клипа / null),
+`anims` (имена клипов для idle/draw/slash1/slash2/midslash1/midslash2/stab/stab_miss).
+Два встроенных ножа остаются в SettingsManager; неизвестный сохранённый id сбрасывается на стандартный.
+Физическая **F — осмотр ножа**: один запуск до возврата в idle; удержание и повторное нажатие
+во время осмотра не перезапускают клип. ЛКМ/ПКМ прерывают осмотр, смена ножа — отменяет.
+Во время draw/атаки, в меню, при вводе текста или свободной мыши F игнорируется.
+Ножи с `inspect_anim: null` не имеют подменной анимации; это отмечено в списке выбора.
+Каталог содержит 20 моделей CS16Forge: 10 с осмотром и 10 без; всего доступны 22 ножа.
+Для осмотра используется реальная последовательность с индексом 8 исходного MDL
+(`inspect`, `inspect_1` или `inspect_1_1`). Длительность GoldSrc-клипа —
+`(frames - 1) / fps`, поскольку кадры пронумерованы от 0 до `frames - 1`.
+Исходники и происхождение перечислены в `models_src/knives/manifest.json` (и `MANIFEST.md`). Сами MDL в Git не
+хранятся: `python tools/fetch_cs16forge_knives.py` скачивает их и проверяет SHA-256, затем
+`python tools/mdl_to_glb.py models_src/knives/<slug>/v_knife.mdl godot/models/knives/<slug>.glb`.
+Страницы источника указывают автора «community» и не указывают лицензию.
+Конвертер сохраняет все bodyparts с их default submodel и skin-family 0, а не только
+первую часть рук. Additive chrome-поверхности отмечены суффиксом `__goldsrc_additive`;
+CSKnife восстанавливает для них additive blending. Текстуры новых GLB импортируются
+встроенными, без дублирующих PNG; миниатюры получены реальным GL Compatibility-рендером.
+Для экспорта добавьте `models/knives/catalog.json` в фильтр non-resource files.
 
 ### Экспорт
 

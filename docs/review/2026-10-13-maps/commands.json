@@ -1,0 +1,163 @@
+[
+  {
+    "map": "35hp_3",
+    "command": "C:/Users/kosta/OneDrive/Desktop/Godot_v4.7-stable_win64_console.exe --path C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\godot --rendering-method gl_compatibility --windowed --resolution 1280x720 --script res://tests/audit_maps_capture.gd -- 35hp_3 C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\docs\\review\\2026-10-13-maps",
+    "pid": 24120,
+    "exit": 0,
+    "seconds": 8.18
+  },
+  {
+    "map": "bhop_blocks",
+    "command": "C:/Users/kosta/OneDrive/Desktop/Godot_v4.7-stable_win64_console.exe --path C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\godot --rendering-method gl_compatibility --windowed --resolution 1280x720 --script res://tests/audit_maps_capture.gd -- bhop_blocks C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\docs\\review\\2026-10-13-maps",
+    "pid": 18500,
+    "exit": 0,
+    "seconds": 7.78
+  },
+  {
+    "map": "bhop_dea",
+    "command": "C:/Users/kosta/OneDrive/Desktop/Godot_v4.7-stable_win64_console.exe --path C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\godot --rendering-method gl_compatibility --windowed --resolution 1280x720 --script res://tests/audit_maps_capture.gd -- bhop_dea C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\docs\\review\\2026-10-13-maps",
+    "pid": 35612,
+    "exit": 0,
+    "seconds": 7.76
+  },
+  {
+    "map": "bhop_flyblocks",
+    "command": "C:/Users/kosta/OneDrive/Desktop/Godot_v4.7-stable_win64_console.exe --path C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\godot --rendering-method gl_compatibility --windowed --resolution 1280x720 --script res://tests/audit_maps_capture.gd -- bhop_flyblocks C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\docs\\review\\2026-10-13-maps",
+    "pid": 19348,
+    "exit": 0,
+    "seconds": 7.79
+  },
+  {
+    "map": "bhop_perfect2012",
+    "command": "C:/Users/kosta/OneDrive/Desktop/Godot_v4.7-stable_win64_console.exe --path C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\godot --rendering-method gl_compatibility --windowed --resolution 1280x720 --script res://tests/audit_maps_capture.gd -- bhop_perfect2012 C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\docs\\review\\2026-10-13-maps",
+    "pid": 16728,
+    "exit": 0,
+    "seconds": 7.84
+  },
+  {
+    "map": "bhop_rabiga",
+    "command": "C:/Users/kosta/OneDrive/Desktop/Godot_v4.7-stable_win64_console.exe --path C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\godot --rendering-method gl_compatibility --windowed --resolution 1280x720 --script res://tests/audit_maps_capture.gd -- bhop_rabiga C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\docs\\review\\2026-10-13-maps",
+    "pid": 37416,
+    "exit": 0,
+    "seconds": 7.84
+  },
+  {
+    "map": "bhop_run_1",
+    "command": "C:/Users/kosta/OneDrive/Desktop/Godot_v4.7-stable_win64_console.exe --path C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\godot --rendering-method gl_compatibility --windowed --resolution 1280x720 --script res://tests/audit_maps_capture.gd -- bhop_run_1 C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\docs\\review\\2026-10-13-maps",
+    "pid": 16076,
+    "exit": 0,
+    "seconds": 8.32
+  },
+  {
+    "map": "bhop_squareblock",
+    "command": "C:/Users/kosta/OneDrive/Desktop/Godot_v4.7-stable_win64_console.exe --path C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\godot --rendering-method gl_compatibility --windowed --resolution 1280x720 --script res://tests/audit_maps_capture.gd -- bhop_squareblock C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\docs\\review\\2026-10-13-maps",
+    "pid": 11572,
+    "exit": 0,
+    "seconds": 7.99
+  },
+  {
+    "map": "bhop_tk_speedrun",
+    "command": "C:/Users/kosta/OneDrive/Desktop/Godot_v4.7-stable_win64_console.exe --path C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\godot --rendering-method gl_compatibility --windowed --resolution 1280x720 --script res://tests/audit_maps_capture.gd -- bhop_tk_speedrun C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\docs\\review\\2026-10-13-maps",
+    "pid": 26248,
+    "exit": 0,
+    "seconds": 7.82
+  },
+  {
+    "map": "bhop_train",
+    "command": "C:/Users/kosta/OneDrive/Desktop/Godot_v4.7-stable_win64_console.exe --path C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\godot --rendering-method gl_compatibility --windowed --resolution 1280x720 --script res://tests/audit_maps_capture.gd -- bhop_train C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\docs\\review\\2026-10-13-maps",
+    "pid": 20824,
+    "exit": 0,
+    "seconds": 8.03
+  },
+  {
+    "map": "bhop_training_final",
+    "command": "C:/Users/kosta/OneDrive/Desktop/Godot_v4.7-stable_win64_console.exe --path C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\godot --rendering-method gl_compatibility --windowed --resolution 1280x720 --script res://tests/audit_maps_capture.gd -- bhop_training_final C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\docs\\review\\2026-10-13-maps",
+    "pid": 17332,
+    "exit": 0,
+    "seconds": 7.98
+  },
+  {
+    "map": "bhop_without_colors",
+    "command": "C:/Users/kosta/OneDrive/Desktop/Godot_v4.7-stable_win64_console.exe --path C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\godot --rendering-method gl_compatibility --windowed --resolution 1280x720 --script res://tests/audit_maps_capture.gd -- bhop_without_colors C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\docs\\review\\2026-10-13-maps",
+    "pid": 26256,
+    "exit": 0,
+    "seconds": 7.77
+  },
+  {
+    "map": "bhop_ytt_neon_light",
+    "command": "C:/Users/kosta/OneDrive/Desktop/Godot_v4.7-stable_win64_console.exe --path C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\godot --rendering-method gl_compatibility --windowed --resolution 1280x720 --script res://tests/audit_maps_capture.gd -- bhop_ytt_neon_light C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\docs\\review\\2026-10-13-maps",
+    "pid": 23808,
+    "exit": 0,
+    "seconds": 7.74
+  },
+  {
+    "map": "bkz_goldbhop",
+    "command": "C:/Users/kosta/OneDrive/Desktop/Godot_v4.7-stable_win64_console.exe --path C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\godot --rendering-method gl_compatibility --windowed --resolution 1280x720 --script res://tests/audit_maps_capture.gd -- bkz_goldbhop C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\docs\\review\\2026-10-13-maps",
+    "pid": 19504,
+    "exit": 0,
+    "seconds": 7.68
+  },
+  {
+    "map": "bkz_noob",
+    "command": "C:/Users/kosta/OneDrive/Desktop/Godot_v4.7-stable_win64_console.exe --path C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\godot --rendering-method gl_compatibility --windowed --resolution 1280x720 --script res://tests/audit_maps_capture.gd -- bkz_noob C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\docs\\review\\2026-10-13-maps",
+    "pid": 33124,
+    "exit": 0,
+    "seconds": 7.62
+  },
+  {
+    "map": "kz_bhop",
+    "command": "C:/Users/kosta/OneDrive/Desktop/Godot_v4.7-stable_win64_console.exe --path C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\godot --rendering-method gl_compatibility --windowed --resolution 1280x720 --script res://tests/audit_maps_capture.gd -- kz_bhop C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\docs\\review\\2026-10-13-maps",
+    "pid": 16924,
+    "exit": 0,
+    "seconds": 7.61
+  },
+  {
+    "map": "kzru_airway",
+    "command": "C:/Users/kosta/OneDrive/Desktop/Godot_v4.7-stable_win64_console.exe --path C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\godot --rendering-method gl_compatibility --windowed --resolution 1280x720 --script res://tests/audit_maps_capture.gd -- kzru_airway C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\docs\\review\\2026-10-13-maps",
+    "pid": 6464,
+    "exit": 0,
+    "seconds": 7.67
+  },
+  {
+    "map": "kzsca_toonbhop",
+    "command": "C:/Users/kosta/OneDrive/Desktop/Godot_v4.7-stable_win64_console.exe --path C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\godot --rendering-method gl_compatibility --windowed --resolution 1280x720 --script res://tests/audit_maps_capture.gd -- kzsca_toonbhop C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\docs\\review\\2026-10-13-maps",
+    "pid": 3608,
+    "exit": 0,
+    "seconds": 7.7
+  },
+  {
+    "map": "kzsk_xmas2010",
+    "command": "C:/Users/kosta/OneDrive/Desktop/Godot_v4.7-stable_win64_console.exe --path C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\godot --rendering-method gl_compatibility --windowed --resolution 1280x720 --script res://tests/audit_maps_capture.gd -- kzsk_xmas2010 C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\docs\\review\\2026-10-13-maps",
+    "pid": 34236,
+    "exit": 0,
+    "seconds": 7.63
+  },
+  {
+    "map": "kzy_fastbhop",
+    "command": "C:/Users/kosta/OneDrive/Desktop/Godot_v4.7-stable_win64_console.exe --path C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\godot --rendering-method gl_compatibility --windowed --resolution 1280x720 --script res://tests/audit_maps_capture.gd -- kzy_fastbhop C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\docs\\review\\2026-10-13-maps",
+    "pid": 27580,
+    "exit": 0,
+    "seconds": 7.69
+  },
+  {
+    "map": "kzy_juhxbhop",
+    "command": "C:/Users/kosta/OneDrive/Desktop/Godot_v4.7-stable_win64_console.exe --path C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\godot --rendering-method gl_compatibility --windowed --resolution 1280x720 --script res://tests/audit_maps_capture.gd -- kzy_juhxbhop C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\docs\\review\\2026-10-13-maps",
+    "pid": 37756,
+    "exit": 0,
+    "seconds": 7.64
+  },
+  {
+    "map": "kzy_junglerocks",
+    "command": "C:/Users/kosta/OneDrive/Desktop/Godot_v4.7-stable_win64_console.exe --path C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\godot --rendering-method gl_compatibility --windowed --resolution 1280x720 --script res://tests/audit_maps_capture.gd -- kzy_junglerocks C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\docs\\review\\2026-10-13-maps",
+    "pid": 24560,
+    "exit": 0,
+    "seconds": 7.69
+  },
+  {
+    "map": "bkz_goldbhop",
+    "command": "C:/Users/kosta/OneDrive/Desktop/Godot_v4.7-stable_win64_console.exe --path C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\godot --rendering-method gl_compatibility --windowed --resolution 1280x720 --script res://tests/audit_maps_capture.gd -- bkz_goldbhop C:\\Users\\kosta\\orca\\workspaces\\csochka\\map-audit-2026-10-13\\docs\\review\\2026-10-13-maps",
+    "pid": 26524,
+    "exit": 0,
+    "seconds": 7.61
+  }
+]

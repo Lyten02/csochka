@@ -24,6 +24,7 @@ var _font_bold: Font
 
 
 func _ready() -> void:
+	add_to_group("knife_input_blockers")
 	_sm = get_node_or_null("/root/SettingsManager")
 	_load_fonts()
 	_build_ui()
@@ -42,7 +43,7 @@ func _load_fonts() -> void:
 
 
 func _build_ui() -> void:
-	custom_minimum_size = Vector2(620, 430)
+	custom_minimum_size = Vector2(900, 540)
 
 	var style := StyleBoxFlat.new()
 	style.bg_color = Color(0.09, 0.11, 0.14, 0.98)
@@ -105,7 +106,7 @@ func _build_ui() -> void:
 
 	# Left Column: Knife List
 	var left_vbox := VBoxContainer.new()
-	left_vbox.custom_minimum_size = Vector2(240, 0)
+	left_vbox.custom_minimum_size = Vector2(400, 0)
 	left_vbox.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	left_vbox.add_theme_constant_override("separation", 4)
 	split_hbox.add_child(left_vbox)
@@ -123,6 +124,8 @@ func _build_ui() -> void:
 	_knife_list.select_mode = ItemList.SELECT_SINGLE
 	_knife_list.allow_reselect = true
 	_knife_list.fixed_icon_size = Vector2i(54, 27)
+	_knife_list.auto_height = false
+	_knife_list.max_columns = 1
 	if _font_regular:
 		_knife_list.add_theme_font_override("font", _font_regular)
 	_knife_list.add_theme_font_size_override("font_size", 12)
@@ -141,7 +144,12 @@ func _build_ui() -> void:
 	right_vbox.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	right_vbox.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	right_vbox.add_theme_constant_override("separation", 8)
-	split_hbox.add_child(right_vbox)
+	var detail_scroll := ScrollContainer.new()
+	detail_scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
+	detail_scroll.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	detail_scroll.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	split_hbox.add_child(detail_scroll)
+	detail_scroll.add_child(right_vbox)
 
 	# Preview Card Panel
 	var preview_panel := PanelContainer.new()
@@ -162,6 +170,7 @@ func _build_ui() -> void:
 
 	# Details
 	_lbl_knife_name = Label.new()
+	_lbl_knife_name.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	if _font_bold:
 		_lbl_knife_name.add_theme_font_override("font", _font_bold)
 	_lbl_knife_name.add_theme_font_size_override("font_size", 16)
@@ -169,6 +178,7 @@ func _build_ui() -> void:
 	right_vbox.add_child(_lbl_knife_name)
 
 	_lbl_knife_status = Label.new()
+	_lbl_knife_status.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	if _font_bold:
 		_lbl_knife_status.add_theme_font_override("font", _font_bold)
 	_lbl_knife_status.add_theme_font_size_override("font_size", 12)
@@ -229,13 +239,16 @@ func _refresh_knives() -> void:
 		if k.has("icon") and ResourceLoader.exists(k["icon"]):
 			icon_tex = load(k["icon"])
 
-		_knife_list.add_item(" " + k["name"], icon_tex)
+		var inspect_hint := "Осмотр: F" if k.get("inspect_anim") != null else "без осмотра"
+		_knife_list.add_item(" %s — %s" % [inspect_hint, k["name"]], icon_tex)
+		_knife_list.set_item_tooltip(i, "%s\n%s" % [k["name"], inspect_hint])
 		if k["id"] == cur_id:
 			select_idx = i
 
 	if _available_knives.size() > 0:
 		_selected_index = select_idx
 		_knife_list.select(_selected_index)
+		_knife_list.ensure_current_is_visible()
 		_display_knife(_selected_index)
 
 
@@ -250,7 +263,8 @@ func _display_knife(index: int) -> void:
 	var k: Dictionary = _available_knives[index]
 	_lbl_knife_name.text = k.get("name", "")
 	_lbl_knife_desc.text = k.get("desc", "")
-	_lbl_knife_details.text = k.get("details", "")
+	var inspect_hint := "Осмотр: F" if k.get("inspect_anim") != null else "Осмотр недоступен для этого ножа (без осмотра)"
+	_lbl_knife_details.text = inspect_hint + "\n\n" + k.get("details", "")
 
 	if k.has("icon") and ResourceLoader.exists(k["icon"]):
 		_preview_rect.texture = load(k["icon"])

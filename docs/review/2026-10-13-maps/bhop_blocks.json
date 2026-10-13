@@ -1,0 +1,54 @@
+{
+	"glb": "res://maps/bhop_blocks.glb",
+	"id": "bhop_blocks",
+	"samples": [
+		{
+			"ground": 0,
+			"origin": "(-193.0, -320.0, 36.03125)",
+			"second": 1,
+			"solid": -1,
+			"teleports": 0,
+			"velocity": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ground": 0,
+			"origin": "(-193.0, -320.0, 36.03125)",
+			"second": 2,
+			"solid": -1,
+			"teleports": 0,
+			"velocity": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ground": 0,
+			"origin": "(-193.0, -320.0, 36.03125)",
+			"second": 3,
+			"solid": -1,
+			"teleports": 0,
+			"velocity": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ground": 0,
+			"origin": "(-193.0, -320.0, 36.03125)",
+			"second": 4,
+			"solid": -1,
+			"teleports": 0,
+			"velocity": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ground": 0,
+			"origin": "(-193.0, -320.0, 36.03125)",
+			"second": 5,
+			"solid": -1,
+			"teleports": 0,
+			"velocity": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ground": 0,
+			"origin": "(-193.0, -320.0, 36.03125)",
+			"second": 6,
+			"solid": -1,
+			"teleports": 0,
+			"velocity": "(0.0, 0.0, 0.0)"
+		}
+	]
+}

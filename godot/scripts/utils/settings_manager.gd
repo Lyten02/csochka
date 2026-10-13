@@ -198,7 +198,7 @@ func save_settings() -> void:
 	cfg.save(CONFIG_PATH)
 
 
-func get_available_knives() -> Array[Dictionary]:
+func get_available_knives(catalog_path: String = "res://models/knives/catalog.json") -> Array[Dictionary]:
 	var knives: Array[Dictionary] = [
 		{
 			"id": "knife_default",
@@ -217,14 +217,58 @@ func get_available_knives() -> Array[Dictionary]:
 			"icon": "res://models/knife_black_thumb.png",
 		},
 	]
+	for builtin in knives:
+		builtin["category"] = "no_inspect"
+		builtin["inspect_anim"] = null
+		builtin["anims"] = {}
+		builtin["source_slug"] = ""
+	if FileAccess.file_exists(catalog_path):
+		var entries: Variant = JSON.parse_string(FileAccess.get_file_as_string(catalog_path))
+		if entries is Array:
+			var ids := {"knife_default": true, "knife_black": true}
+			for entry in entries:
+				if not _valid_knife_entry(entry) or ids.has(entry["id"]):
+					push_warning("Ignoring invalid or duplicate knife catalog entry")
+					continue
+				ids[entry["id"]] = true
+				knives.append(entry)
 	return knives
 
 
-func get_current_knife_model() -> String:
-	for k in get_available_knives():
+func get_current_knife_info() -> Dictionary:
+	var knives := get_available_knives()
+	for k in knives:
 		if k["id"] == current_knife_id:
-			return k["model"]
-	return "res://models/knife.glb"
+			return k
+	current_knife_id = "knife_default"
+	return knives[0]
+
+
+func get_current_knife_model() -> String:
+	return get_current_knife_info()["model"]
+
+
+func _valid_knife_entry(entry: Variant) -> bool:
+	if not entry is Dictionary:
+		return false
+	for field in ["id", "name", "model", "icon", "desc", "details", "category", "source_slug"]:
+		if not entry.get(field) is String:
+			return false
+	if entry["source_slug"].is_empty() or entry["id"] != "cs16forge_" + entry["source_slug"]:
+		return false
+	if entry["name"].is_empty() or not entry["model"].begins_with("res://"):
+		return false
+	if not entry.has("inspect_anim") or not entry.get("anims") is Dictionary:
+		return false
+	if entry["category"] == "inspect":
+		if not entry["inspect_anim"] is String or entry["inspect_anim"].is_empty():
+			return false
+	elif entry["category"] != "no_inspect" or entry["inspect_anim"] != null:
+		return false
+	for role in ["idle", "draw", "slash1", "slash2", "midslash1", "midslash2", "stab", "stab_miss"]:
+		if not entry["anims"].get(role) is String or entry["anims"][role].is_empty():
+			return false
+	return true
 
 
 func set_current_knife(knife_id: String) -> void:

@@ -1,0 +1,200 @@
+[
+	{
+		"bsp": "res://maps/35hp_3.bsp",
+		"category": "other",
+		"desc": "Классическая арена 35HP (бой на ножах, прыжки через мост)",
+		"details": "• Физика: GoldSrc PMove\n• Коллизия: GoldSrc BSP Clip Hulls\n• Спавны: CT / T команды\n• Триггеры: Телепорты в пропасти",
+		"glb": "res://maps/35hp_3.glb",
+		"id": "35hp_3",
+		"name": "35hp_3"
+	},
+	{
+		"bsp": "res://maps/bhop_blocks.bsp",
+		"category": "bhop",
+		"desc": "Классическая Bhop полоса с летающими блоками (bhop_blocks)",
+		"details": "• Режим: Bunnyhop\n• Физика: GoldSrc PMove (KZ / Bhop)\n• Таймер: Кнопки старта и финиша ('E')\n• Телепорт: Авто-возврат при падении на землю и долгом стоянии",
+		"glb": "res://maps/bhop_blocks.glb",
+		"id": "bhop_blocks",
+		"name": "bhop_blocks"
+	},
+	{
+		"bsp": "res://maps/bhop_dea.bsp",
+		"category": "bhop",
+		"desc": "Динамичная Bhop карта над водой (bhop_dea)",
+		"details": "• Режим: Bunnyhop\n• Физика: GoldSrc PMove (KZ / Bhop)\n• Таймер: Кнопки старта и финиша ('E')\n• Телепорт: Авто-возврат при падении в воду/на землю и долгом стоянии",
+		"glb": "res://maps/bhop_dea.glb",
+		"id": "bhop_dea",
+		"name": "bhop_dea"
+	},
+	{
+		"bsp": "res://maps/bhop_flyblocks.bsp",
+		"category": "bhop",
+		"desc": "Классическая карта CS 1.6",
+		"details": "• Физика: GoldSrc PMove\n• Коллизия: GoldSrc BSP Clip Hulls",
+		"glb": "",
+		"id": "bhop_flyblocks",
+		"name": "bhop_flyblocks"
+	},
+	{
+		"bsp": "res://maps/bhop_perfect2012.bsp",
+		"category": "bhop",
+		"desc": "Классическая карта CS 1.6",
+		"details": "• Физика: GoldSrc PMove\n• Коллизия: GoldSrc BSP Clip Hulls",
+		"glb": "",
+		"id": "bhop_perfect2012",
+		"name": "bhop_perfect2012"
+	},
+	{
+		"bsp": "res://maps/bhop_rabiga.bsp",
+		"category": "bhop",
+		"desc": "Классическая скоростная Bhop карта (bhop_rabiga)",
+		"details": "• Режим: Bunnyhop\n• Физика: GoldSrc PMove (KZ / Bhop)\n• Таймер: Кнопки старта и финиша ('E')\n• Телепорт: Авто-возврат при падении на землю и долгом стоянии",
+		"glb": "res://maps/bhop_rabiga.glb",
+		"id": "bhop_rabiga",
+		"name": "bhop_rabiga"
+	},
+	{
+		"bsp": "res://maps/bhop_run_1.bsp",
+		"category": "bhop",
+		"desc": "Популярный длинный Bhop забег (bhop_run_1)",
+		"details": "• Режим: Bunnyhop\n• Физика: GoldSrc PMove (KZ / Bhop)\n• Таймер: Кнопки старта и финиша ('E')\n• Телепорт: Авто-возврат при падении на землю и долгом стоянии",
+		"glb": "res://maps/bhop_run_1.glb",
+		"id": "bhop_run_1",
+		"name": "bhop_run_1"
+	},
+	{
+		"bsp": "res://maps/bhop_squareblock.bsp",
+		"category": "bhop",
+		"desc": "Техничная карта с квадратными блоками (bhop_squareblock)",
+		"details": "• Режим: Bunnyhop\n• Физика: GoldSrc PMove (KZ / Bhop)\n• Таймер: Кнопки старта и финиша ('E')\n• Телепорт: Авто-возврат при падении на землю и долгом стоянии",
+		"glb": "res://maps/bhop_squareblock.glb",
+		"id": "bhop_squareblock",
+		"name": "bhop_squareblock"
+	},
+	{
+		"bsp": "res://maps/bhop_tk_speedrun.bsp",
+		"category": "bhop",
+		"desc": "Скоростная Bhop карта для спидрана (bhop_tk_speedrun)",
+		"details": "• Режим: Bunnyhop Speedrun\n• Физика: GoldSrc PMove (KZ / Bhop)\n• Таймер: Кнопки старта и финиша ('E')\n• Телепорт: Авто-возврат при падении на землю и долгом стоянии",
+		"glb": "res://maps/bhop_tk_speedrun.glb",
+		"id": "bhop_tk_speedrun",
+		"name": "bhop_tk_speedrun"
+	},
+	{
+		"bsp": "res://maps/bhop_train.bsp",
+		"category": "bhop",
+		"desc": "Bhop карта на железнодорожных путях (bhop_train)",
+		"details": "• Режим: Bunnyhop\n• Физика: GoldSrc PMove (KZ / Bhop)\n• Таймер: Кнопки старта и финиша ('E')\n• Телепорт: Авто-возврат при падении на землю и долгом стоянии",
+		"glb": "res://maps/bhop_train.glb",
+		"id": "bhop_train",
+		"name": "bhop_train"
+	},
+	{
+		"bsp": "res://maps/bhop_training_final.bsp",
+		"category": "bhop",
+		"desc": "Тренировочная Bhop карта (bhop_training_final)",
+		"details": "• Режим: Bunnyhop Training\n• Физика: GoldSrc PMove (KZ / Bhop)\n• Таймер: Кнопки старта и финиша ('E')\n• Блоки: Авто-телепорт при долгом стоянии",
+		"glb": "res://maps/bhop_training_final.glb",
+		"id": "bhop_training_final",
+		"name": "bhop_training_final"
+	},
+	{
+		"bsp": "res://maps/bhop_without_colors.bsp",
+		"category": "bhop",
+		"desc": "Классическая карта CS 1.6",
+		"details": "• Физика: GoldSrc PMove\n• Коллизия: GoldSrc BSP Clip Hulls",
+		"glb": "",
+		"id": "bhop_without_colors",
+		"name": "bhop_without_colors"
+	},
+	{
+		"bsp": "res://maps/bhop_ytt_neon_light.bsp",
+		"category": "bhop",
+		"desc": "Атмосферный Bhop ран в неоновом стиле (bhop_ytt_neon_light)",
+		"details": "• Режим: Bunnyhop\n• Физика: GoldSrc PMove (KZ / Bhop)\n• Таймер: Кнопки старта и финиша ('E')\n• Телепорт: Авто-возврат при падении на землю и долгом стоянии",
+		"glb": "res://maps/bhop_ytt_neon_light.glb",
+		"id": "bhop_ytt_neon_light",
+		"name": "bhop_ytt_neon_light"
+	},
+	{
+		"bsp": "res://maps/bkz_goldbhop.bsp",
+		"category": "kz",
+		"desc": "Легендарная Kreedz / Bhop карта (прыжки по золотым блокам)",
+		"details": "• Режим: Kreedz Climbing (KZ)\n• Физика: GoldSrc PMove (KZ / Bhop)\n• Таймер: Кнопки старта и финиша ('E')\n• Цель: Пройти полосу препятствий до вершины",
+		"glb": "res://maps/bkz_goldbhop.glb",
+		"id": "bkz_goldbhop",
+		"name": "bkz_goldbhop"
+	},
+	{
+		"bsp": "res://maps/bkz_noob.bsp",
+		"category": "kz",
+		"desc": "Классическая обучающая KZ карта (bkz_noob)",
+		"details": "• Режим: Kreedz Climbing (KZ)\n• Физика: GoldSrc PMove\n• Таймер: Кнопки старта и финиша ('E')\n• Телепорт: Авто-возврат при падении в пропасть",
+		"glb": "res://maps/bkz_noob.glb",
+		"id": "bkz_noob",
+		"name": "bkz_noob"
+	},
+	{
+		"bsp": "res://maps/kzru_airway.bsp",
+		"category": "kz",
+		"desc": "Легендарная высотная Kreedz карта (kzru_airway)",
+		"details": "• Режим: Kreedz Climbing (KZ)\n• Физика: GoldSrc PMove\n• Таймер: Кнопки старта и финиша ('E')\n• Телепорт: Авто-возврат при падении в пропасть",
+		"glb": "res://maps/kzru_airway.glb",
+		"id": "kzru_airway",
+		"name": "kzru_airway"
+	},
+	{
+		"bsp": "res://maps/kzsca_toonbhop.bsp",
+		"category": "kz",
+		"desc": "Красочная мультяшная Kreedz / Bhop карта (kzsca_toonbhop)",
+		"details": "• Режим: Kreedz / Bhop\n• Физика: GoldSrc PMove\n• Таймер: Кнопки старта и финиша ('E')\n• Телепорт: Авто-возврат при падении и долгом стоянии",
+		"glb": "res://maps/kzsca_toonbhop.glb",
+		"id": "kzsca_toonbhop",
+		"name": "kzsca_toonbhop"
+	},
+	{
+		"bsp": "res://maps/kzsk_xmas2010.bsp",
+		"category": "kz",
+		"desc": "Классическая карта CS 1.6",
+		"details": "• Физика: GoldSrc PMove\n• Коллизия: GoldSrc BSP Clip Hulls",
+		"glb": "",
+		"id": "kzsk_xmas2010",
+		"name": "kzsk_xmas2010"
+	},
+	{
+		"bsp": "res://maps/kzy_fastbhop.bsp",
+		"category": "bhop",
+		"desc": "Классическая карта CS 1.6",
+		"details": "• Физика: GoldSrc PMove\n• Коллизия: GoldSrc BSP Clip Hulls",
+		"glb": "",
+		"id": "kzy_fastbhop",
+		"name": "kzy_fastbhop"
+	},
+	{
+		"bsp": "res://maps/kzy_juhxbhop.bsp",
+		"category": "kz",
+		"desc": "Динамичная Kreedz / Bhop карта (kzy_juhxbhop)",
+		"details": "• Режим: Kreedz / Bhop\n• Физика: GoldSrc PMove\n• Таймер: Кнопки старта и финиша ('E')\n• Телепорт: Авто-возврат при падении и долгом стоянии",
+		"glb": "res://maps/kzy_juhxbhop.glb",
+		"id": "kzy_juhxbhop",
+		"name": "kzy_juhxbhop"
+	},
+	{
+		"bsp": "res://maps/kzy_junglerocks.bsp",
+		"category": "kz",
+		"desc": "Классическая карта CS 1.6",
+		"details": "• Физика: GoldSrc PMove\n• Коллизия: GoldSrc BSP Clip Hulls",
+		"glb": "",
+		"id": "kzy_junglerocks",
+		"name": "kzy_junglerocks"
+	},
+	{
+		"bsp": "res://maps/kz_bhop.bsp",
+		"category": "bhop",
+		"desc": "Классическая карта CS 1.6",
+		"details": "• Физика: GoldSrc PMove\n• Коллизия: GoldSrc BSP Clip Hulls",
+		"glb": "",
+		"id": "kz_bhop",
+		"name": "kz_bhop"
+	}
+]

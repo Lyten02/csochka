@@ -1,0 +1,54 @@
+{
+	"glb": "res://maps/bhop_tk_speedrun.glb",
+	"id": "bhop_tk_speedrun",
+	"samples": [
+		{
+			"ground": 0,
+			"origin": "(-3520.0, -960.0, -26.96875)",
+			"second": 1,
+			"solid": -1,
+			"teleports": 0,
+			"velocity": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ground": 0,
+			"origin": "(-3520.0, -960.0, -26.96875)",
+			"second": 2,
+			"solid": -1,
+			"teleports": 0,
+			"velocity": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ground": 0,
+			"origin": "(-3520.0, -960.0, -26.96875)",
+			"second": 3,
+			"solid": -1,
+			"teleports": 0,
+			"velocity": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ground": 0,
+			"origin": "(-3520.0, -960.0, -26.96875)",
+			"second": 4,
+			"solid": -1,
+			"teleports": 0,
+			"velocity": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ground": 0,
+			"origin": "(-3520.0, -960.0, -26.96875)",
+			"second": 5,
+			"solid": -1,
+			"teleports": 0,
+			"velocity": "(0.0, 0.0, 0.0)"
+		},
+		{
+			"ground": 0,
+			"origin": "(-3520.0, -960.0, -26.96875)",
+			"second": 6,
+			"solid": -1,
+			"teleports": 0,
+			"velocity": "(0.0, 0.0, 0.0)"
+		}
+	]
+}

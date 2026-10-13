@@ -56,6 +56,7 @@ var _font_bold: Font
 
 
 func _ready() -> void:
+	add_to_group("knife_input_blockers")
 	_sm = get_node_or_null("/root/SettingsManager")
 	_load_fonts()
 	_build_ui()
@@ -88,8 +89,6 @@ func _build_ui() -> void:
 	add_child(main_vbox)
 
 	# --- Title Bar ---
-	var title_bar := HBoxContainer.new()
-	title_bar.custom_minimum_size = Vector2(0, 28)
 	var title_style := StyleBoxFlat.new()
 	title_style.bg_color = Color(0.13, 0.17, 0.22, 1.0)
 	title_style.set_content_margin_all(4)
@@ -330,6 +329,7 @@ func _populate_key_tree() -> void:
 		{"name": "Пригнуться", "action": "cs_duck", "k1": "CTRL", "k2": "MWHEELDOWN"},
 		{"name": "Идти (медленно)", "action": "cs_walk", "k1": "SHIFT", "k2": ""},
 		{"name": "Использовать", "action": "cs_use", "k1": "E", "k2": ""},
+		{"name": "Осмотр ножа (если доступен)", "action": "knife_inspect", "k1": "F", "k2": ""},
 		{"name": "Перезапуск / Спавн", "action": "cs_respawn", "k1": "R", "k2": ""},
 		{"name": "Полет (Noclip)", "action": "cs_noclip", "k1": "V", "k2": ""},
 	]
